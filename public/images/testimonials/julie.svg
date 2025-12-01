@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="face-julie" cx="50%" cy="40%">
+      <stop offset="0%" style="stop-color:#FFF8F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E8C4A8;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="chef-white" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F5F5F5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Elegant Background -->
+  <rect width="400" height="400" fill="#EC4899"/>
+  <circle cx="200" cy="200" r="180" fill="#F472B6" opacity="0.4"/>
+  
+  <!-- Chef Uniform -->
+  <rect x="50" y="280" width="300" height="120" fill="url(#chef-white)"/>
+  <ellipse cx="200" cy="360" rx="140" ry="60" fill="#FFFFFF"/>
+  
+  <!-- Buttons -->
+  <circle cx="160" cy="330" r="6" fill="#1F2937"/>
+  <circle cx="160" cy="355" r="6" fill="#1F2937"/>
+  <circle cx="240" cy="330" r="6" fill="#1F2937"/>
+  <circle cx="240" cy="355" r="6" fill="#1F2937"/>
+  
+  <!-- Neck -->
+  <ellipse cx="200" cy="270" rx="30" ry="40" fill="url(#face-julie)"/>
+  
+  <!-- Face -->
+  <ellipse cx="200" cy="195" rx="80" ry="95" fill="url(#face-julie)"/>
+  
+  <!-- Ears -->
+  <ellipse cx="130" cy="200" rx="12" ry="22" fill="#E8C4A8"/>
+  <ellipse cx="270" cy="200" rx="12" ry="22" fill="#E8C4A8"/>
+  
+  <!-- Earrings -->
+  <circle cx="130" cy="215" r="5" fill="#FFD700" stroke="#DAA520" stroke-width="1"/>
+  <circle cx="270" cy="215" r="5" fill="#FFD700" stroke="#DAA520" stroke-width="1"/>
+  
+  <!-- Hair (elegant bun style) -->
+  <ellipse cx="200" cy="120" rx="85" ry="55" fill="#3E2723"/>
+  <path d="M 115 160 Q 110 100 200 90 Q 290 100 285 160" fill="#3E2723"/>
+  <rect x="120" y="130" width="160" height="50" fill="#3E2723"/>
+  <circle cx="200" cy="110" r="30" fill="#3E2723"/>
+  
+  <!-- Hair strands for detail -->
+  <path d="M 140 150 Q 145 120 150 140" stroke="#2C1810" stroke-width="2" fill="none" opacity="0.3"/>
+  <path d="M 260 150 Q 255 120 250 140" stroke="#2C1810" stroke-width="2" fill="none" opacity="0.3"/>
+  
+  <!-- Forehead highlight -->
+  <ellipse cx="200" cy="155" rx="50" ry="15" fill="#FFFFFF" opacity="0.2"/>
+  
+  <!-- Eyes (feminine, larger) -->
+  <ellipse cx="165" cy="190" rx="14" ry="17" fill="#FFFFFF"/>
+  <ellipse cx="235" cy="190" rx="14" ry="17" fill="#FFFFFF"/>
+  <circle cx="167" cy="193" r="10" fill="#4A5568"/>
+  <circle cx="237" cy="193" r="10" fill="#4A5568"/>
+  <circle cx="169" cy="190" r="4" fill="#FFFFFF"/>
+  <circle cx="239" cy="190" r="4" fill="#FFFFFF"/>
+  
+  <!-- Eyelashes (upper) -->
+  <path d="M 152 180 L 150 175" stroke="#2C1810" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 160 178 L 160 173" stroke="#2C1810" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 170 178 L 172 173" stroke="#2C1810" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 178 180 L 182 175" stroke="#2C1810" stroke-width="2" stroke-linecap="round"/>
+  
+  <path d="M 222 180 L 218 175" stroke="#2C1810" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 230 178 L 230 173" stroke="#2C1810" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 240 178 L 242 173" stroke="#2C1810" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 248 180 L 250 175" stroke="#2C1810" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Eyebrows (elegant arch) -->
+  <path d="M 148 172 Q 165 167 182 172" stroke="#3E2723" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M 218 172 Q 235 167 252 172" stroke="#3E2723" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Nose -->
+  <path d="M 200 198 L 196 218 L 204 218 Z" fill="#D4A574" opacity="0.3"/>
+  <ellipse cx="194" cy="220" rx="3" ry="4" fill="#B8956A" opacity="0.5"/>
+  <ellipse cx="206" cy="220" rx="3" ry="4" fill="#B8956A" opacity="0.5"/>
+  
+  <!-- Lips (more detailed, feminine) -->
+  <path d="M 175 245 Q 200 252 225 245" stroke="#C44569" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M 175 245 Q 200 257 225 245 Q 225 250 200 255 Q 175 250 175 245 Z" fill="#E07B91"/>
+  <path d="M 175 245 Q 200 250 225 245" fill="#F8B1C3" opacity="0.5"/>
+  
+  <!-- Cheek blush -->
+  <ellipse cx="145" cy="215" rx="20" ry="15" fill="#F8B1C3" opacity="0.3"/>
+  <ellipse cx="255" cy="215" rx="20" ry="15" fill="#F8B1C3" opacity="0.3"/>
+  
+  <!-- Face contour -->
+  <ellipse cx="135" cy="220" rx="12" ry="35" fill="#000000" opacity="0.04"/>
+  <ellipse cx="265" cy="220" rx="12" ry="35" fill="#000000" opacity="0.04"/>
+</svg>

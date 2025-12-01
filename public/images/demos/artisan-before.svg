@@ -1,0 +1,31 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#ffffff"/>
+  
+  <!-- Header - Old School -->
+  <rect width="800" height="150" fill="#0000ff"/>
+  <text x="400" y="60" font-family="Arial, sans-serif" font-size="48" fill="yellow" text-anchor="middle" font-weight="bold" stroke="black" stroke-width="2">S.O.S ÉLECTRICIEN</text>
+  <text x="400" y="110" font-family="Arial, sans-serif" font-size="42" fill="white" text-anchor="middle" font-weight="bold">06.12.34.56.78</text>
+  <text x="400" y="140" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle">7j/7 - 24h/24 - Pas cher</text>
+  
+  <!-- Content Body -->
+  <rect y="150" width="800" height="350" fill="#f0f0f0"/>
+  
+  <!-- Big ugly photo placeholder -->
+  <rect x="50" y="180" width="300" height="200" fill="#999" stroke="red" stroke-width="5"/>
+  <text x="200" y="280" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle" transform="rotate(-15 200,280)">PHOTO FLOU</text>
+  
+  <!-- Bullet points -->
+  <text x="400" y="200" font-family="Arial, sans-serif" font-size="24" fill="red" font-weight="bold">• DÉPANNAGE RAPIDE</text>
+  <text x="400" y="240" font-family="Arial, sans-serif" font-size="24" fill="red" font-weight="bold">• MISE AUX NORMES</text>
+  <text x="400" y="280" font-family="Arial, sans-serif" font-size="24" fill="red" font-weight="bold">• TABLEAU ÉLECTRIQUE</text>
+  <text x="400" y="320" font-family="Arial, sans-serif" font-size="24" fill="red" font-weight="bold">• DEVIS GRATUIT !!!</text>
+  
+  <!-- Flashy Banner -->
+  <rect x="380" y="360" width="380" height="80" fill="yellow" stroke="red" stroke-width="3" rx="10"/>
+  <text x="570" y="410" font-family="Arial, sans-serif" font-size="32" fill="red" text-anchor="middle" font-weight="bold">PROMO -10% !!!</text>
+  
+  <!-- Footer -->
+  <rect y="460" width="800" height="40" fill="#333"/>
+  <text x="400" y="485" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Site créé en 2008</text>
+</svg>

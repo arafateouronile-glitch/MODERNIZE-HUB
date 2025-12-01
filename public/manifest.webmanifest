@@ -1,0 +1,17 @@
+{
+  "name": "Modernize Hub - Agence de Création Web",
+  "short_name": "Modernize Hub",
+  "description": "Transformez votre site obsolète en machine à générer des leads. Design ultra-moderne 2025.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6366F1",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

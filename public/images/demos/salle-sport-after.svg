@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#000000"/>
+  
+  <!-- Big Text -->
+  <text x="600" y="400" font-family="Arial" font-weight="900" font-size="200" fill="none" stroke="#333" stroke-width="2" text-anchor="middle" transform="skewX(-10)">POWER</text>
+  <text x="600" y="400" font-family="Arial" font-weight="900" font-size="200" fill="none" stroke="#ccff00" stroke-width="2" text-anchor="middle" transform="translate(5,5) skewX(-10)">POWER</text>
+
+  <!-- Header -->
+  <text x="50" y="60" font-family="Arial" font-weight="900" font-size="30" fill="#FFFFFF" transform="skewX(-10)">KINETIC<tspan fill="#ccff00">.</tspan></text>
+  <rect x="1000" y="30" width="150" height="40" fill="#ccff00" transform="skewX(-10)"/>
+  <text x="1040" y="55" font-family="Arial" font-weight="bold" font-size="16" fill="#000000">JOIN NOW</text>
+
+  <!-- Content -->
+  <rect x="100" y="500" width="4" height="100" fill="#ccff00"/>
+  <text x="120" y="530" font-family="Arial" font-size="24" fill="#FFFFFF">UNLEASH YOUR</text>
+  <text x="120" y="560" font-family="Arial" font-weight="bold" font-size="24" fill="#ccff00">POTENTIAL</text>
+
+  <!-- Marquee -->
+  <rect x="0" y="700" width="1200" height="60" fill="#ccff00"/>
+  <text x="50" y="740" font-family="Arial" font-weight="900" font-size="30" fill="#000000">NO PAIN NO GAIN • ELITE EQUIPMENT • 24/7 ACCESS • </text>
+
+</svg>

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="face-marc" cx="50%" cy="40%">
+      <stop offset="0%" style="stop-color:#FFF0E6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4A276;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="work-shirt" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Warm Background -->
+  <rect width="400" height="400" fill="#F59E0B"/>
+  <circle cx="200" cy="200" r="180" fill="#FBBF24" opacity="0.3"/>
+  
+  <!-- Work Shirt -->
+  <ellipse cx="200" cy="380" rx="145" ry="70" fill="url(#work-shirt)"/>
+  <rect x="55" y="295" width="290" height="105" fill="url(#work-shirt)"/>
+  
+  <!-- Collar -->
+  <polygon points="175,295 200,310 225,295" fill="#FFFFFF" opacity="0.9"/>
+  
+  <!-- Pocket (work shirt detail) -->
+  <rect x="160" y="330" width="35" height="40" fill="#D97706" stroke="#B45309" stroke-width="1"/>
+  
+  <!-- Neck -->
+  <ellipse cx="200" cy="285" rx="26" ry="36" fill="url(#face-marc)"/>
+  
+  <!-- Face (more robust, artisan) -->
+  <ellipse cx="200" cy="205" rx="80" ry="92" fill="url(#face-marc)"/>
+  
+  <!-- Ears -->
+  <ellipse cx="130" cy="210" rx="14" ry="25" fill="#D4A276"/>
+  <ellipse cx="270" cy="210" rx="14" ry="25" fill="#D4A276"/>
+  
+  <!-- Hair (short, practical) -->
+  <ellipse cx="200" cy="140" rx="82" ry="48" fill="#3E3E3E"/>
+  <path d="M 118 175 Q 115 130 200 118 Q 285 130 282 175" fill="#3E3E3E"/>
+  <rect x="123" y="145" width="154" height="42" fill="#3E3E3E"/>
+  
+  <!-- Hair (graying at temples) -->
+  <ellipse cx="140" cy="160" rx="12" ry="20" fill="#9CA3AF" opacity="0.5"/>
+  <ellipse cx="260" cy="160" rx="12" ry="20" fill="#9CA3AF" opacity="0.5"/>
+  
+  <!-- Forehead lines (experience) -->
+  <path d="M 160 165 Q 200 163 240 165" stroke="#C89968" stroke-width="0.8" opacity="0.2"/>
+  <path d="M 165 172 Q 200 170 235 172" stroke="#C89968" stroke-width="0.8" opacity="0.2"/>
+  
+  <!-- Eyes (friendly, hardworking) -->
+  <ellipse cx="170" cy="200" rx="12" ry="14" fill="#FFFFFF"/>
+  <ellipse cx="230" cy="200" rx="12" ry="14" fill="#FFFFFF"/>
+  <circle cx="172" cy="203" r="8" fill="#5D4E37"/>
+  <circle cx="232" cy="203" r="8" fill="#5D4E37"/>
+  <circle cx="174" cy="200" r="3" fill="#FFFFFF"/>
+  <circle cx="234" cy="200" r="3" fill="#FFFFFF"/>
+  
+  <!-- Crow's feet (smile lines) -->
+  <path d="M 182 198 L 188 195" stroke="#C89968" stroke-width="0.8" opacity="0.3"/>
+  <path d="M 184 203 L 190 202" stroke="#C89968" stroke-width="0.8" opacity="0.3"/>
+  <path d="M 218 198 L 212 195" stroke="#C89968" stroke-width="0.8" opacity="0.3"/>
+  <path d="M 216 203 L 210 202" stroke="#C89968" stroke-width="0.8" opacity="0.3"/>
+  
+  <!-- Eyebrows (thick, expressive) -->
+  <path d="M 154 187 Q 170 183 186 187" stroke="#3E3E3E" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M 214 187 Q 230 183 246 187" stroke="#3E3E3E" stroke-width="5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Mustache (classic artisan style) -->
+  <ellipse cx="180" cy="242" rx="18" ry="7" fill="#3E3E3E"/>
+  <ellipse cx="220" cy="242" rx="18" ry="7" fill="#3E3E3E"/>
+  <rect x="180" y="238" width="40" height="8" fill="#3E3E3E"/>
+  
+  <!-- Nose -->
+  <path d="M 200 210 L 195 228 L 205 228 Z" fill="#C89968" opacity="0.3"/>
+  <ellipse cx="192" cy="230" rx="4" ry="5" fill="#A68560" opacity="0.5"/>
+  <ellipse cx="208" cy="230" rx="4" ry="5" fill="#A68560" opacity="0.5"/>
+  
+  <!-- Big smile (happy customer!) -->
+  <path d="M 175 255 Q 200 265 225 255" stroke="#8B4513" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M 175 255 Q 200 262 225 255" fill="#CD5C5C" opacity="0.3"/>
+  
+  <!-- Laugh lines -->
+  <path d="M 170 250 Q 165 260 168 268" stroke="#C89968" stroke-width="1" opacity="0.2"/>
+  <path d="M 230 250 Q 235 260 232 268" stroke="#C89968" stroke-width="1" opacity="0.2"/>
+  
+  <!-- Face shadows (weathered) -->
+  <ellipse cx="138" cy="220" rx="14" ry="34" fill="#000000" opacity="0.06"/>
+  <ellipse cx="262" cy="220" rx="14" ry="34" fill="#000000" opacity="0.06"/>
+  <rect x="188" y="228" width="24" height="12" fill="#000000" opacity="0.03"/>
+</svg>
+
+

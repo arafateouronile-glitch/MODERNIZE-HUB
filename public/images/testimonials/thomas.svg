@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="face-thomas" cx="50%" cy="40%">
+      <stop offset="0%" style="stop-color:#FFF5EA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9B494;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="hoodie-thomas" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4338CA;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Tech Background -->
+  <rect width="400" height="400" fill="#6366F1"/>
+  <circle cx="200" cy="200" r="180" fill="#818CF8" opacity="0.3"/>
+  <circle cx="300" cy="100" r="50" fill="#D9FF00" opacity="0.1"/>
+  
+  <!-- Hoodie -->
+  <ellipse cx="200" cy="385" rx="148" ry="68" fill="url(#hoodie-thomas)"/>
+  <rect x="52" y="295" width="296" height="105" fill="url(#hoodie-thomas)"/>
+  
+  <!-- Hood -->
+  <ellipse cx="200" cy="250" rx="95" ry="45" fill="url(#hoodie-thomas)" opacity="0.8"/>
+  
+  <!-- Neck -->
+  <ellipse cx="200" cy="280" rx="27" ry="38" fill="url(#face-thomas)"/>
+  
+  <!-- Face -->
+  <ellipse cx="200" cy="200" rx="76" ry="90" fill="url(#face-thomas)"/>
+  
+  <!-- Ears -->
+  <ellipse cx="133" cy="205" rx="13" ry="23" fill="#D9B494"/>
+  <ellipse cx="267" cy="205" rx="13" ry="23" fill="#D9B494"/>
+  
+  <!-- Headphones/Earbuds -->
+  <circle cx="133" cy="205" r="10" fill="#1F2937" opacity="0.9"/>
+  <circle cx="267" cy="205" r="10" fill="#1F2937" opacity="0.9"/>
+  <circle cx="133" cy="205" r="4" fill="#D9FF00"/>
+  <circle cx="267" cy="205" r="4" fill="#D9FF00"/>
+  
+  <!-- Hair (young, messy/stylish) -->
+  <ellipse cx="200" cy="135" rx="80" ry="52" fill="#2C1810"/>
+  <path d="M 120 165 Q 115 120 200 110 Q 285 120 280 165" fill="#2C1810"/>
+  <rect x="125" y="140" width="150" height="38" fill="#2C1810"/>
+  
+  <!-- Hair texture (messy front) -->
+  <path d="M 165 140 Q 170 120 175 135" stroke="#1A0F08" stroke-width="3" fill="none" opacity="0.4"/>
+  <path d="M 200 130 Q 205 115 210 130" stroke="#1A0F08" stroke-width="3" fill="none" opacity="0.4"/>
+  <path d="M 235 140 Q 230 120 225 135" stroke="#1A0F08" stroke-width="3" fill="none" opacity="0.4"/>
+  
+  <!-- Eyes (tired startup founder look) -->
+  <ellipse cx="170" cy="195" rx="13" ry="15" fill="#FFFFFF"/>
+  <ellipse cx="230" cy="195" rx="13" ry="15" fill="#FFFFFF"/>
+  <circle cx="172" cy="198" r="8" fill="#3E2723"/>
+  <circle cx="232" cy="198" r="8" fill="#3E2723"/>
+  <circle cx="174" cy="195" r="3" fill="#FFFFFF"/>
+  <circle cx="234" cy="195" r="3" fill="#FFFFFF"/>
+  
+  <!-- Eye bags (startup life) -->
+  <ellipse cx="170" cy="208" rx="10" ry="3" fill="#9E7B5F" opacity="0.2"/>
+  <ellipse cx="230" cy="208" rx="10" ry="3" fill="#9E7B5F" opacity="0.2"/>
+  
+  <!-- Eyebrows (expressive) -->
+  <path d="M 152 180 Q 170 175 188 180" stroke="#2C1810" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M 212 180 Q 230 175 248 180" stroke="#2C1810" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <!-- Stubble/light beard -->
+  <ellipse cx="200" cy="245" rx="38" ry="28" fill="#2C1810" opacity="0.15"/>
+  <path d="M 170 230 Q 170 250 180 258" fill="#2C1810" opacity="0.1"/>
+  <path d="M 230 230 Q 230 250 220 258" fill="#2C1810" opacity="0.1"/>
+  
+  <!-- Nose -->
+  <path d="M 200 205 L 196 222 L 204 222 Z" fill="#C8A074" opacity="0.3"/>
+  <ellipse cx="193" cy="224" rx="3.5" ry="4.5" fill="#A68560" opacity="0.5"/>
+  <ellipse cx="207" cy="224" rx="3.5" ry="4.5" fill="#A68560" opacity="0.5"/>
+  
+  <!-- Smile (confident startup founder) -->
+  <path d="M 180 250 Q 200 256 220 250" stroke="#2C1810" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 180 250 Q 200 253 220 250" fill="#E07B8A" opacity="0.2"/>
+  
+  <!-- Face shadows -->
+  <ellipse cx="140" cy="215" rx="13" ry="31" fill="#000000" opacity="0.05"/>
+  <ellipse cx="260" cy="215" rx="13" ry="31" fill="#000000" opacity="0.05"/>
+</svg>
+
+

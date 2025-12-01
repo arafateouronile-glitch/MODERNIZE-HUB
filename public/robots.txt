@@ -1,0 +1,12 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://modernizehub.com/sitemap.xml
+
+# Disallow admin or sensitive paths (if any)
+# Disallow: /admin/
+# Disallow: /api/
+
+

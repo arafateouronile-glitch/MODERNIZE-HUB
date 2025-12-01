@@ -1,0 +1,30 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f5f5f5"/>
+  
+  <!-- Header -->
+  <rect width="800" height="100" fill="#333333"/>
+  <text x="400" y="55" font-family="Arial, sans-serif" font-size="32" fill="white" text-anchor="middle" font-weight="bold">SALLE DE SPORT</text>
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="16" fill="#cccccc" text-anchor="middle">Votre bien-être</text>
+  
+  <!-- Image Banner -->
+  <rect y="100" width="800" height="200" fill="#666666"/>
+  <text x="400" y="210" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle">Photo de la salle</text>
+  
+  <!-- Services -->
+  <rect y="300" width="800" height="200" fill="#ffffff"/>
+  <text x="400" y="335" font-family="Arial, sans-serif" font-size="22" fill="#333333" text-anchor="middle" font-weight="bold">Nos Services</text>
+  
+  <rect x="100" y="350" width="150" height="120" fill="#e0e0e0" stroke="#cccccc" stroke-width="1"/>
+  <text x="175" y="390" font-family="Arial, sans-serif" font-size="14" fill="#666666" text-anchor="middle">Musculation</text>
+  <text x="175" y="410" font-family="Arial, sans-serif" font-size="12" fill="#888888" text-anchor="middle">30€/mois</text>
+  
+  <rect x="275" y="350" width="150" height="120" fill="#e0e0e0" stroke="#cccccc" stroke-width="1"/>
+  <text x="350" y="390" font-family="Arial, sans-serif" font-size="14" fill="#666666" text-anchor="middle">Cardio</text>
+  <text x="350" y="410" font-family="Arial, sans-serif" font-size="12" fill="#888888" text-anchor="middle">25€/mois</text>
+  
+  <rect x="450" y="350" width="150" height="120" fill="#e0e0e0" stroke="#cccccc" stroke-width="1"/>
+  <text x="525" y="390" font-family="Arial, sans-serif" font-size="14" fill="#666666" text-anchor="middle">Cours</text>
+  <text x="525" y="410" font-family="Arial, sans-serif" font-size="12" fill="#888888" text-anchor="middle">35€/mois</text>
+</svg>
+

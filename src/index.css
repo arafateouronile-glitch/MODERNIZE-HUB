@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Light mode (default) - BLANC, NOIR, NÉON uniquement */
+  :root {
+    --color-background: #FFFFFF;
+    --color-surface: #FFFFFF;
+    --color-surface-highlight: #FFFFFF;
+    --color-text-main: #000000;
+    --color-text-muted: #000000;
+    --color-primary: #D9FF00;
+    --color-border: rgba(0, 0, 0, 0.2);
+  }
+
+  /* Dark mode - Noir, Blanc, Néon */
+  [data-theme="dark"],
+  .dark {
+    --color-background: #0F1116;
+    --color-surface: #161B22;
+    --color-surface-highlight: #1F242C;
+    --color-text-main: #FFFFFF;
+    --color-text-muted: #D9FF00;
+    --color-primary: #D9FF00;
+    --color-border: rgba(255, 255, 255, 0.1);
+  }
+
+  /* Light mode explicit - BLANC, NOIR, NÉON uniquement */
+  [data-theme="light"],
+  .light {
+    --color-background: #FFFFFF;
+    --color-surface: #FFFFFF;
+    --color-surface-highlight: #FFFFFF;
+    --color-text-main: #000000;
+    --color-text-muted: #000000;
+    --color-primary: #D9FF00;
+    --color-border: rgba(0, 0, 0, 0.2);
+  }
+
+  body {
+    background-color: var(--color-background) !important;
+    color: var(--color-text-main) !important;
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--color-text-main) !important;
+  }
+
+  p, span, div {
+    color: inherit; 
+  }
+  
+  .text-muted {
+    color: var(--color-text-muted) !important;
+  }
+
+  ::selection {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-background) !important;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Force les classes Tailwind à utiliser les variables CSS */
+  [data-theme] {
+    background-color: var(--color-background);
+    color: var(--color-text-main);
+  }
+}
+
+@layer utilities {
+  .text-outline {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+    color: transparent;
+  }
+  
+  [data-theme="light"] .text-outline {
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+    color: transparent;
+  }
+  
+  .text-outline-hover:hover {
+    -webkit-text-stroke: 1px #D9FF00;
+    color: #D9FF00;
+  }
+
+  .glass-panel {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  [data-theme="light"] .glass-panel {
+    background-color: rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* ========== OVERRIDE GLOBAL POUR MODE CLAIR ========== */
+[data-theme="light"] {
+  color-scheme: light;
+  /* Force blanc partout */
+  background-color: #FFFFFF !important;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+/* Force background blanc en mode clair pour TOUT */
+[data-theme="light"] body,
+[data-theme="light"] html,
+[data-theme="light"] main,
+[data-theme="light"] section,
+[data-theme="light"] div {
+  background-color: #FFFFFF !important;
+}
+
+/* EXCEPTIONS HEADER - DOIT VENIR APRÈS pour surcharger */
+/* Header parent transparent */
+[data-theme="light"] header {
+  background-color: transparent !important;
+}
+
+/* Divs dans header transparent */
+[data-theme="light"] header > div {
+  background-color: transparent !important;
+}
+
+/* Nav en néon */
+[data-theme="light"] header nav {
+  background-color: #D9FF00 !important;
+}
+
+/* Divs dans nav en néon */
+[data-theme="light"] header nav > div {
+  background-color: #D9FF00 !important;
+}
+
+/* Tous les boutons dans nav en néon */
+[data-theme="light"] header nav button {
+  background-color: #D9FF00 !important;
+}
+
+/* Force texte noir en mode clair */
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] h4,
+[data-theme="light"] h5,
+[data-theme="light"] h6,
+[data-theme="light"] p,
+[data-theme="light"] span {
+  color: #000000 !important;
+}
+
+/* Override des classes Tailwind hardcodées */
+[data-theme="light"] [class*="bg-black"],
+[data-theme="light"] [class*="bg-\[#0F1116\]"],
+[data-theme="light"] [class*="bg-\[#161B22\]"],
+[data-theme="light"] .bg-background {
+  background-color: #FFFFFF !important;
+}
+
+[data-theme="light"] [class*="text-white"]:not([class*="text-primary"]):not([class*="text-[#D9FF00]"]) {
+  color: #000000 !important;
+}
+
+/* Force dark overlay - désactivé en mode clair */
+.noise-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='1'/%3E%3C/svg%3E");
+}
+
+[data-theme="light"] .noise-overlay {
+  opacity: 0;
+}

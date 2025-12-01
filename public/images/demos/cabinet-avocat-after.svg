@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#0B0F19"/>
+  
+  <!-- Decor -->
+  <circle cx="1000" cy="200" r="300" fill="#F59E0B" opacity="0.05"/>
+
+  <!-- Navigation -->
+  <text x="50" y="50" font-family="Times New Roman" font-weight="bold" font-size="24" fill="#F59E0B">VANDERBILT</text>
+  <text x="220" y="50" font-family="Arial" font-size="24" fill="#FFFFFF">& ASSOCIÉS</text>
+
+  <!-- Hero Content -->
+  <text x="100" y="250" font-family="Times New Roman" font-size="80" fill="#FFFFFF">L'Art de</text>
+  <text x="400" y="250" font-family="Times New Roman" font-style="italic" font-size="80" fill="#F59E0B">Gagner.</text>
+  
+  <rect x="100" y="300" width="50" height="4" fill="#F59E0B"/>
+  
+  <text x="100" y="350" font-family="Arial" font-size="24" fill="#F59E0B" opacity="0.9">EXPERTISE JURIDIQUE INTERNATIONALE</text>
+  
+  <!-- Stats -->
+  <line x1="100" y1="500" x2="1100" y2="500" stroke="#333" stroke-width="1"/>
+  
+  <text x="150" y="600" font-family="Times New Roman" font-weight="bold" font-size="50" fill="#FFFFFF">35+</text>
+  <text x="150" y="630" font-family="Arial" font-size="14" fill="#F59E0B" letter-spacing="2">ANNÉES D'EXPÉRIENCE</text>
+  
+  <text x="500" y="600" font-family="Times New Roman" font-weight="bold" font-size="50" fill="#FFFFFF">2M€</text>
+  <text x="500" y="630" font-family="Arial" font-size="14" fill="#F59E0B" letter-spacing="2">RÉCUPÉRÉS</text>
+  
+  <text x="850" y="600" font-family="Times New Roman" font-weight="bold" font-size="50" fill="#FFFFFF">98%</text>
+  <text x="850" y="630" font-family="Arial" font-size="14" fill="#F59E0B" letter-spacing="2">DE SUCCÈS</text>
+
+</svg>

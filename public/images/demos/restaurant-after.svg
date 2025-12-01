@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#000000"/>
+  
+  <!-- Image placeholder (darkened) -->
+  <rect width="1200" height="800" fill="#111111" opacity="0.8"/>
+  
+  <!-- Gradient Overlay -->
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0.9" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#grad)"/>
+
+  <!-- Logo -->
+  <text x="600" y="80" font-family="Times New Roman" font-size="24" fill="#FFFFFF" text-anchor="middle" letter-spacing="5">L'ÉPHÉMÈRE</text>
+
+  <!-- Central Text -->
+  <text x="600" y="350" font-family="Times New Roman" font-size="100" fill="#FFFFFF" text-anchor="middle" opacity="0.1">SENSORIAL</text>
+  <text x="600" y="350" font-family="Times New Roman" font-size="100" fill="none" stroke="#FFFFFF" stroke-width="1" text-anchor="middle">SENS<tspan fill="#F43F5E" stroke="none">O</tspan>RIAL</text>
+  
+  <text x="600" y="420" font-family="Arial" font-size="18" fill="#F43F5E" text-anchor="middle" letter-spacing="3">CUISINE D'AUTEUR</text>
+  
+  <!-- Scroll Line -->
+  <line x1="600" y1="650" x2="600" y2="750" stroke="#F43F5E" stroke-width="1"/>
+
+</svg>

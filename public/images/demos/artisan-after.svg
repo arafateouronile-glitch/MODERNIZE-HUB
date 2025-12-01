@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#FFFFFF"/>
+  
+  <!-- Abstract Tech Grid -->
+  <path d="M0 100 H1200 M0 300 H1200 M0 500 H1200 M0 700 H1200" stroke="#E2E8F0" stroke-width="1"/>
+  <path d="M100 0 V800 M300 0 V800 M500 0 V800 M700 0 V800 M900 0 V800 M1100 0 V800" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="80" fill="#FFFFFF" opacity="0.9"/>
+  <text x="50" y="50" font-family="Arial" font-weight="bold" font-size="24" fill="#0F172A">ELEC<tspan fill="#2563EB">TECH</tspan></text>
+  <rect x="1000" y="25" width="150" height="30" rx="15" fill="#2563EB"/>
+  <text x="1075" y="45" font-family="Arial" font-weight="bold" font-size="14" fill="#FFFFFF" text-anchor="middle">DEVIS 24/7</text>
+
+  <!-- Hero Section -->
+  <text x="100" y="250" font-family="Arial" font-weight="900" font-size="60" fill="#0F172A">L'ÉLECTRICITÉ</text>
+  <text x="100" y="320" font-family="Arial" font-weight="900" font-size="60" fill="#2563EB">INTELLIGENTE</text>
+  
+  <text x="100" y="380" font-family="Arial" font-size="20" fill="#64748B">DOMOTIQUE • SÉCURITÉ • DÉPANNAGE</text>
+  
+  <rect x="100" y="420" width="200" height="50" rx="5" fill="#2563EB"/>
+  <text x="200" y="452" font-family="Arial" font-weight="bold" font-size="16" fill="#FFFFFF" text-anchor="middle">NOUS CONTACTER</text>
+
+  <!-- Image Placeholder -->
+  <rect x="600" y="150" width="500" height="400" rx="20" fill="#F1F5F9" stroke="#2563EB" stroke-width="2"/>
+  <circle cx="850" cy="350" r="80" stroke="#2563EB" stroke-width="4" fill="none"/>
+  <path d="M850 290 L850 330 M850 370 L850 410" stroke="#2563EB" stroke-width="4"/>
+  <path d="M820 350 L880 350" stroke="#2563EB" stroke-width="4"/>
+
+  <!-- Floating Cards -->
+  <rect x="550" y="450" width="220" height="80" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#glow)"/>
+  <circle cx="590" cy="490" r="15" fill="#22C55E"/>
+  <path d="M582 490 L588 496 L598 484" stroke="#FFFFFF" stroke-width="3" fill="none"/>
+  <text x="620" y="485" font-family="Arial" font-weight="bold" font-size="14" fill="#0F172A">Intervention</text>
+  <text x="620" y="505" font-family="Arial" font-size="12" fill="#64748B">Terminée à l'instant</text>
+
+</svg>
