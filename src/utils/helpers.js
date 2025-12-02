@@ -149,3 +149,12 @@ export const scrollToElement = (id, offset = 80) => {
     behavior: 'smooth',
   })
 }
+
+/**
+ * Scroll smooth vers une section (alias de scrollToElement)
+ * @param {string} id - ID de la section
+ * @param {number} offset - Offset en pixels (défaut: 80)
+ */
+export const scrollToSection = (id, offset = 80) => {
+  scrollToElement(id, offset)
+}
