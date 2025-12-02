@@ -35,7 +35,7 @@ const RestaurantBefore = ({ demo }) => {
 
       {/* Contact */}
       <section className="py-12 px-6 bg-white text-center">
-        <h2 className="text-2xl font-bold mb-4">Contact</h2>
+        <h2 className="text-2xl font-bold mb-4">Contactez-nous</h2>
         <p className="text-gray-600">Téléphone: 01 23 45 67 89</p>
         <p className="text-gray-600">Email: contact@restaurant.fr</p>
       </section>

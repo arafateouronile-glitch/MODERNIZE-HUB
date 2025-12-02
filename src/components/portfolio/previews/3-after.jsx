@@ -15,7 +15,7 @@ const ImmobilierAfter = ({ demo }) => {
           <a href="#" className="hover:text-white/70 transition-colors">Agences</a>
         </div>
         <button className="bg-white text-slate-900 px-6 py-2 font-medium hover:bg-slate-100 transition-colors">
-          Contact
+          Contactez-nous
         </button>
       </nav>
 

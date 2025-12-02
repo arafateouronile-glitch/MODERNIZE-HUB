@@ -75,7 +75,7 @@ const ArtisanAfter = ({ demo }) => {
           <div className="relative">
             <img 
               src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1200&auto=format&fit=crop" 
-              alt="Electrician at work" 
+              alt="Électricien au travail" 
               className="rounded-3xl shadow-2xl relative z-10"
             />
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl z-20 flex items-center gap-4 animate-bounce-slow">

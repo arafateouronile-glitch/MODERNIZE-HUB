@@ -7,10 +7,10 @@ import { ThemeToggle } from './ThemeToggle'
 import { useTheme } from '../../contexts/ThemeContext'
 
 const navItems = [
-  { label: 'Work', id: 'portfolio', type: 'scroll' },
-  { label: 'Agency', id: 'about', type: 'scroll' },
-  { label: 'Process', id: 'process', type: 'scroll' },
-  { label: 'Pricing', id: 'offres', type: 'scroll' },
+  { label: 'Portfolio', id: '/portfolio', type: 'route' },
+  { label: 'Agence', id: 'about', type: 'scroll' },
+  { label: 'Processus', id: '/process', type: 'route' },
+  { label: 'Nos Services', id: '/nos-services', type: 'route' },
   { label: 'Blog', id: '/blog', type: 'route' },
 ]
 
@@ -129,7 +129,7 @@ export const Header = () => {
                 backgroundColor: '#D9FF00'
               } : {}}
             >
-              Let's Talk
+              Parlons-en
             </button>
 
             <button

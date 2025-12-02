@@ -1,0 +1,91 @@
+{
+  "name": "Modernize Hub - Création de Sites Web Premium",
+  "short_name": "Modernize Hub",
+  "description": "Créez un site web moderne et performant en 14 jours. Tarifs transparents, qualité premium.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0A0A",
+  "theme_color": "#D9FF00",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity", "web-development"],
+  "screenshots": [
+    {
+      "src": "/screenshot-1.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "label": "Homepage - Découvrez nos services"
+    },
+    {
+      "src": "/screenshot-2.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "label": "Portfolio - Nos réalisations premium"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Demander un devis",
+      "short_name": "Devis",
+      "description": "Demander un devis gratuit pour votre projet web",
+      "url": "/contact",
+      "icons": [
+        {
+          "src": "/icon-contact.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Voir le portfolio",
+      "short_name": "Portfolio",
+      "description": "Découvrir nos réalisations",
+      "url": "/portfolio",
+      "icons": [
+        {
+          "src": "/icon-portfolio.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Nos tarifs",
+      "short_name": "Tarifs",
+      "description": "Consulter nos formules et tarifs",
+      "url": "/nos-services",
+      "icons": [
+        {
+          "src": "/icon-pricing.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "/contact",
+    "method": "GET",
+    "enctype": "application/x-www-form-urlencoded",
+    "params": {
+      "title": "subject",
+      "text": "message",
+      "url": "url"
+    }
+  },
+  "lang": "fr-FR",
+  "dir": "ltr",
+  "prefer_related_applications": false
+}
+

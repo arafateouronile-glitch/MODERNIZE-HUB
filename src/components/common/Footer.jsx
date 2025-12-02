@@ -39,12 +39,12 @@ export const Footer = () => {
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 font-mono text-xs text-white/40">
-          <p>© 2025 MODERNIZE HUB. ALL RIGHTS RESERVED.</p>
+          <p>© 2025 MODERNIZE HUB. TOUS DROITS RÉSERVÉS.</p>
           
           <div className="flex gap-8">
-            <button onClick={() => scrollToSection('accueil')} className="hover:text-[#D9FF00] transition-colors">TOP</button>
-            <a href="#" className="hover:text-[#D9FF00] transition-colors">LEGAL</a>
-            <a href="#" className="hover:text-[#D9FF00] transition-colors">PRIVACY</a>
+            <button onClick={() => scrollToSection('accueil')} className="hover:text-[#D9FF00] transition-colors">HAUT</button>
+            <a href="#" className="hover:text-[#D9FF00] transition-colors">MENTIONS LÉGALES</a>
+            <a href="#" className="hover:text-[#D9FF00] transition-colors">CONFIDENTIALITÉ</a>
             <a href="/admin" className="hover:text-[#D9FF00] transition-colors text-white/20">ADMIN</a>
           </div>
         </div>

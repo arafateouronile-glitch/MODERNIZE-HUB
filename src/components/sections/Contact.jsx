@@ -109,11 +109,11 @@ export const Contact = () => {
             <Reveal>
               <div className="max-w-4xl mx-auto mb-20 text-center">
                 <span className="font-mono text-[#D9FF00] text-sm tracking-widest uppercase mb-6 block">
-                  Final Step
+                  Dernière Étape
                 </span>
                 <h2 className="font-display text-5xl md:text-8xl font-bold text-white uppercase leading-[0.85] mb-8">
-                  STOP LOSING<br/>
-                  <span className="text-[#D9FF00]">START WINNING</span>
+                  ARRÊTEZ DE PERDRE<br/>
+                  <span className="text-[#D9FF00]">COMMENCEZ À GAGNER</span>
                 </h2>
                 <p className="text-xl text-text-muted max-w-2xl mx-auto font-light mb-8">
                   Devis gratuit sous 24h. Sans engagement. Sans bullshit.

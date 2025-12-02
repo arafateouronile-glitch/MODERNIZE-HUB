@@ -30,7 +30,7 @@ export const PricingJustification = () => {
     },
     {
       label: 'Modernize Hub',
-      price: '1 490€ - 5 990€',
+      price: '1 990€ - 5 990€',
       benefits: [
         'Design 100% sur-mesure',
         'Livraison 7-21 jours',
@@ -190,7 +190,7 @@ export const PricingJustification = () => {
             <div className="mt-8 text-center">
               <button
                 onClick={() => {
-                  document.getElementById('offres')?.scrollIntoView({ behavior: 'smooth' })
+                  window.location.href = '/nos-services'
                 }}
                 className="inline-flex items-center gap-3 px-8 py-4 bg-[#D9FF00] text-black font-bold hover:bg-white transition-all"
               >

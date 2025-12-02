@@ -60,7 +60,7 @@ const recommendations = {
     title: "Formule Express",
     subtitle: "Parfait pour démarrer rapidement",
     description: "Vous avez besoin d'un coup de jeune rapide et efficace. Notre formule Express est idéale pour professionnaliser votre présence en ligne sans casser la banque.",
-    price: "1 490€",
+    price: "1 990€",
     cta: "Voir la Formule Express"
   },
   medium: {
@@ -269,7 +269,7 @@ export const LeadQuiz = ({ isOpen, onClose }) => {
                   <button
                     onClick={() => {
                       onClose()
-                      document.getElementById('offres')?.scrollIntoView({ behavior: 'smooth' })
+                      window.location.href = '/nos-services'
                     }}
                     className="flex-1 px-8 py-4 bg-[#D9FF00] text-black font-bold hover:bg-white transition-all"
                   >

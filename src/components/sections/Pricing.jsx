@@ -27,7 +27,7 @@ export const Pricing = () => {
   }, [])
 
   return (
-    <section id="offres" ref={ref} className="py-32 bg-background relative z-10 border-t border-white/5">
+    <section id="refonte" ref={ref} className="py-32 bg-background relative z-10 border-t border-white/5">
       <div className="container mx-auto px-6">
         
         <div className="flex flex-col items-center mb-20">

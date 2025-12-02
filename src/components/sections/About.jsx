@@ -52,7 +52,7 @@ export const About = () => {
                 <span className="text-[#D9FF00]">€€€€</span>
               </h2>
               <p className="text-xl text-text-muted font-light max-w-lg leading-relaxed">
-                Chaque jour sans site moderne = clients capturés par vos concurrents. 
+                Chaque jour sans site moderne = clients capturés par vos concurrents. Que vous ayez besoin d'un nouveau site créé à partir de zéro ou d'une refonte complète de votre site existant, nous transformons votre présence digitale.
                 <span className="block mt-4 text-white font-bold">Le coût réel de l'inaction : 10 000€+ par mois.</span>
               </p>
             </div>

@@ -105,7 +105,7 @@ RECOMMANDATIONS PRIORITAIRES
 1. REFONTE DESIGN URGENTE
    Impact: +280% conversions estimées
    Délai: 14 jours
-   Investissement: 1 490€ - 5 990€
+   Investissement: 1 990€ - 5 990€
 
 2. OPTIMISATION PERFORMANCE
    Impact: +45% temps sur site

@@ -1,0 +1,21 @@
+# Template pour le fichier .env
+# Copier ce contenu dans un fichier .env à la racine du projet
+
+# Supabase Configuration
+VITE_SUPABASE_URL=your-supabase-url
+VITE_SUPABASE_ANON_KEY=your-supabase-anon-key
+
+# Email Service (Resend)
+VITE_RESEND_API_KEY=your-resend-api-key
+VITE_ADMIN_EMAIL=yasser.arafate@gmail.com
+
+# Calendly Integration
+VITE_CALENDLY_URL=your-calendly-url
+
+# Crisp Chat (NOUVEAU)
+VITE_CRISP_WEBSITE_ID=your-crisp-website-id
+
+# Site Configuration
+VITE_SITE_URL=https://modernizehub.com
+VITE_SITE_NAME=Modernize Hub
+

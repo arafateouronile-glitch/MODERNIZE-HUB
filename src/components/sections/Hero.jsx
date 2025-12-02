@@ -64,8 +64,26 @@ export const Hero = () => {
           <p className="max-w-2xl mx-auto text-text-muted text-xl md:text-2xl font-light leading-relaxed mb-4">
             Pendant que vos concurrents récoltent VOS clients avec des sites qui convertissent.
           </p>
-          <p className="text-white font-bold text-2xl mb-12">
+          <p className="text-white font-bold text-2xl mb-6">
             On change ça. <span style={{ color: '#D9FF00' }} className="text-[#D9FF00]">Maintenant.</span>
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
+            <a
+              href="/creation-site-web"
+              className="px-6 py-3 border-2 border-white/20 hover:border-[#D9FF00] rounded-full text-white hover:text-[#D9FF00] transition-all text-sm font-medium"
+            >
+              ✨ Création de Site Web
+            </a>
+            <span className="text-white/50">•</span>
+            <a
+              href="/refonte-site"
+              className="px-6 py-3 border-2 border-white/20 hover:border-[#D9FF00] rounded-full text-white hover:text-[#D9FF00] transition-all text-sm font-medium"
+            >
+              🔄 Refonte Design Ultra-Premium
+            </a>
+          </div>
+          <p className="text-white/70 text-sm mb-12">
+            Site web créé à partir de zéro ou refonte complète de votre site existant
           </p>
         </Reveal>
 
@@ -77,15 +95,15 @@ export const Hero = () => {
               className="shadow-[0_0_30px_rgba(217,255,0,0.4)] hover:shadow-[0_0_50px_rgba(217,255,0,0.6)]"
             />
             
-            <button 
-              onClick={() => scrollToSection('portfolio')}
+            <a
+              href="/portfolio"
               className="px-8 py-5 text-white font-medium hover:text-[#D9FF00] transition-colors flex items-center gap-3 group"
             >
               <span className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center group-hover:border-[#D9FF00] group-hover:bg-[#D9FF00]/10 transition-all">
                 <Play size={16} className="ml-0.5 fill-current" />
               </span>
               <span>Voir Nos Transformations</span>
-            </button>
+            </a>
           </div>
 
           {/* Quiz CTA */}
@@ -96,6 +114,50 @@ export const Hero = () => {
             <Sparkles className="w-4 h-4" />
             <span>Quelle formule vous correspond ? (Quiz 2 min)</span>
           </button>
+        </Reveal>
+
+        {/* Stats Bandeau Défilant */}
+        <Reveal delay={1.1}>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.1 }}
+            className="w-full overflow-hidden mb-12"
+          >
+            <div className="flex gap-8 animate-scroll-horizontal">
+              {[
+                { value: '200+', label: 'Sites créés' },
+                { value: '+320%', label: 'Conversions moyennes' },
+                { value: '10-21j', label: 'Livraison' },
+                { value: '98%', label: 'Satisfaction' },
+                { value: '200+', label: 'Sites créés' },
+                { value: '+320%', label: 'Conversions moyennes' },
+              ].map((stat, i) => (
+                <div key={i} className="flex-shrink-0 flex items-center gap-4 px-6 py-3 border border-white/10 rounded-full bg-white/5 backdrop-blur-sm">
+                  <div className="font-display text-2xl font-bold text-[#D9FF00]">
+                    {stat.value}
+                  </div>
+                  <div className="font-mono text-xs text-white/70 uppercase">
+                    {stat.label}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        </Reveal>
+
+        {/* Badges de Confiance */}
+        <Reveal delay={1.3}>
+          <div className="flex flex-wrap items-center justify-center gap-4 mb-16">
+            <div className="flex items-center gap-2 px-4 py-2 border border-white/10 rounded-full bg-white/5 backdrop-blur-sm">
+              <span className="text-sm font-bold text-[#D9FF00]">100%</span>
+              <span className="text-xs text-white/70">Satisfait ou Remboursé</span>
+            </div>
+            <div className="flex items-center gap-2 px-4 py-2 border border-white/10 rounded-full bg-white/5 backdrop-blur-sm">
+              <span className="text-sm font-bold text-[#D9FF00]">🔒</span>
+              <span className="text-xs text-white/70">Paiement Sécurisé</span>
+            </div>
+          </div>
         </Reveal>
 
         <Reveal delay={1.1}>

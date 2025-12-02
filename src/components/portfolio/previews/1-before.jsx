@@ -14,7 +14,7 @@ const CabinetAvocatBefore = ({ demo }) => {
         <div className="container mx-auto px-6 py-3">
           <a href="#accueil" className="mr-6">Accueil</a>
           <a href="#services" className="mr-6">Services</a>
-          <a href="#contact">Contact</a>
+          <a href="#contact">Contactez-nous</a>
         </div>
       </nav>
 

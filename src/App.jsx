@@ -8,6 +8,7 @@ import { Hero } from './components/sections/Hero'
 import { About } from './components/sections/About'
 import { Portfolio } from './components/sections/Portfolio'
 import { Pricing } from './components/sections/Pricing'
+import { PricingCreation } from './components/sections/PricingCreation'
 import { Contact } from './components/sections/Contact'
 import { MetaTags } from './components/seo/MetaTags'
 import { faqs } from './components/sections/FAQ'
@@ -61,6 +62,7 @@ function App() {
           <About />
           <Portfolio />
           <Pricing />
+          <PricingCreation />
           
           {/* Lazy loaded sections */}
           <Suspense fallback={<SectionLoader />}>

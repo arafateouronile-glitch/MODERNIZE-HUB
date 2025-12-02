@@ -191,7 +191,7 @@ const CabinetAvocatAfter = ({ demo }) => {
               </p>
             </div>
             <div>
-              <h4 className="text-white font-bold mb-6">Contact</h4>
+              <h4 className="text-white font-bold mb-6">Contactez-nous</h4>
               <div className="space-y-4 text-gray-500">
                 <p className="flex items-center gap-3 hover:text-amber-500 cursor-pointer transition-colors">
                   <MapPin className="w-4 h-4" /> 12 Avenue Montaigne, Paris
