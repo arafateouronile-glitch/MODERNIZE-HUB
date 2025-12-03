@@ -133,3 +133,4 @@ Pour vérifier :
 Votre backend Supabase est maintenant configuré. Les données seront synchronisées et accessibles depuis n'importe quel appareil !
 
 
+

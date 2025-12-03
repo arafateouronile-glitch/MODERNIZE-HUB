@@ -124,3 +124,4 @@ Environment: ✅ Production, ✅ Preview, ✅ Development
 
 **Une fois les variables configurées, passez à la configuration du domaine ! 🌐**
 
+

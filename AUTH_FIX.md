@@ -86,3 +86,4 @@ Le système **utilise automatiquement localStorage** si Supabase Auth n'est pas 
 **Les erreurs dans la console sont normales et n'empêchent pas le fonctionnement du fallback.**
 
 
+

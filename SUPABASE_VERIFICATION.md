@@ -89,3 +89,4 @@ Maintenant que Supabase est configuré, vous pouvez :
 **Tout est prêt pour la production ! 🎉**
 
 
+

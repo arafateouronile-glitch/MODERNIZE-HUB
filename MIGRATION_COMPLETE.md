@@ -105,3 +105,4 @@ L'authentification Supabase est déjà implémentée ! Il ne reste plus qu'à :
 **Note actuelle : 9.0/10** 🚀
 
 
+

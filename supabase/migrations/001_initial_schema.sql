@@ -86,3 +86,4 @@ COMMENT ON TABLE blog_posts IS 'Articles de blog pour le site';
 COMMENT ON TABLE testimonials IS 'Témoignages clients affichés sur le site';
 
 
+

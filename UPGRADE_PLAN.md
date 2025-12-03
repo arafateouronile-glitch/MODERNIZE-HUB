@@ -508,3 +508,4 @@ npx playwright install
 **Une fois ces points complétés, votre application sera à 9.5/10 ! 🚀**
 
 
+

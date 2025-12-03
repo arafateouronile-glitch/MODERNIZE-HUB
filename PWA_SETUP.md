@@ -328,3 +328,4 @@ navigator.serviceWorker.getRegistrations().then(regs => {
 
 Prêt à conquérir le monde offline ! 🚀
 
+

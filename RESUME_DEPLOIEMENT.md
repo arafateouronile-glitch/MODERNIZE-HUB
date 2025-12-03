@@ -86,3 +86,4 @@ Le site se mettra à jour automatiquement en 2-3 minutes.
 
 Il ne reste plus qu'à configurer le domaine personnalisé.
 
+

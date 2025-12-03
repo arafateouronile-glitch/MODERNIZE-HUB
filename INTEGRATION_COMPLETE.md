@@ -206,3 +206,4 @@ npm run lighthouse   # Tester avec Lighthouse (nécessite serveur actif)
 - Tous les tests utilisent des mocks appropriés pour éviter les dépendances externes
 
 
+

@@ -32,3 +32,4 @@ Le problème vient des classes hardcodées. Il faut :
 **Solution rapide :** Tester d'abord si le toggle fonctionne avec les logs.
 
 
+

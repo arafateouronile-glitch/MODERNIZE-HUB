@@ -71,3 +71,4 @@ Utiliser le mot de passe que vous venez de créer dans Supabase.
 **Vous pouvez vous connecter maintenant avec les identifiants par défaut ! 🚀**
 
 
+

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="mGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D9FF00"/>
+      <stop offset="100%" stop-color="#B8E600"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Fond sombre avec coins arrondis -->
+  <rect width="64" height="64" rx="14" fill="#0a0a0a"/>
+  
+  <!-- Lettre M stylisée, épurée et moderne -->
+  <path d="M 16 20 L 16 44 L 24 28 L 32 44 L 32 20 L 28 20 L 28 38 L 24 26 L 20 26 L 20 20 Z" 
+        fill="url(#mGrad)"/>
+  
+  <!-- Point accent moderne (évite la confusion avec W) -->
+  <circle cx="38" cy="22" r="4" fill="url(#mGrad)"/>
+</svg>

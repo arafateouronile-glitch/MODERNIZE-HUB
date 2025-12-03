@@ -53,3 +53,4 @@ Si la connexion fonctionne, Supabase est configuré !
 **Détails complets dans : `SUPABASE_NEXT_STEPS.md`**
 
 
+
