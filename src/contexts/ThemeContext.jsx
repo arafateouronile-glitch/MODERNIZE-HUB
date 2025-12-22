@@ -32,10 +32,6 @@ export const ThemeProvider = ({ children }) => {
     
     // Mettre à jour l'attribut data-theme pour le CSS
     root.setAttribute('data-theme', theme)
-    
-    console.log('✅ Theme changed to:', theme)
-    console.log('📋 HTML classes:', root.className)
-    console.log('📋 data-theme:', root.getAttribute('data-theme'))
   }, [theme])
 
   const toggleTheme = () => {

@@ -6,7 +6,6 @@ import { motion } from 'framer-motion'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 import { ArrowRight, Check, Shield } from 'lucide-react'
 import { Reveal } from '../animations/Reveal'
-import { CalendlyButton } from '../common/CalendlyButton'
 import { supabaseStorage as storage } from '../../services/supabaseStorage'
 import { sendLeadEmails } from '../../services/emailService'
 
@@ -119,18 +118,6 @@ export const Contact = () => {
                   Devis gratuit sous 24h. Sans engagement. Sans bullshit.
                 </p>
                 
-                {/* Calendly CTA Alternative */}
-                <div className="mb-12">
-                  <p className="text-white font-bold mb-6 text-lg">
-                    Ou préférez-vous un appel direct ?
-                  </p>
-                  <CalendlyButton 
-                    variant="primary"
-                    text="Réserver Mon Appel Découverte (30min)"
-                    className="shadow-[0_0_30px_rgba(217,255,0,0.3)]"
-                  />
-                </div>
-
                 <div className="flex items-center justify-center gap-4 flex-wrap">
                   <div className="flex items-center gap-2 text-sm">
                     <Shield className="w-4 h-4 text-[#D9FF00]" />

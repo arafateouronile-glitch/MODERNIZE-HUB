@@ -6,7 +6,6 @@ export const ThemeToggle = () => {
   const { theme, toggleTheme } = useTheme()
 
   const handleToggle = () => {
-    console.log('🔄 Toggle theme:', theme, '→', theme === 'light' ? 'dark' : 'light')
     toggleTheme()
   }
 

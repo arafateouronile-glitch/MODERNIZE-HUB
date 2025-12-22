@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { X, ExternalLink, Play, Filter } from 'lucide-react'
 import { Header } from '../components/common/Header'
 import { Footer } from '../components/common/Footer'
-import { CalendlyButton } from '../components/common/CalendlyButton'
 import { portfolioProjects, portfolioCategories } from '../data/portfolioMockups'
 import { useTheme } from '../contexts/ThemeContext'
 
@@ -238,11 +237,12 @@ export const Portfolio = () => {
           >
             Discutons de votre projet et créons quelque chose d'exceptionnel
           </motion.p>
-          <CalendlyButton
-            variant="primary"
-            text="Démarrer Mon Projet"
-            className="text-lg"
-          />
+          <a
+            href="/#contact"
+            className="group inline-flex items-center gap-3 px-8 py-4 bg-[#D9FF00] text-black hover:bg-white font-bold rounded-full transition-all duration-300 text-lg"
+          >
+            <span>Demander un Devis</span>
+          </a>
         </div>
       </section>
 

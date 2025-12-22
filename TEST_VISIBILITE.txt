@@ -1,0 +1,37 @@
+TEST DE VISIBILITÉ - À exécuter dans la console (F12)
+
+Étape 1 : Créer un élément de test visible
+-------------------------------------------
+const testDiv = document.createElement('div')
+testDiv.style.cssText = 'position: fixed; top: 0; left: 0; background: red; color: white; padding: 20px; z-index: 99999; font-size: 24px; font-weight: bold;'
+testDiv.textContent = '🎯 TEST - Si vous voyez ceci en rouge, le problème vient de React/CSS'
+document.body.appendChild(testDiv)
+console.log('✅ Élément de test créé - Voir en haut à gauche')
+
+Étape 2 : Forcer tout le texte en rouge visible
+------------------------------------------------
+document.querySelectorAll('*').forEach(el => {
+  if (el.textContent && el.textContent.trim().length > 10) {
+    el.style.color = '#FF0000'
+    el.style.opacity = '1'
+    el.style.visibility = 'visible'
+    el.style.fontSize = '20px'
+    el.style.fontWeight = 'bold'
+    el.style.backgroundColor = 'transparent'
+  }
+})
+console.log('✅ Texte forcé en rouge - Cherchez du texte rouge sur la page')
+
+Étape 3 : Vérifier si le contenu est vraiment là
+-------------------------------------------------
+const root = document.getElementById('root')
+console.log('📊 Contenu de #root:', root.innerHTML.substring(0, 500))
+console.log('📊 Texte de #root:', root.textContent.substring(0, 500))
+
+RÉSULTAT ATTENDU :
+- Si vous voyez l'élément de test rouge → Le problème vient de React/CSS
+- Si vous voyez du texte rouge → Le contenu est là, c'est un problème de couleur CSS
+- Si vous ne voyez rien → Problème plus profond (overlay, z-index, etc.)
+
+
+

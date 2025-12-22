@@ -3,7 +3,6 @@ import { motion } from 'framer-motion'
 import { Check, Sparkles, Rocket, Crown, ArrowRight, ChevronDown, ChevronUp } from 'lucide-react'
 import { Header } from '../components/common/Header'
 import { Footer } from '../components/common/Footer'
-import { CalendlyButton } from '../components/common/CalendlyButton'
 import { refonteTiers, refonteServices, faqRefonte } from '../data/refonte'
 import { useTheme } from '../contexts/ThemeContext'
 
@@ -396,11 +395,12 @@ export const RefonteSite = () => {
           >
             Discutons de votre projet et trouvons la formule parfaite pour vous
           </motion.p>
-          <CalendlyButton
-            variant="primary"
-            text="Réserver un Appel Gratuit"
-            className="text-lg"
-          />
+          <a
+            href="/#contact"
+            className="group inline-flex items-center gap-3 px-8 py-4 bg-[#D9FF00] text-black hover:bg-white font-bold rounded-full transition-all duration-300 text-lg"
+          >
+            <span>Demander un Devis</span>
+          </a>
         </div>
       </section>
 

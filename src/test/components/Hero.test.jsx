@@ -15,9 +15,6 @@ vi.mock('../animations/Reveal', () => ({
   Reveal: ({ children }) => <div>{children}</div>,
 }))
 
-vi.mock('../common/CalendlyButton', () => ({
-  CalendlyButton: () => <button>Calendly</button>,
-}))
 
 vi.mock('../quiz/LeadQuiz', () => ({
   LeadQuiz: () => null,

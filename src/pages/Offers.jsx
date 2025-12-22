@@ -3,7 +3,6 @@ import { motion } from 'framer-motion'
 import { Check, Sparkles, Rocket, Crown, ArrowRight, ChevronDown, ChevronUp } from 'lucide-react'
 import { Header } from '../components/common/Header'
 import { Footer } from '../components/common/Footer'
-import { CalendlyButton } from '../components/common/CalendlyButton'
 import { pricingTiers, additionalServices, faqOffers } from '../data/offers'
 import { useTheme } from '../contexts/ThemeContext'
 
@@ -18,7 +17,7 @@ export const Offers = () => {
   const { theme } = useTheme()
 
   const handleCTAClick = (tierName) => {
-    // Scroll vers la section contact ou ouvrir Calendly
+    // Scroll vers la section contact
     const contactSection = document.getElementById('contact-section')
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: 'smooth' })
@@ -374,11 +373,12 @@ export const Offers = () => {
           >
             Discutons de votre projet et trouvons la formule parfaite pour vous
           </motion.p>
-          <CalendlyButton
-            variant="primary"
-            text="Réserver un Appel Gratuit"
-            className="text-lg"
-          />
+          <a
+            href="/#contact"
+            className="group inline-flex items-center gap-3 px-8 py-4 bg-[#D9FF00] text-black hover:bg-white font-bold rounded-full transition-all duration-300 text-lg"
+          >
+            <span>Demander un Devis</span>
+          </a>
         </div>
       </section>
 

@@ -2,7 +2,6 @@ import { lazy, Suspense } from 'react'
 import { Header } from './components/common/Header'
 import { Footer } from './components/common/Footer'
 import { CustomCursor } from './components/common/CustomCursor'
-import { LiveChat } from './components/common/LiveChat'
 import { Marquee } from './components/common/Marquee'
 import { Hero } from './components/sections/Hero'
 import { About } from './components/sections/About'
@@ -53,7 +52,6 @@ function App() {
       
       <ThemeDebug />
       <CustomCursor />
-      <LiveChat />
       <Header />
       <main>
         <Hero />

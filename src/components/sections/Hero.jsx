@@ -5,7 +5,6 @@ import { Play, ArrowRight, Sparkles } from 'lucide-react'
 import { Reveal } from '../animations/Reveal'
 import { scrollToSection } from '../../utils/helpers'
 import { useCountUp } from '../../hooks/useCountUp'
-import { CalendlyButton } from '../common/CalendlyButton'
 import { LeadQuiz } from '../quiz/LeadQuiz'
 
 export const Hero = () => {
@@ -33,18 +32,6 @@ export const Hero = () => {
 
       <div className="relative z-10 max-w-6xl mx-auto flex flex-col items-center w-full">
         
-        <Reveal>
-          <div className="inline-flex items-center gap-2 mb-6 sm:mb-8 px-3 sm:px-4 py-1.5 rounded-full border border-[#D9FF00]/30 bg-[#D9FF00]/10 backdrop-blur-sm max-w-full">
-            <span className="relative flex h-2 w-2 flex-shrink-0">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D9FF00] opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#D9FF00]"></span>
-            </span>
-            <span className="text-[10px] sm:text-xs font-mono text-[#D9FF00] tracking-wider sm:tracking-widest uppercase whitespace-nowrap overflow-hidden text-ellipsis">
-              🔥 Plus que 2 places • Réservez
-            </span>
-          </div>
-        </Reveal>
-
         <motion.h1 
           style={{ y }}
           className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-[10rem] font-bold leading-[0.9] sm:leading-[0.85] tracking-tighter mb-6 sm:mb-8 text-white px-2"
@@ -89,11 +76,12 @@ export const Hero = () => {
 
         <Reveal delay={0.9}>
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-center mb-4 sm:mb-6 w-full px-2">
-            <CalendlyButton 
-              variant="primary"
-              text="Réserver Mon Appel Gratuit"
-              className="shadow-[0_0_30px_rgba(217,255,0,0.4)] hover:shadow-[0_0_50px_rgba(217,255,0,0.6)]"
-            />
+            <a
+              href="/#contact"
+              className="group inline-flex items-center gap-3 px-8 py-4 bg-[#D9FF00] text-black hover:bg-white font-bold rounded-full transition-all duration-300 shadow-[0_0_30px_rgba(217,255,0,0.4)] hover:shadow-[0_0_50px_rgba(217,255,0,0.6)]"
+            >
+              <span>Demander un Devis</span>
+            </a>
             
             <a
               href="/portfolio"

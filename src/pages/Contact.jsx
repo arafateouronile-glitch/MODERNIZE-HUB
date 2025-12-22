@@ -6,7 +6,6 @@ import { motion } from 'framer-motion'
 import { Mail, Phone, Clock, MapPin, Send, Check, Sparkles } from 'lucide-react'
 import { Header } from '../components/common/Header'
 import { Footer } from '../components/common/Footer'
-import { CalendlyButton } from '../components/common/CalendlyButton'
 import { supabaseStorage as storage } from '../services/supabaseStorage'
 import { sendLeadEmails } from '../services/emailService'
 import { useTheme } from '../contexts/ThemeContext'
@@ -352,29 +351,6 @@ export const Contact = () => {
               transition={{ delay: 0.5 }}
               className="space-y-6"
             >
-              {/* Calendly Widget */}
-              <div className={`rounded-3xl p-8 border-2 ${
-                theme === 'light'
-                  ? 'bg-white border-black'
-                  : 'bg-surface border-white/10'
-              }`}>
-                <h3 className={`text-2xl font-bold mb-4 ${
-                  theme === 'light' ? 'text-black' : 'text-white'
-                }`}>
-                  Réserver un Appel Découverte
-                </h3>
-                <p className={`mb-6 ${
-                  theme === 'light' ? 'text-gray-600' : 'text-gray-400'
-                }`}>
-                  Discutons de votre projet en 30 minutes (gratuit et sans engagement)
-                </p>
-                <CalendlyButton
-                  variant="primary"
-                  text="Choisir un créneau"
-                  className="w-full justify-center"
-                />
-              </div>
-
               {/* Informations */}
               <div className={`rounded-3xl p-8 border-2 ${
                 theme === 'light'

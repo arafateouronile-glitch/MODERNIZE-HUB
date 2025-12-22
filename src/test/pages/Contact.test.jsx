@@ -90,12 +90,6 @@ describe('Contact Page', () => {
     expect(screen.getByText(/contact@modernizehub.com/i)).toBeInTheDocument()
   })
 
-  it('devrait avoir un embed Calendly', () => {
-    renderWithRouter(<Contact />)
-    // Calendly devrait être présent (bouton ou iframe)
-    const page = screen.getByText(/Contact/i).closest('div')
-    expect(page?.textContent).toMatch(/Calendly|Réserver|Appel/i)
-  })
 
   it('devrait afficher le temps de réponse moyen', () => {
     renderWithRouter(<Contact />)

@@ -24,9 +24,6 @@ vi.mock('../../components/animations/Reveal', () => ({
   Reveal: ({ children }) => <div>{children}</div>,
 }))
 
-vi.mock('../common/CalendlyButton', () => ({
-  CalendlyButton: () => <button>Calendly</button>,
-}))
 
 describe('Contact Component', () => {
   beforeEach(() => {
