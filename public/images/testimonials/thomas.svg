@@ -13,7 +13,7 @@
   <!-- Tech Background -->
   <rect width="400" height="400" fill="#6366F1"/>
   <circle cx="200" cy="200" r="180" fill="#818CF8" opacity="0.3"/>
-  <circle cx="300" cy="100" r="50" fill="#D9FF00" opacity="0.1"/>
+  <circle cx="300" cy="100" r="50" fill="#88A9C3" opacity="0.1"/>
   
   <!-- Hoodie -->
   <ellipse cx="200" cy="385" rx="148" ry="68" fill="url(#hoodie-thomas)"/>
@@ -35,8 +35,8 @@
   <!-- Headphones/Earbuds -->
   <circle cx="133" cy="205" r="10" fill="#1F2937" opacity="0.9"/>
   <circle cx="267" cy="205" r="10" fill="#1F2937" opacity="0.9"/>
-  <circle cx="133" cy="205" r="4" fill="#D9FF00"/>
-  <circle cx="267" cy="205" r="4" fill="#D9FF00"/>
+  <circle cx="133" cy="205" r="4" fill="#88A9C3"/>
+  <circle cx="267" cy="205" r="4" fill="#88A9C3"/>
   
   <!-- Hair (young, messy/stylish) -->
   <ellipse cx="200" cy="135" rx="80" ry="52" fill="#2C1810"/>

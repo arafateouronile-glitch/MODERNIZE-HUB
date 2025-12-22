@@ -54,7 +54,7 @@ export const DemoCard = ({ demo, index }) => {
         <div className="p-6">
           {/* Story Quote */}
           {demo.story && (
-            <div className="mb-6 p-4 border-l-2 border-[#D9FF00] bg-[#D9FF00]/5">
+            <div className="mb-6 p-4 border-l-2 border-[#88A9C3] bg-[#88A9C3]/5">
               <p className="text-sm text-white/90 italic leading-relaxed font-light">
                 {demo.story}
               </p>
@@ -80,7 +80,7 @@ export const DemoCard = ({ demo, index }) => {
                 setPortfolioType('after')
                 setIsPortfolioOpen(true)
               }}
-              className="flex-1 py-4 bg-[#D9FF00] text-black font-bold font-mono text-sm hover:bg-white transition-colors duration-300 uppercase tracking-wider"
+              className="flex-1 py-4 bg-[#88A9C3] text-black font-bold font-mono text-sm hover:bg-white transition-colors duration-300 uppercase tracking-wider"
             >
               Voir le Projet
             </button>
@@ -90,13 +90,13 @@ export const DemoCard = ({ demo, index }) => {
                 setPortfolioType('before')
                 setIsPortfolioOpen(true)
               }}
-              className="w-14 h-14 flex items-center justify-center border border-[#D9FF00] text-[#D9FF00] hover:bg-[#D9FF00] hover:text-black transition-all duration-300"
+              className="w-14 h-14 flex items-center justify-center border border-[#88A9C3] text-[#88A9C3] hover:bg-[#88A9C3] hover:text-black transition-all duration-300"
             >
               <span className="font-mono text-xs">AVANT</span>
             </button>
              <button
               onClick={() => setIsModalOpen(true)}
-              className="w-14 h-14 flex items-center justify-center border border-[#D9FF00] text-[#D9FF00] hover:bg-[#D9FF00] hover:text-black transition-all duration-300 group/btn"
+              className="w-14 h-14 flex items-center justify-center border border-[#88A9C3] text-[#88A9C3] hover:bg-[#88A9C3] hover:text-black transition-all duration-300 group/btn"
             >
               <ArrowUpRight className="w-5 h-5 group-hover/btn:rotate-45 transition-transform" />
             </button>

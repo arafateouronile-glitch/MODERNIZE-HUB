@@ -63,7 +63,7 @@ export const AdminTestimonialsManager = () => {
           </div>
           <button
             onClick={() => navigate('/admin/testimonials/new')}
-            className="flex items-center gap-2 px-6 py-3 bg-[#D9FF00] text-black font-bold hover:bg-white transition-colors"
+            className="flex items-center gap-2 px-6 py-3 bg-[#88A9C3] text-black font-bold hover:bg-white transition-colors"
           >
             <Plus className="w-5 h-5" />
             Nouvel Avis
@@ -76,7 +76,7 @@ export const AdminTestimonialsManager = () => {
             <p className="text-white/50 mb-6">Aucun avis client pour le moment</p>
             <button
               onClick={() => navigate('/admin/testimonials/new')}
-              className="px-6 py-3 bg-[#D9FF00] text-black font-bold hover:bg-white transition-colors"
+              className="px-6 py-3 bg-[#88A9C3] text-black font-bold hover:bg-white transition-colors"
             >
               Ajouter le Premier Avis
             </button>
@@ -96,14 +96,14 @@ export const AdminTestimonialsManager = () => {
                     <img
                       src={testimonial.avatar}
                       alt={testimonial.name}
-                      className="w-16 h-16 rounded-full border-2 border-[#D9FF00]/30 object-cover"
+                      className="w-16 h-16 rounded-full border-2 border-[#88A9C3]/30 object-cover"
                     />
                   )}
                   <div className="flex-1">
                     <h3 className="font-display text-xl font-bold text-white mb-1">
                       {testimonial.name}
                     </h3>
-                    <p className="font-mono text-xs text-[#D9FF00] mb-2">
+                    <p className="font-mono text-xs text-[#88A9C3] mb-2">
                       {testimonial.role}
                     </p>
                     <div className="flex gap-1">
@@ -112,7 +112,7 @@ export const AdminTestimonialsManager = () => {
                           key={i}
                           className={`w-4 h-4 ${
                             i < (testimonial.rating || 5)
-                              ? 'text-[#D9FF00] fill-current'
+                              ? 'text-[#88A9C3] fill-current'
                               : 'text-white/20'
                           }`}
                         />
@@ -126,7 +126,7 @@ export const AdminTestimonialsManager = () => {
                 </p>
 
                 {testimonial.results && (
-                  <p className="text-sm text-[#D9FF00] font-mono mb-4">
+                  <p className="text-sm text-[#88A9C3] font-mono mb-4">
                     → {testimonial.results}
                   </p>
                 )}
@@ -136,7 +136,7 @@ export const AdminTestimonialsManager = () => {
                     <>
                       <button
                         onClick={() => navigate(`/admin/testimonials/edit/${testimonial.id}`)}
-                        className="flex-1 px-4 py-2 border border-white/20 hover:border-[#D9FF00] hover:text-[#D9FF00] transition-colors flex items-center justify-center gap-2"
+                        className="flex-1 px-4 py-2 border border-white/20 hover:border-[#88A9C3] hover:text-[#88A9C3] transition-colors flex items-center justify-center gap-2"
                       >
                         <Edit className="w-4 h-4" />
                         Modifier

@@ -4,7 +4,7 @@ import { Zap, Activity, Trophy, Timer } from 'lucide-react'
 
 const SalleSportAfter = ({ demo }) => {
   return (
-    <div className="min-h-screen bg-[#050505] text-white font-sans overflow-x-hidden selection:bg-neon-green/30">
+    <div className="min-h-screen bg-[#050505] text-white font-sans overflow-x-hidden selection:bg-primary/30">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 px-8 py-6 flex justify-between items-center bg-black/50 backdrop-blur-md border-b border-white/5">
         <div className="text-2xl font-black italic tracking-tighter">
@@ -118,7 +118,7 @@ const SalleSportAfter = ({ demo }) => {
             </div>
 
             {/* Card 2 - Featured */}
-            <div className="bg-[#1a1a1a] p-10 border-2 border-primary text-center transform scale-110 shadow-[0_0_50px_rgba(217,255,0,0.2)]">
+            <div className="bg-[#1a1a1a] p-10 border-2 border-primary text-center transform scale-110 shadow-[0_0_50px_rgba(136,169,195,0.2)]">
               <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary text-black px-4 py-1 font-bold text-xs uppercase tracking-widest">Most Popular</div>
               <h3 className="text-2xl font-black italic mb-2 text-primary">ATHLETE</h3>
               <div className="text-6xl font-black mb-4">79€<span className="text-sm font-normal text-gray-400">/mo</span></div>

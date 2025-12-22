@@ -72,7 +72,7 @@ export const BlogManager = ({ onUpdate }) => {
         </h2>
         <button
           onClick={() => startEdit()}
-          className="flex items-center gap-3 px-6 py-3 bg-[#D9FF00] text-black font-bold hover:bg-white transition-all"
+          className="flex items-center gap-3 px-6 py-3 bg-[#88A9C3] text-black font-bold hover:bg-white transition-all"
         >
           <Plus className="w-5 h-5" />
           Nouvel Article
@@ -101,7 +101,7 @@ export const BlogManager = ({ onUpdate }) => {
           <p className="text-white/50 font-mono mb-6">Aucun article de blog</p>
           <button
             onClick={() => startEdit()}
-            className="px-6 py-3 bg-[#D9FF00] text-black font-bold hover:bg-white transition-all"
+            className="px-6 py-3 bg-[#88A9C3] text-black font-bold hover:bg-white transition-all"
           >
             Créer le premier article
           </button>
@@ -117,7 +117,7 @@ export const BlogManager = ({ onUpdate }) => {
               className="border border-white/10 bg-white/5 p-6 hover:bg-white/10 transition-all"
             >
               <div className="flex items-start justify-between mb-4">
-                <span className="font-mono text-xs text-[#D9FF00] uppercase bg-[#D9FF00]/10 px-3 py-1 border border-[#D9FF00]/30">
+                <span className="font-mono text-xs text-[#88A9C3] uppercase bg-[#88A9C3]/10 px-3 py-1 border border-[#88A9C3]/30">
                   {post.category}
                 </span>
                 {post.featured && (
@@ -204,7 +204,7 @@ const BlogPostEditor = ({ post, onChange, onSave, onCancel }) => {
                 type="text"
                 value={post.title}
                 onChange={(e) => onChange({ ...post, title: e.target.value })}
-                className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] transition-colors"
+                className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] transition-colors"
                 placeholder="10 Erreurs Qui Font Perdre 80% de Vos Visiteurs"
               />
             </div>
@@ -217,7 +217,7 @@ const BlogPostEditor = ({ post, onChange, onSave, onCancel }) => {
                 value={post.excerpt}
                 onChange={(e) => onChange({ ...post, excerpt: e.target.value })}
                 rows={4}
-                className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] transition-colors resize-none"
+                className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] transition-colors resize-none"
                 placeholder="Découvrez les erreurs critiques..."
               />
             </div>
@@ -230,7 +230,7 @@ const BlogPostEditor = ({ post, onChange, onSave, onCancel }) => {
                 <select
                   value={post.category}
                   onChange={(e) => onChange({ ...post, category: e.target.value })}
-                  className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white focus:outline-none focus:border-[#D9FF00] transition-colors"
+                  className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white focus:outline-none focus:border-[#88A9C3] transition-colors"
                 >
                   <option>Conversion</option>
                   <option>Marketing</option>
@@ -249,7 +249,7 @@ const BlogPostEditor = ({ post, onChange, onSave, onCancel }) => {
                   type="text"
                   value={post.readTime}
                   onChange={(e) => onChange({ ...post, readTime: e.target.value })}
-                  className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] transition-colors"
+                  className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] transition-colors"
                   placeholder="5 min"
                 />
               </div>
@@ -262,7 +262,7 @@ const BlogPostEditor = ({ post, onChange, onSave, onCancel }) => {
                   type="text"
                   value={post.slug}
                   onChange={(e) => onChange({ ...post, slug: e.target.value })}
-                  className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] transition-colors font-mono"
+                  className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] transition-colors font-mono"
                   placeholder="auto-generé"
                 />
               </div>
@@ -286,7 +286,7 @@ const BlogPostEditor = ({ post, onChange, onSave, onCancel }) => {
           <div className="flex gap-4 mt-8 pt-8 border-t border-white/10">
             <button
               onClick={onSave}
-              className="flex-1 px-6 py-4 bg-[#D9FF00] text-black font-bold hover:bg-white transition-all flex items-center justify-center gap-3"
+              className="flex-1 px-6 py-4 bg-[#88A9C3] text-black font-bold hover:bg-white transition-all flex items-center justify-center gap-3"
             >
               <Save className="w-5 h-5" />
               Enregistrer

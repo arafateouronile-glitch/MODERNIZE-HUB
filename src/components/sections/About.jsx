@@ -2,6 +2,10 @@ import { motion } from 'framer-motion'
 import { Frown, Smartphone, ZapOff, Zap, Smartphone as Mobile, Palette, TrendingUp, ArrowDown } from 'lucide-react'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 import { Reveal } from '../animations/Reveal'
+import { lazy, Suspense } from 'react'
+
+// Lazy load 3D scene
+const AboutScene = lazy(() => import('../3d/FloatingShapes').then(m => ({ default: m.AboutScene })))
 
 const problems = [
   {
@@ -36,6 +40,11 @@ export const About = () => {
 
   return (
     <section id="about" ref={ref} className="py-32 bg-background relative overflow-hidden border-t border-white/5">
+      {/* 3D Background */}
+      <Suspense fallback={null}>
+        <AboutScene />
+      </Suspense>
+      
       {/* Decorative Lines */}
       <div className="absolute bottom-0 left-0 w-full h-px bg-white/10" />
       
@@ -43,13 +52,13 @@ export const About = () => {
         <div className="grid lg:grid-cols-2 gap-20 items-start mb-32">
           <Reveal>
             <div>
-              <span className="font-mono text-[#D9FF00] text-sm tracking-widest uppercase mb-4 block">
+              <span className="font-mono text-[#88A9C3] text-sm tracking-widest uppercase mb-4 block">
                 Vérité Terrain
               </span>
               <h2 className="font-display text-5xl md:text-7xl font-bold leading-[0.9] text-white mb-8">
                 VOUS <br />
                 PERDEZ <br />
-                <span className="text-[#D9FF00]">€€€€</span>
+                <span className="text-[#88A9C3]">€€€€</span>
               </h2>
               <p className="text-xl text-text-muted font-light max-w-lg leading-relaxed">
                 Chaque jour sans site moderne = clients capturés par vos concurrents. Que vous ayez besoin d'un nouveau site créé à partir de zéro ou d'une refonte complète de votre site existant, nous transformons votre présence digitale.
@@ -64,14 +73,14 @@ export const About = () => {
                 <div className="group border border-white/10 p-6 hover:bg-white/5 hover:border-primary/30 transition-all duration-300">
                   <div className="flex items-start justify-between mb-3">
                     <div>
-                      <div className="font-display text-5xl text-white group-hover:text-[#D9FF00] transition-colors mb-1">
+                      <div className="font-display text-5xl text-white group-hover:text-[#88A9C3] transition-colors mb-1">
                         {problem.stat}
                       </div>
-                      <div className="font-mono text-[10px] text-[#D9FF00] tracking-widest">
+                      <div className="font-mono text-[10px] text-[#88A9C3] tracking-widest">
                         {problem.label}
                       </div>
                     </div>
-                    <problem.icon className="w-5 h-5 text-white/20 group-hover:text-[#D9FF00] transition-colors" />
+                    <problem.icon className="w-5 h-5 text-white/20 group-hover:text-[#88A9C3] transition-colors" />
                   </div>
                   <p className="text-text-muted text-sm font-light leading-relaxed">
                     {problem.text}
@@ -88,7 +97,7 @@ export const About = () => {
             animate={{ y: [0, 20, 0] }}
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
           >
-            <ArrowDown className="w-6 h-6 text-[#D9FF00]" />
+            <ArrowDown className="w-6 h-6 text-[#88A9C3]" />
           </motion.div>
         </div>
 
@@ -96,11 +105,11 @@ export const About = () => {
         <div className="max-w-6xl mx-auto">
            <Reveal>
             <div className="text-center mb-16">
-              <span className="font-mono text-[#D9FF00] text-sm tracking-widest uppercase mb-4 block">
+              <span className="font-mono text-[#88A9C3] text-sm tracking-widest uppercase mb-4 block">
                 La Solution
               </span>
               <h3 className="font-display text-4xl md:text-7xl font-bold text-white mb-6 uppercase">
-                ROI DE <span className="text-[#D9FF00]">480%</span>
+                ROI DE <span className="text-[#88A9C3]">480%</span>
               </h3>
               <p className="text-2xl text-white font-bold mb-4">
                 En Moins de 60 Jours
@@ -115,11 +124,11 @@ export const About = () => {
             {benefits.map((benefit, index) => (
               <Reveal key={index} delay={0.3 + index * 0.1}>
                 <div className="bg-background p-8 hover:bg-white/5 transition-colors group aspect-square flex flex-col items-center justify-center text-center">
-                  <benefit.icon className="w-12 h-12 text-white mb-6 group-hover:scale-110 group-hover:text-[#D9FF00] transition-all duration-300" />
+                  <benefit.icon className="w-12 h-12 text-white mb-6 group-hover:scale-110 group-hover:text-[#88A9C3] transition-all duration-300" />
                   <p className="font-mono text-sm font-bold tracking-widest text-white mb-2">
                     {benefit.text}
                   </p>
-                  <p className="font-mono text-xs text-[#D9FF00]">
+                  <p className="font-mono text-xs text-[#88A9C3]">
                     {benefit.subtext}
                   </p>
                 </div>

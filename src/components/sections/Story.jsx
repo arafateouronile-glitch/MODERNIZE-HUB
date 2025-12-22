@@ -46,7 +46,7 @@ export const Story = () => {
       {/* Decorative Grid */}
       <div className="absolute inset-0 opacity-[0.02]">
         <div className="h-full w-full" style={{
-          backgroundImage: 'linear-gradient(#D9FF00 1px, transparent 1px), linear-gradient(90deg, #D9FF00 1px, transparent 1px)',
+          backgroundImage: 'linear-gradient(#88A9C3 1px, transparent 1px), linear-gradient(90deg, #88A9C3 1px, transparent 1px)',
           backgroundSize: '50px 50px'
         }} />
       </div>
@@ -54,17 +54,17 @@ export const Story = () => {
       <div className="container mx-auto px-6 relative z-10">
         <Reveal>
           <div className="max-w-4xl mb-24">
-            <span className="font-mono text-[#D9FF00] text-sm tracking-widest uppercase mb-6 block">
+            <span className="font-mono text-[#88A9C3] text-sm tracking-widest uppercase mb-6 block">
               Notre Histoire
             </span>
             <h2 className="font-display text-5xl md:text-8xl font-bold text-white uppercase leading-[0.85] mb-8">
               ON A COMMENCÉ<br/>
-              AVEC <span className="text-[#D9FF00]">1 CLIENT</span><br/>
+              AVEC <span className="text-[#88A9C3]">1 CLIENT</span><br/>
               DÉSESPÉRÉ.
             </h2>
             <p className="text-2xl md:text-3xl text-white font-light leading-relaxed">
               Aujourd'hui, nos clients génèrent{' '}
-              <span className="text-[#D9FF00] font-bold">850 000€+</span> de revenus supplémentaires.
+              <span className="text-[#88A9C3] font-bold">850 000€+</span> de revenus supplémentaires.
             </p>
             <p className="text-xl text-text-muted mt-6 font-light">
               Voici comment on est passés de zéro à la référence en design web haute-conversion.
@@ -84,22 +84,22 @@ export const Story = () => {
               >
                 {/* Timeline Line */}
                 {index < timeline.length - 1 && (
-                  <div className="absolute left-[3rem] top-24 w-px h-full bg-gradient-to-b from-[#D9FF00]/50 to-transparent" />
+                  <div className="absolute left-[3rem] top-24 w-px h-full bg-gradient-to-b from-[#88A9C3]/50 to-transparent" />
                 )}
 
                 <div className="grid md:grid-cols-[auto_1fr_auto] gap-8 items-start">
                   {/* Icon */}
                   <div className="flex items-center gap-4">
-                    <div className="w-24 h-24 rounded-full bg-[#D9FF00]/10 border border-[#D9FF00]/30 flex items-center justify-center relative group hover:bg-[#D9FF00]/20 transition-all">
-                      <item.icon className="w-10 h-10 text-[#D9FF00]" />
-                      <div className="absolute inset-0 rounded-full bg-[#D9FF00]/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <div className="w-24 h-24 rounded-full bg-[#88A9C3]/10 border border-[#88A9C3]/30 flex items-center justify-center relative group hover:bg-[#88A9C3]/20 transition-all">
+                      <item.icon className="w-10 h-10 text-[#88A9C3]" />
+                      <div className="absolute inset-0 rounded-full bg-[#88A9C3]/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
                     </div>
                   </div>
 
                   {/* Content */}
                   <div className="border border-white/10 p-8 hover:bg-white/5 transition-all group">
                     <div className="flex items-baseline gap-4 mb-4">
-                      <span className="font-mono text-[#D9FF00] text-sm tracking-widest">
+                      <span className="font-mono text-[#88A9C3] text-sm tracking-widest">
                         {item.year}
                       </span>
                       <h3 className="font-display text-3xl md:text-4xl font-bold text-white">
@@ -113,7 +113,7 @@ export const Story = () => {
 
                   {/* Metric */}
                   <div className="text-right min-w-[140px]">
-                    <div className="font-display text-4xl md:text-5xl font-bold text-[#D9FF00]">
+                    <div className="font-display text-4xl md:text-5xl font-bold text-[#88A9C3]">
                       {item.metric}
                     </div>
                     <div className="font-mono text-xs text-white/50 uppercase tracking-widest mt-2">

@@ -38,12 +38,12 @@ export const Blog = () => {
           {/* Header */}
           <Reveal>
             <div className="max-w-4xl mx-auto text-center mb-20">
-              <span className="font-mono text-[#D9FF00] text-sm tracking-widest uppercase mb-6 block">
+              <span className="font-mono text-[#88A9C3] text-sm tracking-widest uppercase mb-6 block">
                 Ressources & Expertise
               </span>
               <h1 className="font-display text-5xl md:text-8xl font-bold text-white uppercase leading-[0.9] mb-8">
                 BLOG<br/>
-                <span className="text-[#D9FF00]">EXPERT</span>
+                <span className="text-[#88A9C3]">EXPERT</span>
               </h1>
               <p className="text-xl text-white/80 font-light max-w-2xl mx-auto">
                 Guides pratiques, études de cas, tendances. Tout pour transformer votre présence web.
@@ -62,7 +62,7 @@ export const Blog = () => {
                   placeholder="Rechercher un article..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full bg-white/5 border border-white/10 rounded-full px-12 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] transition-colors"
+                  className="w-full bg-white/5 border border-white/10 rounded-full px-12 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] transition-colors"
                 />
               </div>
 
@@ -74,7 +74,7 @@ export const Blog = () => {
                     onClick={() => setSelectedCategory(category)}
                     className={`px-6 py-2 rounded-full font-mono text-sm uppercase tracking-widest transition-all ${
                       selectedCategory === category
-                        ? 'bg-[#D9FF00] text-black font-bold'
+                        ? 'bg-[#88A9C3] text-black font-bold'
                         : 'bg-white/5 border border-white/10 text-white hover:bg-white/10'
                     }`}
                   >
@@ -101,13 +101,13 @@ export const Blog = () => {
                       transition={{ delay: index * 0.1 }}
                       whileHover={{ y: -5 }}
                       onClick={() => navigate(`/blog/${post.slug}`)}
-                      className="border border-white/10 bg-white/5 p-8 hover:bg-white/10 hover:border-[#D9FF00]/30 transition-all duration-300 group cursor-pointer"
+                      className="border border-white/10 bg-white/5 p-8 hover:bg-white/10 hover:border-[#88A9C3]/30 transition-all duration-300 group cursor-pointer"
                     >
-                      <span className="inline-block font-mono text-[10px] text-[#D9FF00] uppercase tracking-widest mb-4 bg-[#D9FF00]/10 px-3 py-1 border border-[#D9FF00]/30">
+                      <span className="inline-block font-mono text-[10px] text-[#88A9C3] uppercase tracking-widest mb-4 bg-[#88A9C3]/10 px-3 py-1 border border-[#88A9C3]/30">
                         {post.category}
                       </span>
 
-                      <h3 className="font-display text-2xl md:text-3xl font-bold text-white mb-4 group-hover:text-[#D9FF00] transition-colors">
+                      <h3 className="font-display text-2xl md:text-3xl font-bold text-white mb-4 group-hover:text-[#88A9C3] transition-colors">
                         {post.title}
                       </h3>
 
@@ -126,7 +126,7 @@ export const Blog = () => {
                             <span className="font-mono">{post.read_time || post.readTime}</span>
                           </div>
                         </div>
-                        <ArrowRight className="w-5 h-5 text-[#D9FF00] group-hover:translate-x-2 transition-transform" />
+                        <ArrowRight className="w-5 h-5 text-[#88A9C3] group-hover:translate-x-2 transition-transform" />
                       </div>
                     </motion.article>
                   ))}
@@ -152,13 +152,13 @@ export const Blog = () => {
                       transition={{ delay: 0.4 + index * 0.05 }}
                       whileHover={{ y: -3 }}
                       onClick={() => navigate(`/blog/${post.slug}`)}
-                      className="border border-white/10 bg-white/5 p-6 hover:bg-white/10 hover:border-[#D9FF00]/30 transition-all duration-300 group cursor-pointer"
+                      className="border border-white/10 bg-white/5 p-6 hover:bg-white/10 hover:border-[#88A9C3]/30 transition-all duration-300 group cursor-pointer"
                     >
-                      <span className="inline-block font-mono text-[10px] text-[#D9FF00] uppercase tracking-widest mb-3">
+                      <span className="inline-block font-mono text-[10px] text-[#88A9C3] uppercase tracking-widest mb-3">
                         {post.category}
                       </span>
                       
-                      <h3 className="font-display text-xl font-bold text-white mb-3 group-hover:text-[#D9FF00] transition-colors line-clamp-2">
+                      <h3 className="font-display text-xl font-bold text-white mb-3 group-hover:text-[#88A9C3] transition-colors line-clamp-2">
                         {post.title}
                       </h3>
 
@@ -168,7 +168,7 @@ export const Blog = () => {
 
                       <div className="flex items-center justify-between pt-4 border-t border-white/10">
                         <span className="font-mono text-[10px] text-white/50">{post.read_time || post.readTime}</span>
-                        <ArrowRight className="w-4 h-4 text-[#D9FF00] group-hover:translate-x-1 transition-transform" />
+                        <ArrowRight className="w-4 h-4 text-[#88A9C3] group-hover:translate-x-1 transition-transform" />
                       </div>
                     </motion.article>
                   ))}
@@ -186,7 +186,7 @@ export const Blog = () => {
             <div className="text-center">
               <button
                 onClick={() => navigate('/')}
-                className="inline-flex items-center gap-3 px-8 py-4 border border-[#D9FF00] text-[#D9FF00] hover:bg-[#D9FF00] hover:text-black transition-all font-mono text-sm uppercase tracking-widest"
+                className="inline-flex items-center gap-3 px-8 py-4 border border-[#88A9C3] text-[#88A9C3] hover:bg-[#88A9C3] hover:text-black transition-all font-mono text-sm uppercase tracking-widest"
               >
                 <ArrowRight className="w-4 h-4 rotate-180" />
                 Retour à l'Accueil

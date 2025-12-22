@@ -105,7 +105,7 @@ export const getThemeColors = (theme) => {
     return {
       bg: '#FFFFFF',
       text: '#000000',
-      accent: '#D9FF00',
+      accent: '#88A9C3',
       secondary: '#6366F1',
       border: '#E5E7EB',
     }
@@ -114,7 +114,7 @@ export const getThemeColors = (theme) => {
   return {
     bg: '#000000',
     text: '#FFFFFF',
-    accent: '#D9FF00',
+    accent: '#88A9C3',
     secondary: '#6366F1',
     border: '#1F2937',
   }

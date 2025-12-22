@@ -59,7 +59,7 @@ export const PricingComparison = () => {
 
   const renderCell = (value) => {
     if (value === true) {
-      return <Check className="w-5 h-5 text-[#D9FF00] mx-auto" />
+      return <Check className="w-5 h-5 text-[#88A9C3] mx-auto" />
     }
     if (value === false) {
       return <X className="w-5 h-5 text-white/20 mx-auto" />
@@ -73,12 +73,12 @@ export const PricingComparison = () => {
       <div className="text-center mb-8">
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="group inline-flex items-center gap-3 px-6 py-3 bg-surface border border-[#D9FF00]/30 hover:bg-[#D9FF00]/10 transition-all duration-300 font-mono text-sm uppercase tracking-widest"
+          className="group inline-flex items-center gap-3 px-6 py-3 bg-surface border border-[#88A9C3]/30 hover:bg-[#88A9C3]/10 transition-all duration-300 font-mono text-sm uppercase tracking-widest"
         >
-          <span className="text-[#D9FF00]">
+          <span className="text-[#88A9C3]">
             {isOpen ? 'Masquer' : 'Comparer'} les Formules en Détail
           </span>
-          <ChevronDown className={`w-4 h-4 text-[#D9FF00] transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
+          <ChevronDown className={`w-4 h-4 text-[#88A9C3] transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
         </button>
       </div>
 
@@ -92,78 +92,81 @@ export const PricingComparison = () => {
             transition={{ duration: 0.4 }}
             className="overflow-hidden"
           >
-            <div className="border border-white/10 bg-surface/50 backdrop-blur-sm overflow-x-auto">
-              {/* Header */}
-              <div className="grid grid-cols-4 border-b border-white/10 bg-white/5 sticky top-0 z-10">
-                <div className="p-4 font-mono text-xs uppercase text-white/50">
-                  Fonctionnalités
-                </div>
-                {pricingPlans.map(plan => (
-                  <div key={plan.id} className={`p-4 text-center ${plan.highlighted ? 'bg-[#D9FF00]/5 border-l border-r border-[#D9FF00]/20' : ''}`}>
-                    <div className="font-display text-lg font-bold text-white mb-1">
-                      {plan.name}
+            <div className="border border-white/10 bg-surface/50 backdrop-blur-sm">
+              {/* Scrollable container for mobile */}
+              <div className="overflow-x-auto">
+                <div className="min-w-[700px]">
+                  {/* Header */}
+                  <div className="grid grid-cols-[minmax(150px,1fr)_repeat(3,minmax(120px,1fr))] border-b border-white/10 bg-white/5 sticky top-0 z-10">
+                    <div className="p-3 md:p-4 font-mono text-[10px] md:text-xs uppercase text-white/50">
+                      Fonctionnalités
                     </div>
-                    <div className="font-mono text-2xl font-bold text-[#D9FF00]">
-                      {plan.price}€
-                    </div>
+                    {pricingPlans.map(plan => (
+                      <div key={plan.id} className={`p-3 md:p-4 text-center ${plan.highlighted ? 'bg-[#88A9C3]/5 border-l border-r border-[#88A9C3]/20' : ''}`}>
+                        <div className="font-display text-sm md:text-lg font-bold text-white mb-1 whitespace-nowrap">
+                          {plan.name}
+                        </div>
+                        <div className="font-mono text-lg md:text-2xl font-bold text-[#88A9C3]">
+                          {plan.price}€
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                ))}
+
+                  {/* Categories & Features */}
+                  {comparisonFeatures.map((category, catIndex) => (
+                    <div key={catIndex} className="border-b border-white/10">
+                      {/* Category Header - Collapsible */}
+                      <button
+                        onClick={() => toggleCategory(catIndex)}
+                        className="w-full p-3 md:p-4 bg-white/5 hover:bg-white/10 transition-colors text-left flex items-center justify-between"
+                      >
+                        <span className="font-mono text-xs md:text-sm font-bold text-[#88A9C3] uppercase tracking-wider">
+                          {category.category}
+                        </span>
+                        <ChevronDown className={`w-4 h-4 text-[#88A9C3] transition-transform ${expandedCategories.includes(catIndex) ? 'rotate-180' : ''}`} />
+                      </button>
+
+                      {/* Features - Expandable */}
+                      <AnimatePresence>
+                        {expandedCategories.includes(catIndex) && (
+                          <motion.div
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{ height: 'auto', opacity: 1 }}
+                            exit={{ height: 0, opacity: 0 }}
+                            transition={{ duration: 0.3 }}
+                            className="overflow-hidden"
+                          >
+                            {category.features.map((feature, idx) => (
+                              <div
+                                key={idx}
+                                className={`grid grid-cols-[minmax(150px,1fr)_repeat(3,minmax(120px,1fr))] p-3 md:p-4 ${idx % 2 === 0 ? 'bg-black/20' : 'bg-black/10'} hover:bg-white/5 transition-colors`}
+                              >
+                                <div className="font-mono text-xs md:text-sm text-white/70 pr-2">
+                                  {feature.name}
+                                </div>
+                                <div className={`flex items-center justify-center ${pricingPlans[0].highlighted ? 'bg-[#88A9C3]/5' : ''}`}>
+                                  {renderCell(feature.express)}
+                                </div>
+                                <div className={`flex items-center justify-center ${pricingPlans[1].highlighted ? 'bg-[#88A9C3]/5' : ''}`}>
+                                  {renderCell(feature.transformation)}
+                                </div>
+                                <div className={`flex items-center justify-center ${pricingPlans[2].highlighted ? 'bg-[#88A9C3]/5' : ''}`}>
+                                  {renderCell(feature.premium)}
+                                </div>
+                              </div>
+                            ))}
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
+                  ))}
+                </div>
               </div>
 
-              {/* Categories & Features */}
-              {comparisonFeatures.map((category, catIndex) => (
-                <div key={catIndex} className="border-b border-white/10">
-                  {/* Category Header - Collapsible */}
-                  <button
-                    onClick={() => toggleCategory(catIndex)}
-                    className="w-full grid grid-cols-4 p-4 bg-white/5 hover:bg-white/10 transition-colors text-left"
-                  >
-                    <div className="col-span-4 flex items-center justify-between">
-                      <span className="font-mono text-sm font-bold text-[#D9FF00] uppercase tracking-wider">
-                        {category.category}
-                      </span>
-                      <ChevronDown className={`w-4 h-4 text-[#D9FF00] transition-transform ${expandedCategories.includes(catIndex) ? 'rotate-180' : ''}`} />
-                    </div>
-                  </button>
-
-                  {/* Features - Expandable */}
-                  <AnimatePresence>
-                    {expandedCategories.includes(catIndex) && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: 'auto', opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.3 }}
-                        className="overflow-hidden"
-                      >
-                        {category.features.map((feature, idx) => (
-                          <div
-                            key={idx}
-                            className={`grid grid-cols-4 p-4 ${idx % 2 === 0 ? 'bg-black/20' : 'bg-black/10'} hover:bg-white/5 transition-colors`}
-                          >
-                            <div className="font-mono text-sm text-white/70">
-                              {feature.name}
-                            </div>
-                            <div className={`flex items-center justify-center ${pricingPlans[0].highlighted ? 'bg-[#D9FF00]/5' : ''}`}>
-                              {renderCell(feature.express)}
-                            </div>
-                            <div className={`flex items-center justify-center ${pricingPlans[1].highlighted ? 'bg-[#D9FF00]/5' : ''}`}>
-                              {renderCell(feature.transformation)}
-                            </div>
-                            <div className={`flex items-center justify-center ${pricingPlans[2].highlighted ? 'bg-[#D9FF00]/5' : ''}`}>
-                              {renderCell(feature.premium)}
-                            </div>
-                          </div>
-                        ))}
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-              ))}
-
               {/* Footer CTA */}
-              <div className="p-6 bg-white/5 text-center">
-                <p className="font-mono text-sm text-white/50 mb-4">
+              <div className="p-4 md:p-6 bg-white/5 text-center">
+                <p className="font-mono text-xs md:text-sm text-white/50 mb-4 px-2">
                   Toutes les formules incluent : Satisfait ou 100% Remboursé • Support 30 Jours • Paiement 3x Sans Frais
                 </p>
                 <button
@@ -171,7 +174,7 @@ export const PricingComparison = () => {
                     const contactSection = document.getElementById('contact')
                     contactSection?.scrollIntoView({ behavior: 'smooth' })
                   }}
-                  className="px-8 py-3 bg-[#D9FF00] text-black font-bold hover:bg-white transition-colors"
+                  className="px-6 md:px-8 py-3 bg-[#88A9C3] text-black font-bold hover:bg-white transition-colors text-sm md:text-base"
                 >
                   Choisir Ma Formule →
                 </button>

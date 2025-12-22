@@ -42,12 +42,12 @@ export const VideoTestimonials = () => {
         {/* Header */}
         <Reveal>
           <div className="max-w-4xl mx-auto text-center mb-20">
-            <span className="font-mono text-[#D9FF00] text-sm tracking-widest uppercase mb-6 block">
+            <span className="font-mono text-[#88A9C3] text-sm tracking-widest uppercase mb-6 block">
               Témoignages Vidéo
             </span>
             <h2 className="font-display text-5xl md:text-7xl font-bold text-white uppercase leading-[0.9] mb-8">
               VOIR C'EST<br/>
-              <span className="text-[#D9FF00]">CROIRE</span>
+              <span className="text-[#88A9C3]">CROIRE</span>
             </h2>
             <p className="text-xl text-white/80 font-light">
               Nos clients témoignent en vidéo de leur transformation. Résultats réels. Histoires authentiques.
@@ -67,9 +67,9 @@ export const VideoTestimonials = () => {
                 {/* Thumbnail */}
                 <div className="relative aspect-video bg-black/50 border border-white/10 overflow-hidden">
                   {/* Placeholder Thumbnail */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#D9FF00]/10 to-black flex items-center justify-center">
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#88A9C3]/10 to-black flex items-center justify-center">
                     <div className="text-center">
-                      <div className="w-20 h-20 rounded-full bg-[#D9FF00] flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                      <div className="w-20 h-20 rounded-full bg-[#88A9C3] flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                         <Play className="w-10 h-10 text-black ml-1" fill="currentColor" />
                       </div>
                       <div className="font-mono text-xs text-white/50 uppercase">
@@ -83,7 +83,7 @@ export const VideoTestimonials = () => {
                   
                   {/* Client Info */}
                   <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 to-transparent">
-                    <div className="font-mono text-xs text-[#D9FF00] uppercase tracking-wider mb-2">
+                    <div className="font-mono text-xs text-[#88A9C3] uppercase tracking-wider mb-2">
                       {video.client}
                     </div>
                     <h3 className="font-display text-xl font-bold text-white mb-2">
@@ -109,7 +109,7 @@ export const VideoTestimonials = () => {
               href="https://youtube.com/@modernizehub"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 px-8 py-4 border border-[#D9FF00] text-[#D9FF00] hover:bg-[#D9FF00] hover:text-black transition-all font-mono text-sm uppercase tracking-widest"
+              className="inline-flex items-center gap-3 px-8 py-4 border border-[#88A9C3] text-[#88A9C3] hover:bg-[#88A9C3] hover:text-black transition-all font-mono text-sm uppercase tracking-widest"
             >
               <ExternalLink className="w-4 h-4" />
               Voir Toutes Les Vidéos
@@ -138,11 +138,11 @@ export const VideoTestimonials = () => {
               exit={{ scale: 0.8, opacity: 0 }}
               className="fixed inset-4 md:inset-12 lg:inset-20 z-[9999]"
             >
-              <div className="relative w-full h-full bg-black border border-[#D9FF00]/30">
+              <div className="relative w-full h-full bg-black border border-[#88A9C3]/30">
                 {/* Close Button */}
                 <button
                   onClick={closeVideo}
-                  className="absolute -top-12 right-0 w-10 h-10 flex items-center justify-center bg-black/50 hover:bg-[#D9FF00] hover:text-black transition-colors"
+                  className="absolute -top-12 right-0 w-10 h-10 flex items-center justify-center bg-black/50 hover:bg-[#88A9C3] hover:text-black transition-colors"
                   aria-label="Fermer"
                 >
                   <X className="w-5 h-5 text-white" />

@@ -135,7 +135,7 @@ export const DemoPage = () => {
                   <div className="flex items-center gap-6">
                     <span>Mentions Légales</span>
                     <span>Politique de Confidentialité</span>
-                    <span className="text-[#D9FF00]">Site réalisé par Modernize Hub</span>
+                    <span className="text-[#88A9C3]">Site réalisé par Modernize Hub</span>
                   </div>
                 </div>
               </div>
@@ -245,7 +245,7 @@ export const DemoPage = () => {
                 </div>
                 <div className="border-t border-[#F5F5F4]/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[#57534E]">
                   <p>© 2025 L'Épicurien. Tous droits réservés.</p>
-                  <p className="text-[#D9FF00]">Site conçu par Modernize Hub</p>
+                  <p className="text-[#88A9C3]">Site conçu par Modernize Hub</p>
                 </div>
               </div>
             </footer>
@@ -397,7 +397,7 @@ export const DemoPage = () => {
                   <div className="flex items-center gap-6">
                     <span>CGV</span>
                     <span>Mentions Légales</span>
-                    <span className="text-[#D9FF00] font-medium">Créé par Modernize Hub</span>
+                    <span className="text-[#88A9C3] font-medium">Créé par Modernize Hub</span>
                   </div>
                 </div>
               </div>
@@ -405,12 +405,12 @@ export const DemoPage = () => {
           </div>
         )
 
-      // 4. COACH SPORTIF - Style "Brutalist Neon"
+      // 4. COACH SPORTIF - Style "Brutalist"
       case 'coach-sportif':
         return (
           <div className="bg-[#111111] text-white font-sans min-h-screen">
             <section className="min-h-screen flex flex-col justify-center px-6 relative overflow-hidden bg-[#111111]">
-              <div className="absolute top-0 right-0 w-1/2 h-full bg-[#00FF88] opacity-5 -skew-x-12" />
+              <div className="absolute top-0 right-0 w-1/2 h-full bg-[#88A9C3] opacity-5 -skew-x-12" />
               
               <div className="max-w-6xl mx-auto w-full z-10">
                 <motion.div 
@@ -418,27 +418,27 @@ export const DemoPage = () => {
                   animate={{ x: 0, opacity: 1 }}
                   className="mb-8"
                 >
-                  <span className="bg-[#00FF88] text-black px-4 py-1 font-black text-sm uppercase skew-x-[-10deg] inline-block mb-4 shadow-[4px_4px_0px_white]">
+                  <span className="bg-[#88A9C3] text-black px-4 py-1 font-black text-sm uppercase skew-x-[-10deg] inline-block mb-4 shadow-[4px_4px_0px_white]">
                     Coaching Élite
                   </span>
                   <h1 className="text-7xl md:text-[10rem] font-black leading-[0.8] tracking-tighter uppercase italic">
                     Push <br/>
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00FF88] to-transparent" style={{ WebkitTextStroke: '2px #00FF88' }}>Limits</span>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#88A9C3] to-transparent" style={{ WebkitTextStroke: '2px #88A9C3' }}>Limits</span>
                   </h1>
                 </motion.div>
 
                 <div className="grid md:grid-cols-2 gap-12 items-end">
-                  <p className="text-xl text-[#A3A3A3] font-bold max-w-md border-l-4 border-[#00FF88] pl-6">
+                  <p className="text-xl text-[#A3A3A3] font-bold max-w-md border-l-4 border-[#88A9C3] pl-6">
                     Transforme ton corps et ton mental en 90 jours. Programme personnalisé. Résultats garantis.
                   </p>
                   
                   {/* LANDING PAGE OPTIMIZATION: Lead Capture */}
-                  <div className="bg-[#1F1F1F] p-6 border-2 border-[#333] skew-x-[-5deg] shadow-[8px_8px_0px_#00FF88]">
-                    <h3 className="text-xl font-black uppercase mb-4 text-[#00FF88]">Séance Bilan Offerte</h3>
+                  <div className="bg-[#1F1F1F] p-6 border-2 border-[#333] skew-x-[-5deg] shadow-[8px_8px_0px_#88A9C3]">
+                    <h3 className="text-xl font-black uppercase mb-4 text-[#88A9C3]">Séance Bilan Offerte</h3>
                     <div className="flex flex-col gap-4">
-                       <input type="text" placeholder="TON NOM" className="bg-[#111] border border-[#333] p-3 font-bold text-white focus:border-[#00FF88] outline-none transition-colors" />
-                       <input type="email" placeholder="TON EMAIL" className="bg-[#111] border border-[#333] p-3 font-bold text-white focus:border-[#00FF88] outline-none transition-colors" />
-                       <button className="bg-white text-black px-8 py-4 font-black text-xl uppercase hover:bg-[#00FF88] transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none shadow-[4px_4px_0px_#333]">
+                       <input type="text" placeholder="TON NOM" className="bg-[#111] border border-[#333] p-3 font-bold text-white focus:border-[#88A9C3] outline-none transition-colors" />
+                       <input type="email" placeholder="TON EMAIL" className="bg-[#111] border border-[#333] p-3 font-bold text-white focus:border-[#88A9C3] outline-none transition-colors" />
+                       <button className="bg-white text-black px-8 py-4 font-black text-xl uppercase hover:bg-[#88A9C3] transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none shadow-[4px_4px_0px_#333]">
                          JE FONCE
                        </button>
                     </div>
@@ -454,13 +454,13 @@ export const DemoPage = () => {
               </div>
             </section>
 
-            <section className="bg-[#00FF88] text-black py-20 px-6">
+            <section className="bg-[#88A9C3] text-black py-20 px-6">
               <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
                 {['Muscle', 'Cardio', 'Mental', 'Nutrition'].map((stat, i) => (
-                  <div key={i} className="border-4 border-black p-8 text-center hover:bg-black hover:text-[#00FF88] transition-colors cursor-pointer group bg-white">
+                  <div key={i} className="border-4 border-black p-8 text-center hover:bg-black hover:text-[#88A9C3] transition-colors cursor-pointer group bg-white">
                     <h3 className="text-3xl font-black uppercase mb-2">{stat}</h3>
                     <div className="w-full h-4 bg-black/10 mt-4 rounded-none overflow-hidden group-hover:bg-[#333]">
-                      <div className="h-full bg-black w-3/4 group-hover:bg-[#00FF88]" />
+                      <div className="h-full bg-black w-3/4 group-hover:bg-[#88A9C3]" />
                     </div>
                   </div>
                 ))}
@@ -468,7 +468,7 @@ export const DemoPage = () => {
             </section>
 
             {/* ENHANCED FOOTER */}
-            <footer className="bg-[#0A0A0A] py-16 px-6 border-t-4 border-[#00FF88]">
+            <footer className="bg-[#0A0A0A] py-16 px-6 border-t-4 border-[#88A9C3]">
               <div className="max-w-7xl mx-auto">
                 <div className="grid md:grid-cols-3 gap-12 mb-12">
                   <div className="col-span-2">
@@ -478,25 +478,25 @@ export const DemoPage = () => {
                     </p>
                     <div className="flex gap-4">
                       {[Instagram, Facebook, Twitter].map((Icon, i) => (
-                        <div key={i} className="w-12 h-12 bg-[#00FF88] border-2 border-black flex items-center justify-center hover:bg-white transition-all cursor-pointer shadow-[4px_4px_0px_white]">
+                        <div key={i} className="w-12 h-12 bg-[#88A9C3] border-2 border-black flex items-center justify-center hover:bg-white transition-all cursor-pointer shadow-[4px_4px_0px_white]">
                           <Icon className="w-6 h-6 text-black" />
                         </div>
                       ))}
                     </div>
                   </div>
                   <div>
-                    <h4 className="text-[#00FF88] uppercase font-black text-sm mb-6 tracking-widest bg-black inline-block px-2">Contact</h4>
+                    <h4 className="text-[#88A9C3] uppercase font-black text-sm mb-6 tracking-widest bg-black inline-block px-2">Contact</h4>
                     <div className="space-y-3 text-white font-bold">
                       <p>123 Avenue de la Forme</p>
                       <p>75015 Paris</p>
-                      <p className="text-[#00FF88] mt-4 text-xl">06 12 34 56 78</p>
+                      <p className="text-[#88A9C3] mt-4 text-xl">06 12 34 56 78</p>
                       <p>coach@apex-fitness.fr</p>
                     </div>
                   </div>
                 </div>
                 <div className="border-t-2 border-[#333] pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                   <p className="text-[#525252] text-xs font-bold uppercase">© 2025 APEX FITNESS. ALL RIGHTS RESERVED.</p>
-                  <p className="text-[#D9FF00] text-xs font-black uppercase">POWERED BY MODERNIZE HUB</p>
+                  <p className="text-[#88A9C3] text-xs font-black uppercase">POWERED BY MODERNIZE HUB</p>
                 </div>
               </div>
             </footer>
@@ -603,7 +603,7 @@ export const DemoPage = () => {
                 </div>
                 <div className="border-t border-[#2c2416]/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[#2c2416]/50 font-sans">
                   <p>© 2025 L'Atelier Boisé. Tous droits réservés.</p>
-                  <p className="text-[#D9FF00] font-medium">Site web par Modernize Hub</p>
+                  <p className="text-[#88A9C3] font-medium">Site web par Modernize Hub</p>
                 </div>
               </div>
             </footer>
@@ -709,7 +709,7 @@ export const DemoPage = () => {
                   <div className="flex items-center gap-6">
                     <span className="hover:text-white cursor-pointer transition-colors">Privacy Policy</span>
                     <span className="hover:text-white cursor-pointer transition-colors">Terms of Service</span>
-                    <span className="text-[#D9FF00] font-medium">Built with Modernize Hub</span>
+                    <span className="text-[#88A9C3] font-medium">Built with Modernize Hub</span>
                   </div>
                 </div>
               </div>
@@ -817,7 +817,7 @@ export const DemoPage = () => {
                   <div className="flex items-center gap-6">
                     <span>CGV</span>
                     <span>Confidentialité</span>
-                    <span className="text-[#D9FF00] font-medium">Site par Modernize Hub</span>
+                    <span className="text-[#88A9C3] font-medium">Site par Modernize Hub</span>
                   </div>
                 </div>
               </div>
@@ -835,7 +835,7 @@ export const DemoPage = () => {
                 <div className="font-bold text-2xl tracking-tighter bg-[#111] text-white p-2 inline-block">BOLD.</div>
                 <nav className="flex flex-col gap-4 text-xl font-bold">
                   {['Work', 'Agency', 'News', 'Contact'].map(item => (
-                    <a key={item} href="#" className="hover:text-[#D9FF00] hover:bg-[#111] px-2 -ml-2 transition-colors">{item}</a>
+                    <a key={item} href="#" className="hover:text-[#88A9C3] hover:bg-[#111] px-2 -ml-2 transition-colors">{item}</a>
                   ))}
                 </nav>
                 <div className="text-xs font-mono">© 2025</div>
@@ -850,12 +850,12 @@ export const DemoPage = () => {
                     className="text-7xl md:text-9xl font-black leading-[0.8] mb-12 tracking-tighter z-10"
                   >
                     WE CREATE <br/>
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF00CC] to-[#333399]">DIGITAL</span> <br/>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#88A9C3] to-[#6B8FA8]">DIGITAL</span> <br/>
                     IMPACT.
                   </motion.h1>
                   <div className="flex flex-col md:flex-row gap-12 items-start max-w-4xl z-10">
                     <div className="flex gap-4">
-                       <ArrowRight className="w-12 h-12 shrink-0 bg-[#111] text-[#D9FF00] rounded-full p-2 rotate-45" />
+                       <ArrowRight className="w-12 h-12 shrink-0 bg-[#111] text-[#88A9C3] rounded-full p-2 rotate-45" />
                        <p className="text-xl font-medium leading-tight">
                          Agence créative spécialisée dans le branding disruptif et les expériences web immersives.
                          Nous ne suivons pas les tendances, nous les créons.
@@ -863,24 +863,24 @@ export const DemoPage = () => {
                     </div>
                     
                     {/* LANDING PAGE OPTIMIZATION: Primary CTA */}
-                    <button className="bg-[#FF00CC] text-white px-8 py-6 text-xl font-black uppercase tracking-tighter hover:bg-[#111] hover:scale-105 transition-all shadow-[8px_8px_0px_#111] rotate-2">
+                    <button className="bg-[#88A9C3] text-white px-8 py-6 text-xl font-black uppercase tracking-tighter hover:bg-[#111] hover:scale-105 transition-all shadow-[8px_8px_0px_#111] rotate-2">
                        Start Project
                     </button>
                   </div>
                   
                   {/* Floating Elements */}
-                  <div className="absolute right-0 top-1/2 -translate-y-1/2 w-64 h-64 bg-[#D9FF00] rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-pulse-slow" />
+                  <div className="absolute right-0 top-1/2 -translate-y-1/2 w-64 h-64 bg-[#88A9C3] rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-pulse-slow" />
                 </section>
 
                 <section className="grid md:grid-cols-2 bg-[#FAFAFA]">
-                  <div className="aspect-square bg-[#111] p-12 text-white flex flex-col justify-between group hover:bg-[#D9FF00] hover:text-black transition-colors cursor-pointer border-r border-b border-[#111]">
+                  <div className="aspect-square bg-[#111] p-12 text-white flex flex-col justify-between group hover:bg-[#88A9C3] hover:text-black transition-colors cursor-pointer border-r border-b border-[#111]">
                     <h3 className="text-4xl font-bold">Nike Campaign</h3>
                     <div className="flex justify-between items-end">
                       <span>Strategy / Art Direction</span>
                       <ArrowUpRight className="w-8 h-8 group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform" />
                     </div>
                   </div>
-                  <div className="aspect-square bg-[#FAFAFA] border-b border-[#111] p-12 flex flex-col justify-between group hover:bg-[#FF00CC] hover:text-white transition-colors cursor-pointer">
+                  <div className="aspect-square bg-[#FAFAFA] border-b border-[#111] p-12 flex flex-col justify-between group hover:bg-[#88A9C3] hover:text-white transition-colors cursor-pointer">
                     <h3 className="text-4xl font-bold">Spotify Rebrand</h3>
                     <div className="flex justify-between items-end">
                       <span>Identity / Motion</span>
@@ -927,7 +927,7 @@ export const DemoPage = () => {
                     </div>
                     <div className="border-t-2 border-[#111] pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                       <p className="text-xs text-[#666] font-mono">© 2025 BOLD AGENCY. ALL RIGHTS RESERVED.</p>
-                      <p className="text-xs font-black text-[#D9FF00] uppercase tracking-widest bg-black px-2">CRAFTED BY MODERNIZE HUB</p>
+                      <p className="text-xs font-black text-[#88A9C3] uppercase tracking-widest bg-black px-2">CRAFTED BY MODERNIZE HUB</p>
                     </div>
                   </div>
                 </footer>
@@ -979,14 +979,14 @@ export const DemoPage = () => {
         <div className="h-4 w-px bg-white/20 hidden md:block" />
         <button 
           onClick={() => navigate('/portfolio')}
-          className="flex items-center gap-2 text-xs font-bold text-white hover:text-[#D9FF00] transition-colors px-2"
+          className="flex items-center gap-2 text-xs font-bold text-white hover:text-[#88A9C3] transition-colors px-2"
         >
           <ArrowLeft className="w-3 h-3" />
           Retour
         </button>
         <button
           onClick={() => navigate('/contact')}
-          className="bg-[#D9FF00] text-black px-4 py-2 rounded-full text-xs font-bold hover:bg-white transition-colors"
+          className="bg-[#88A9C3] text-black px-4 py-2 rounded-full text-xs font-bold hover:bg-white transition-colors"
         >
           Je veux ce site
         </button>

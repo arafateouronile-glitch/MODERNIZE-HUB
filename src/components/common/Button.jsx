@@ -12,10 +12,10 @@ export const Button = ({
   const baseStyles = "relative inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold transition-all duration-300 overflow-hidden group"
   
   const variants = {
-    primary: "bg-[#D9FF00] text-background hover:bg-white hover:text-background shadow-lg shadow-[#D9FF00]/20",
+    primary: "bg-[#88A9C3] text-background hover:bg-white hover:text-background shadow-lg shadow-[#88A9C3]/20",
     secondary: "bg-surfaceHighlight text-text-main border border-white/10 hover:bg-surfaceHighlight/80 active:bg-surfaceHighlight/70",
-    outline: "bg-transparent border-2 border-[#D9FF00] text-[#D9FF00] hover:bg-[#D9FF00] hover:text-black",
-    gradient: "bg-[#D9FF00] text-background shadow-lg shadow-[#D9FF00]/30 hover:shadow-[#D9FF00]/50 hover:scale-[1.02]"
+    outline: "bg-transparent border-2 border-[#88A9C3] text-[#88A9C3] hover:bg-[#88A9C3] hover:text-black",
+    gradient: "bg-[#88A9C3] text-background shadow-lg shadow-[#88A9C3]/30 hover:shadow-[#88A9C3]/50 hover:scale-[1.02]"
   }
 
   return (
@@ -31,7 +31,7 @@ export const Button = ({
       
       {/* Glow Effect for Primary */}
       {variant === 'primary' && (
-        <div className="absolute -inset-1 bg-[#D9FF00] rounded-xl blur opacity-0 group-hover:opacity-30 transition-opacity duration-500" />
+        <div className="absolute -inset-1 bg-[#88A9C3] rounded-xl blur opacity-0 group-hover:opacity-30 transition-opacity duration-500" />
       )}
 
       <span className="relative z-20 flex items-center gap-2">

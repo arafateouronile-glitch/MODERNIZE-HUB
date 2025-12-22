@@ -3,39 +3,45 @@
 @tailwind utilities;
 
 @layer base {
-  /* Light mode (default) - BLANC, NOIR, NÉON uniquement */
+  /* Light mode (default) - Design raffiné avec nuances subtiles */
   :root {
-    --color-background: #FFFFFF;
+    --color-background: #FAFBFC;
     --color-surface: #FFFFFF;
-    --color-surface-highlight: #FFFFFF;
-    --color-text-main: #000000;
-    --color-text-muted: #000000;
-    --color-primary: #D9FF00;
-    --color-border: rgba(0, 0, 0, 0.2);
+    --color-surface-highlight: #F0F4F8;
+    --color-text-main: #1A1A2E;
+    --color-text-muted: #4A5568;
+    --color-primary: #88A9C3;
+    --color-border: rgba(0, 0, 0, 0.12);
+    --color-card-bg: #FFFFFF;
+    --color-card-border: rgba(136, 169, 195, 0.2);
+    --color-shadow: rgba(136, 169, 195, 0.15);
   }
 
-  /* Dark mode - Noir, Blanc, Néon */
+  /* Dark mode - Noir, Blanc, Bleu */
   [data-theme="dark"],
   .dark {
     --color-background: #0F1116;
     --color-surface: #161B22;
     --color-surface-highlight: #1F242C;
     --color-text-main: #FFFFFF;
-    --color-text-muted: #D9FF00;
-    --color-primary: #D9FF00;
+    --color-text-muted: #88A9C3;
+    --color-primary: #88A9C3;
     --color-border: rgba(255, 255, 255, 0.1);
   }
 
-  /* Light mode explicit - BLANC, NOIR, NÉON uniquement */
+  /* Light mode explicit - Design raffiné avec nuances subtiles */
   [data-theme="light"],
   .light {
-    --color-background: #FFFFFF;
+    --color-background: #FAFBFC;
     --color-surface: #FFFFFF;
-    --color-surface-highlight: #FFFFFF;
-    --color-text-main: #000000;
-    --color-text-muted: #000000;
-    --color-primary: #D9FF00;
-    --color-border: rgba(0, 0, 0, 0.2);
+    --color-surface-highlight: #F0F4F8;
+    --color-text-main: #1A1A2E;
+    --color-text-muted: #4A5568;
+    --color-primary: #88A9C3;
+    --color-border: rgba(0, 0, 0, 0.12);
+    --color-card-bg: #FFFFFF;
+    --color-card-border: rgba(0, 0, 0, 0.08);
+    --color-shadow: rgba(136, 169, 195, 0.15);
   }
 
   body {
@@ -92,8 +98,8 @@
   }
   
   .text-outline-hover:hover {
-    -webkit-text-stroke: 1px #D9FF00;
-    color: #D9FF00;
+    -webkit-text-stroke: 1px #88A9C3;
+    color: #88A9C3;
   }
 
   .glass-panel {
@@ -112,21 +118,67 @@
 /* ========== OVERRIDE GLOBAL POUR MODE CLAIR ========== */
 [data-theme="light"] {
   color-scheme: light;
-  /* Force blanc partout */
-  background-color: #FFFFFF !important;
+  background-color: #FAFBFC !important;
 }
 
 [data-theme="dark"] {
   color-scheme: dark;
 }
 
-/* Force background blanc en mode clair pour TOUT */
+/* Fond subtil en mode clair - pas de blanc pur */
 [data-theme="light"] body,
-[data-theme="light"] html,
-[data-theme="light"] main,
-[data-theme="light"] section,
-[data-theme="light"] div {
+[data-theme="light"] html {
+  background-color: #FAFBFC !important;
+}
+
+[data-theme="light"] main {
+  background: linear-gradient(180deg, #FAFBFC 0%, #F0F4F8 50%, #FAFBFC 100%) !important;
+}
+
+[data-theme="light"] section {
+  background-color: transparent !important;
+}
+
+/* Cartes et conteneurs en mode clair - avec ombres et bordures visibles */
+[data-theme="light"] .bg-surface,
+[data-theme="light"] .bg-background {
   background-color: #FFFFFF !important;
+  box-shadow: 0 4px 20px rgba(136, 169, 195, 0.1), 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Bordures visibles en mode clair */
+[data-theme="light"] [class*="border-white/10"],
+[data-theme="light"] [class*="border-white/5"],
+[data-theme="light"] [class*="border-white/20"] {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Fonds semi-transparents adaptés au mode clair - sauf header */
+[data-theme="light"] *:not(header):not(header *) [class*="bg-white/5"],
+[data-theme="light"] *:not(header):not(header *) [class*="bg-white/10"],
+[data-theme="light"] section [class*="bg-white/5"],
+[data-theme="light"] section [class*="bg-white/10"] {
+  background-color: rgba(136, 169, 195, 0.08) !important;
+}
+
+/* Header nav - tout transparent sauf nav */
+[data-theme="light"] header [class*="bg-white/5"],
+[data-theme="light"] header [class*="bg-white/10"],
+[data-theme="light"] header [class*="bg-surface"],
+[data-theme="light"] header div,
+[data-theme="light"] header button {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Seule la nav garde son fond bleu */
+[data-theme="light"] header nav {
+  background-color: #88A9C3 !important;
+}
+
+/* Ombres et effets glow en mode clair */
+[data-theme="light"] [class*="shadow-"] {
+  --tw-shadow-color: rgba(136, 169, 195, 0.2);
 }
 
 /* EXCEPTIONS HEADER - DOIT VENIR APRÈS pour surcharger */
@@ -140,43 +192,164 @@
   background-color: transparent !important;
 }
 
-/* Nav en néon */
-[data-theme="light"] header nav {
-  background-color: #D9FF00 !important;
-}
+/* Nav - règles déplacées plus haut */
 
-/* Divs dans nav en néon */
-[data-theme="light"] header nav > div {
-  background-color: #D9FF00 !important;
-}
-
-/* Tous les boutons dans nav en néon */
-[data-theme="light"] header nav button {
-  background-color: #D9FF00 !important;
-}
-
-/* Force texte noir en mode clair */
+/* Force texte sombre en mode clair */
 [data-theme="light"] h1,
 [data-theme="light"] h2,
 [data-theme="light"] h3,
 [data-theme="light"] h4,
 [data-theme="light"] h5,
-[data-theme="light"] h6,
+[data-theme="light"] h6 {
+  color: #1A1A2E !important;
+}
+
 [data-theme="light"] p,
 [data-theme="light"] span {
-  color: #000000 !important;
+  color: #4A5568 !important;
 }
 
 /* Override des classes Tailwind hardcodées */
 [data-theme="light"] [class*="bg-black"],
 [data-theme="light"] [class*="bg-\[#0F1116\]"],
-[data-theme="light"] [class*="bg-\[#161B22\]"],
-[data-theme="light"] .bg-background {
+[data-theme="light"] [class*="bg-\[#161B22\]"] {
   background-color: #FFFFFF !important;
+  box-shadow: 0 4px 20px rgba(136, 169, 195, 0.12);
 }
 
-[data-theme="light"] [class*="text-white"]:not([class*="text-primary"]):not([class*="text-[#D9FF00]"]) {
-  color: #000000 !important;
+[data-theme="light"] [class*="text-white"]:not([class*="text-primary"]):not([class*="text-[#88A9C3]"]):not(button span):not(a span) {
+  color: #1A1A2E !important;
+}
+
+/* Texte muted avec couleur visible */
+[data-theme="light"] [class*="text-white/70"],
+[data-theme="light"] [class*="text-white/50"],
+[data-theme="light"] [class*="text-white/40"],
+[data-theme="light"] [class*="text-white/30"],
+[data-theme="light"] .text-text-muted {
+  color: #6B7C93 !important;
+}
+
+/* Dégradés adaptés au mode clair */
+[data-theme="light"] [class*="bg-gradient"] {
+  opacity: 0.6;
+}
+
+/* Animation pulse avec couleur adaptée */
+[data-theme="light"] [class*="bg-primary/10"] {
+  background-color: rgba(136, 169, 195, 0.15) !important;
+}
+
+[data-theme="light"] [class*="bg-secondary/10"] {
+  background-color: rgba(157, 78, 221, 0.1) !important;
+}
+
+/* ========== CARTES ET ÉLÉMENTS EN MODE CLAIR ========== */
+
+/* Cartes de pricing et portfolio avec ombres */
+[data-theme="light"] [class*="border"][class*="bg-background"],
+[data-theme="light"] [class*="border"][class*="bg-surface"] {
+  background-color: #FFFFFF !important;
+  border-color: rgba(136, 169, 195, 0.25) !important;
+  box-shadow: 0 8px 32px rgba(136, 169, 195, 0.12), 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* Cartes avec effet hover */
+[data-theme="light"] [class*="hover:border-primary"],
+[data-theme="light"] [class*="hover:border-\[#88A9C3\]"] {
+  transition: all 0.3s ease;
+}
+
+[data-theme="light"] [class*="hover:border-primary"]:hover,
+[data-theme="light"] [class*="hover:border-\[#88A9C3\]"]:hover {
+  border-color: #88A9C3 !important;
+  box-shadow: 0 12px 40px rgba(136, 169, 195, 0.25), 0 4px 12px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Stats et badges arrondis */
+[data-theme="light"] [class*="rounded-full"][class*="border"] {
+  background-color: rgba(136, 169, 195, 0.08) !important;
+  border-color: rgba(136, 169, 195, 0.2) !important;
+}
+
+/* Backdrop blur adapté */
+[data-theme="light"] [class*="backdrop-blur"] {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  border-color: rgba(136, 169, 195, 0.15) !important;
+}
+
+/* Ligne décorative verticale */
+[data-theme="light"] [class*="bg-gradient-to-b"][class*="via-white"] {
+  background: linear-gradient(to bottom, transparent, rgba(136, 169, 195, 0.4), transparent) !important;
+}
+
+/* Séparateurs horizontaux */
+[data-theme="light"] [class*="border-t"][class*="border-white/5"],
+[data-theme="light"] [class*="border-b"][class*="border-white/10"] {
+  border-color: rgba(136, 169, 195, 0.15) !important;
+}
+
+/* Sections avec fond contrasté */
+[data-theme="light"] section[class*="bg-\[#88A9C3\]"] {
+  background-color: #88A9C3 !important;
+}
+
+/* Boutons avec texte visible */
+[data-theme="light"] button[class*="bg-\[#88A9C3\]"] span,
+[data-theme="light"] a[class*="bg-\[#88A9C3\]"] span {
+  color: #FFFFFF !important;
+}
+
+/* Icônes colorées */
+[data-theme="light"] [class*="text-\[#88A9C3\]"] {
+  color: #88A9C3 !important;
+}
+
+/* Formulaire inputs avec fond légèrement contrasté */
+[data-theme="light"] input[class*="bg-transparent"],
+[data-theme="light"] textarea[class*="bg-transparent"],
+[data-theme="light"] select[class*="bg-transparent"] {
+  background-color: rgba(136, 169, 195, 0.03) !important;
+}
+
+/* Marquee avec fond visible */
+[data-theme="light"] [class*="bg-black"][class*="border"]:not(footer):not(footer *) {
+  background-color: #1A1A2E !important;
+}
+
+/* ========== FOOTER EN MODE CLAIR ========== */
+/* Le footer garde son fond sombre */
+[data-theme="light"] footer,
+[data-theme="light"] footer div,
+[data-theme="light"] footer section {
+  background-color: #1A1A2E !important;
+}
+
+/* Texte blanc dans le footer en mode clair */
+[data-theme="light"] footer h1,
+[data-theme="light"] footer h2,
+[data-theme="light"] footer h3,
+[data-theme="light"] footer p,
+[data-theme="light"] footer span,
+[data-theme="light"] footer a,
+[data-theme="light"] footer button {
+  color: #FFFFFF !important;
+}
+
+/* Lien admin plus discret */
+[data-theme="light"] footer a[href="/admin"] {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Menu mobile avec fond bleu uniforme */
+[data-theme="light"] [class*="fixed"][class*="inset-4"][class*="bg-\[#88A9C3\]"],
+[data-theme="light"] [class*="fixed"][class*="inset-4"][class*="bg-\[#88A9C3\]"] * {
+  background-color: #88A9C3 !important;
+}
+
+/* Boutons et texte dans menu mobile */
+[data-theme="light"] [class*="fixed"][class*="inset-4"] button {
+  background-color: transparent !important;
 }
 
 /* Force dark overlay - désactivé en mode clair */
@@ -194,4 +367,28 @@
 
 [data-theme="light"] .noise-overlay {
   opacity: 0;
+}
+
+/* ========== HEADER NAVIGATION - PRIORITÉ MAXIMALE ========== */
+/* Ces règles doivent être à la fin pour avoir la priorité */
+
+[data-theme="light"] header,
+[data-theme="light"] header > div,
+[data-theme="light"] header > div > div {
+  background-color: transparent !important;
+  background: transparent !important;
+}
+
+[data-theme="light"] header nav {
+  background-color: #88A9C3 !important;
+  background: #88A9C3 !important;
+}
+
+[data-theme="light"] header nav div,
+[data-theme="light"] header nav button,
+[data-theme="light"] header nav a,
+[data-theme="light"] header nav span,
+[data-theme="light"] header nav * {
+  background-color: transparent !important;
+  background: transparent !important;
 }

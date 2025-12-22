@@ -65,7 +65,7 @@ export const Portfolio = () => {
           >
             Nos Créations
             <br />
-            <span className="text-[#D9FF00]">Qui Font Rêver</span>
+            <span className="text-[#88A9C3]">Qui Font Rêver</span>
           </motion.h1>
           
           <motion.p
@@ -96,7 +96,7 @@ export const Portfolio = () => {
                 onClick={() => setSelectedCategory(category.id)}
                 className={`px-6 py-3 rounded-full font-bold transition-all ${
                   selectedCategory === category.id
-                    ? 'bg-[#D9FF00] text-black scale-105'
+                    ? 'bg-[#88A9C3] text-black scale-105'
                     : theme === 'light'
                     ? 'bg-white border-2 border-black text-black hover:bg-gray-100'
                     : 'bg-surface border border-white/10 text-white hover:bg-surface/80'
@@ -174,7 +174,7 @@ export const Portfolio = () => {
                       </div>
                     </div>
 
-                    <div className="absolute top-4 right-4 bg-[#D9FF00] text-black px-3 py-1 rounded-full text-xs font-bold z-10">
+                    <div className="absolute top-4 right-4 bg-[#88A9C3] text-black px-3 py-1 rounded-full text-xs font-bold z-10">
                       {project.industry}
                     </div>
                   </div>
@@ -219,7 +219,7 @@ export const Portfolio = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-[#D9FF00]">
+      <section className="py-20 px-6 bg-[#88A9C3]">
         <div className="container mx-auto max-w-4xl text-center">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -239,7 +239,7 @@ export const Portfolio = () => {
           </motion.p>
           <a
             href="/#contact"
-            className="group inline-flex items-center gap-3 px-8 py-4 bg-[#D9FF00] text-black hover:bg-white font-bold rounded-full transition-all duration-300 text-lg"
+            className="group inline-flex items-center gap-3 px-8 py-4 bg-[#88A9C3] text-black hover:bg-white font-bold rounded-full transition-all duration-300 text-lg"
           >
             <span>Demander un Devis</span>
           </a>
@@ -278,7 +278,7 @@ export const Portfolio = () => {
                 {/* Header */}
                 <div className="mb-8">
                   <div className="flex items-center gap-3 mb-4">
-                    <span className="bg-[#D9FF00] text-black px-3 py-1 rounded-full text-sm font-bold">
+                    <span className="bg-[#88A9C3] text-black px-3 py-1 rounded-full text-sm font-bold">
                       {selectedProject.industry}
                     </span>
                     <span className={`text-sm ${
@@ -351,7 +351,7 @@ export const Portfolio = () => {
                     <ul className="space-y-3">
                       {selectedProject.features.map((feature, idx) => (
                         <li key={idx} className="flex items-start gap-3">
-                          <span className="text-[#D9FF00] mt-1">✓</span>
+                          <span className="text-[#88A9C3] mt-1">✓</span>
                           <span className={`${
                             theme === 'light' ? 'text-gray-700' : 'text-gray-300'
                           }`}>
@@ -399,7 +399,7 @@ export const Portfolio = () => {
                               : 'bg-white/5'
                           }`}
                         >
-                          <div className="text-2xl font-bold text-[#D9FF00] mb-1">
+                          <div className="text-2xl font-bold text-[#88A9C3] mb-1">
                             {metric.value}
                           </div>
                           <div className={`text-xs ${
@@ -423,7 +423,7 @@ export const Portfolio = () => {
                         contactSection.scrollIntoView({ behavior: 'smooth' })
                       }
                     }}
-                    className="flex-1 py-4 px-6 bg-[#D9FF00] text-black font-bold rounded-full hover:bg-white transition-colors"
+                    className="flex-1 py-4 px-6 bg-[#88A9C3] text-black font-bold rounded-full hover:bg-white transition-colors"
                   >
                     {selectedProject.cta}
                   </button>

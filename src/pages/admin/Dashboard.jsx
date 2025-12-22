@@ -50,9 +50,9 @@ export const Dashboard = () => {
       label: 'Demandes de Devis',
       value: stats.totalQuotes,
       subvalue: `${stats.pendingQuotes} en attente`,
-      color: 'text-[#D9FF00]',
-      bg: 'bg-[#D9FF00]/10',
-      border: 'border-[#D9FF00]/30',
+      color: 'text-[#88A9C3]',
+      bg: 'bg-[#88A9C3]/10',
+      border: 'border-[#88A9C3]/30',
       onClick: () => navigate('/admin/quotes'),
     },
     {
@@ -93,7 +93,7 @@ export const Dashboard = () => {
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
           <div>
             <h1 className="font-display text-2xl font-bold text-white">
-              ADMIN <span className="text-[#D9FF00]">DASHBOARD</span>
+              ADMIN <span className="text-[#88A9C3]">DASHBOARD</span>
             </h1>
             <p className="font-mono text-xs text-white/50">
               {localStorage.getItem('admin_email')}
@@ -163,9 +163,9 @@ export const Dashboard = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 + index * 0.1 }}
               onClick={() => navigate(action.path)}
-              className="border border-white/10 bg-white/5 p-8 text-left hover:bg-white/10 hover:border-[#D9FF00]/30 transition-all group"
+              className="border border-white/10 bg-white/5 p-8 text-left hover:bg-white/10 hover:border-[#88A9C3]/30 transition-all group"
             >
-              <action.icon className="w-8 h-8 text-[#D9FF00] mb-4 group-hover:scale-110 transition-transform" />
+              <action.icon className="w-8 h-8 text-[#88A9C3] mb-4 group-hover:scale-110 transition-transform" />
               <div className="font-display text-xl font-bold text-white mb-2">
                 {action.label}
               </div>

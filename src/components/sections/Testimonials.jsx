@@ -35,7 +35,7 @@ export const Testimonials = () => {
             >
               <div className="grid md:grid-cols-3 gap-8 items-start">
                 <div className="flex items-center gap-4">
-                  <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-[#D9FF00]/30 group-hover:border-[#D9FF00] transition-all group-hover:scale-110 flex-shrink-0">
+                  <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-[#88A9C3]/30 group-hover:border-[#88A9C3] transition-all group-hover:scale-110 flex-shrink-0">
                     <OptimizedImage 
                       src={testimonial.avatar} 
                       alt={testimonial.name}
@@ -45,14 +45,14 @@ export const Testimonials = () => {
                   </div>
                   <div>
                     <div className="font-display text-xl font-bold text-white uppercase">{testimonial.name}</div>
-                    <div className="font-mono text-xs text-[#D9FF00]">{testimonial.role}</div>
+                    <div className="font-mono text-xs text-[#88A9C3]">{testimonial.role}</div>
                   </div>
                 </div>
 
                 <div className="md:col-span-2">
                   <div className="flex gap-1 mb-4">
                     {[...Array(testimonial.rating || 5)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 text-[#D9FF00] fill-current" />
+                      <Star key={i} className="w-4 h-4 text-[#88A9C3] fill-current" />
                     ))}
                   </div>
                   <p className="text-2xl md:text-3xl font-display font-bold text-white leading-tight">

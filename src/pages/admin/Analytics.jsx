@@ -147,14 +147,14 @@ export const Analytics = () => {
           className="bg-[#1a1a1a] p-6 rounded-xl border border-white/10 mb-8"
         >
           <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
-            <TrendingUp className="w-6 h-6 text-[#D9FF00]" />
+            <TrendingUp className="w-6 h-6 text-[#88A9C3]" />
             Pages les plus visitées
           </h2>
           <div className="space-y-4">
             {topPages.map((page, index) => (
               <div key={page.page} className="flex items-center justify-between p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-all">
                 <div className="flex items-center gap-4 flex-1">
-                  <div className="w-8 h-8 rounded-full bg-[#D9FF00] text-black flex items-center justify-center font-bold">
+                  <div className="w-8 h-8 rounded-full bg-[#88A9C3] text-black flex items-center justify-center font-bold">
                     {index + 1}
                   </div>
                   <div>
@@ -179,7 +179,7 @@ export const Analytics = () => {
             className="bg-[#1a1a1a] p-6 rounded-xl border border-white/10"
           >
             <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
-              <MousePointerClick className="w-6 h-6 text-[#D9FF00]" />
+              <MousePointerClick className="w-6 h-6 text-[#88A9C3]" />
               Tests A/B en cours
             </h2>
             <div className="space-y-6">

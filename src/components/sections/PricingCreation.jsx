@@ -27,7 +27,7 @@ export const PricingCreation = () => {
         
         <div className="flex flex-col items-center mb-20">
           <Reveal>
-            <span className="font-mono text-[#D9FF00] text-sm tracking-widest uppercase mb-6 block">
+            <span className="font-mono text-[#88A9C3] text-sm tracking-widest uppercase mb-6 block">
               Création de Site Web
             </span>
           </Reveal>
@@ -38,7 +38,7 @@ export const PricingCreation = () => {
             }`}>
               VOTRE SITE WEB
               <br />
-              <span className="text-[#D9FF00]">SUR-MESURE</span>
+              <span className="text-[#88A9C3]">SUR-MESURE</span>
             </h2>
           </Reveal>
 
@@ -64,14 +64,14 @@ export const PricingCreation = () => {
                 transition={{ delay: index * 0.1, duration: 0.6 }}
                 className={`relative group h-full flex flex-col p-8 border ${
                   tier.popular 
-                    ? 'bg-white/5 border-[#D9FF00] shadow-[0_0_30px_rgba(217,255,0,0.1)] scale-105' 
+                    ? 'bg-white/5 border-[#88A9C3] shadow-[0_0_30px_rgba(136,169,195,0.1)] scale-105' 
                     : theme === 'light'
-                    ? 'bg-white border-black hover:border-[#D9FF00]'
+                    ? 'bg-white border-black hover:border-[#88A9C3]'
                     : 'bg-background border-white/10 hover:border-white/30'
                 } transition-all duration-300`}
               >
                 {tier.popular && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#D9FF00] text-black font-mono text-xs font-bold px-4 py-1 uppercase tracking-widest">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#88A9C3] text-black font-mono text-xs font-bold px-4 py-1 uppercase tracking-widest">
                     ⭐ POPULAIRE
                   </div>
                 )}
@@ -111,7 +111,7 @@ export const PricingCreation = () => {
                       className="flex items-start gap-3"
                     >
                       <Check className={`w-5 h-5 mt-0.5 flex-shrink-0 ${
-                        tier.popular ? 'text-[#D9FF00]' : 'text-[#8B5CF6]'
+                        tier.popular ? 'text-[#88A9C3]' : 'text-[#8B5CF6]'
                       }`} />
                       <span className={`text-sm ${
                         theme === 'light' ? 'text-gray-700' : 'text-white/80'
@@ -128,10 +128,10 @@ export const PricingCreation = () => {
                   onClick={handleCTAClick}
                   className={`w-full py-4 px-6 rounded-full font-bold transition-all flex items-center justify-center gap-2 ${
                     tier.popular
-                      ? 'bg-[#D9FF00] text-black hover:bg-white'
+                      ? 'bg-[#88A9C3] text-black hover:bg-white'
                       : theme === 'light'
                       ? 'bg-black text-white hover:bg-gray-800'
-                      : 'bg-[#D9FF00] text-black hover:bg-white'
+                      : 'bg-[#88A9C3] text-black hover:bg-white'
                   }`}
                 >
                   {tier.cta}
@@ -150,8 +150,8 @@ export const PricingCreation = () => {
               onClick={() => navigate('/creation-site-web')}
               className={`inline-flex items-center gap-3 px-8 py-4 rounded-full font-bold transition-all ${
                 theme === 'light'
-                  ? 'bg-[#D9FF00] text-black hover:bg-white'
-                  : 'bg-[#D9FF00] text-black hover:bg-white'
+                  ? 'bg-[#88A9C3] text-black hover:bg-white'
+                  : 'bg-[#88A9C3] text-black hover:bg-white'
               }`}
             >
               Voir Toutes les Formules de Création

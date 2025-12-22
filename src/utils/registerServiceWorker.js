@@ -73,13 +73,13 @@ const showUpdateNotification = (newWorker) => {
       bottom: 20px;
       right: 20px;
       background: linear-gradient(135deg, #0A0A0A 0%, #1a1a1a 100%);
-      color: #D9FF00;
+      color: #88A9C3;
       padding: 20px 24px;
       border-radius: 12px;
-      box-shadow: 0 8px 32px rgba(217, 255, 0, 0.2);
+      box-shadow: 0 8px 32px rgba(136, 169, 195, 0.2);
       z-index: 10000;
       max-width: 350px;
-      border: 1px solid #D9FF00;
+      border: 1px solid #88A9C3;
       animation: slideInUp 0.3s ease-out;
     ">
       <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
@@ -93,7 +93,7 @@ const showUpdateNotification = (newWorker) => {
       </p>
       <div style="display: flex; gap: 12px;">
         <button id="sw-update-btn" style="
-          background: #D9FF00;
+          background: #88A9C3;
           color: #0A0A0A;
           border: none;
           padding: 10px 20px;
@@ -107,8 +107,8 @@ const showUpdateNotification = (newWorker) => {
         </button>
         <button id="sw-dismiss-btn" style="
           background: transparent;
-          color: #D9FF00;
-          border: 1px solid #D9FF00;
+          color: #88A9C3;
+          border: 1px solid #88A9C3;
           padding: 10px 20px;
           border-radius: 8px;
           font-weight: bold;
@@ -134,10 +134,10 @@ const showUpdateNotification = (newWorker) => {
       #sw-update-btn:hover {
         background: #C4E600;
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(217, 255, 0, 0.3);
+        box-shadow: 0 4px 12px rgba(136, 169, 195, 0.3);
       }
       #sw-dismiss-btn:hover {
-        background: rgba(217, 255, 0, 0.1);
+        background: rgba(136, 169, 195, 0.1);
       }
     </style>
   `
@@ -235,11 +235,11 @@ const showInstallButton = (deferredPrompt) => {
       position: fixed;
       bottom: 20px;
       left: 20px;
-      background: linear-gradient(135deg, #D9FF00 0%, #C4E600 100%);
+      background: linear-gradient(135deg, #88A9C3 0%, #C4E600 100%);
       color: #0A0A0A;
       padding: 16px 24px;
       border-radius: 12px;
-      box-shadow: 0 8px 32px rgba(217, 255, 0, 0.3);
+      box-shadow: 0 8px 32px rgba(136, 169, 195, 0.3);
       z-index: 9999;
       border: none;
       cursor: pointer;
@@ -271,7 +271,7 @@ const showInstallButton = (deferredPrompt) => {
       }
       #pwa-install-btn:hover > div {
         transform: translateY(-2px);
-        box-shadow: 0 12px 40px rgba(217, 255, 0, 0.4);
+        box-shadow: 0 12px 40px rgba(136, 169, 195, 0.4);
       }
     </style>
   `

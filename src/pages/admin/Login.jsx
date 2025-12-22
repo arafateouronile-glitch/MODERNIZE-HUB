@@ -34,7 +34,7 @@ export const Login = () => {
         {/* Logo */}
         <div className="text-center mb-12">
           <h1 className="font-display text-4xl font-bold text-white mb-2">
-            MODERNIZE <span className="text-[#D9FF00]">HUB</span>
+            MODERNIZE <span className="text-[#88A9C3]">HUB</span>
           </h1>
           <p className="font-mono text-sm text-white/50 uppercase tracking-wider">
             Espace Administrateur
@@ -66,7 +66,7 @@ export const Login = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="admin@modernizehub.com"
-                  className="w-full bg-black/50 border border-white/20 pl-12 pr-4 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] transition-colors"
+                  className="w-full bg-black/50 border border-white/20 pl-12 pr-4 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] transition-colors"
                 />
               </div>
             </div>
@@ -83,14 +83,14 @@ export const Login = () => {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="••••••••"
-                  className="w-full bg-black/50 border border-white/20 pl-12 pr-4 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] transition-colors"
+                  className="w-full bg-black/50 border border-white/20 pl-12 pr-4 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] transition-colors"
                 />
               </div>
             </div>
 
             <button
               type="submit"
-              className="w-full py-4 bg-[#D9FF00] text-black font-bold hover:bg-white transition-all"
+              className="w-full py-4 bg-[#88A9C3] text-black font-bold hover:bg-white transition-all"
             >
               Se Connecter
             </button>
@@ -99,7 +99,7 @@ export const Login = () => {
           <div className="mt-6 pt-6 border-t border-white/10">
             <p className="font-mono text-xs text-white/50 text-center">
               Identifiants par défaut :<br/>
-              <span className="text-[#D9FF00]">admin@modernizehub.com</span> / <span className="text-[#D9FF00]">admin123</span>
+              <span className="text-[#88A9C3]">admin@modernizehub.com</span> / <span className="text-[#88A9C3]">admin123</span>
             </p>
           </div>
         </div>
@@ -108,7 +108,7 @@ export const Login = () => {
         <div className="mt-8 text-center">
           <a
             href="/"
-            className="font-mono text-sm text-white/50 hover:text-[#D9FF00] transition-colors"
+            className="font-mono text-sm text-white/50 hover:text-[#88A9C3] transition-colors"
           >
             ← Retour au site
           </a>

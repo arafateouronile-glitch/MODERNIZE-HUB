@@ -126,7 +126,7 @@ const generateAdminEmailTemplate = (lead) => {
   <title>Nouvelle demande de devis</title>
 </head>
 <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px;">
-  <div style="background: linear-gradient(135deg, #D9FF00 0%, #000000 100%); padding: 30px; text-align: center; border-radius: 10px 10px 0 0;">
+  <div style="background: linear-gradient(135deg, #88A9C3 0%, #000000 100%); padding: 30px; text-align: center; border-radius: 10px 10px 0 0;">
     <h1 style="color: #000; margin: 0; font-size: 28px;">🔥 Nouvelle Demande de Devis</h1>
   </div>
   
@@ -141,7 +141,7 @@ const generateAdminEmailTemplate = (lead) => {
       <tr>
         <td style="padding: 10px; background: #f5f5f5; font-weight: bold;">Email :</td>
         <td style="padding: 10px; background: #ffffff;">
-          <a href="mailto:${lead.email}" style="color: #D9FF00; text-decoration: none;">${lead.email || 'Non renseigné'}</a>
+          <a href="mailto:${lead.email}" style="color: #88A9C3; text-decoration: none;">${lead.email || 'Non renseigné'}</a>
         </td>
       </tr>
       ${lead.phone ? `
@@ -155,7 +155,7 @@ const generateAdminEmailTemplate = (lead) => {
       ${lead.budget ? `
       <tr>
         <td style="padding: 10px; background: #f5f5f5; font-weight: bold;">Budget :</td>
-        <td style="padding: 10px; background: #ffffff; color: #D9FF00; font-weight: bold;">${lead.budget}</td>
+        <td style="padding: 10px; background: #ffffff; color: #88A9C3; font-weight: bold;">${lead.budget}</td>
       </tr>
       ` : ''}
     </table>
@@ -163,7 +163,7 @@ const generateAdminEmailTemplate = (lead) => {
     ${lead.message ? `
     <div style="margin: 20px 0;">
       <h3 style="color: #000; margin-bottom: 10px;">Message :</h3>
-      <div style="background: #f9f9f9; padding: 15px; border-left: 4px solid #D9FF00; border-radius: 5px;">
+      <div style="background: #f9f9f9; padding: 15px; border-left: 4px solid #88A9C3; border-radius: 5px;">
         <p style="margin: 0; white-space: pre-wrap;">${lead.message}</p>
       </div>
     </div>
@@ -178,7 +178,7 @@ const generateAdminEmailTemplate = (lead) => {
     
     <div style="margin-top: 30px; text-align: center;">
       <a href="${siteUrl}/admin" 
-         style="display: inline-block; background: #D9FF00; color: #000; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 16px;">
+         style="display: inline-block; background: #88A9C3; color: #000; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 16px;">
         Voir dans l'espace admin
       </a>
     </div>
@@ -227,7 +227,7 @@ const generateConfirmationEmailTemplate = (lead) => {
   <title>Demande reçue</title>
 </head>
 <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px;">
-  <div style="background: linear-gradient(135deg, #D9FF00 0%, #000000 100%); padding: 30px; text-align: center; border-radius: 10px 10px 0 0;">
+  <div style="background: linear-gradient(135deg, #88A9C3 0%, #000000 100%); padding: 30px; text-align: center; border-radius: 10px 10px 0 0;">
     <h1 style="color: #000; margin: 0; font-size: 28px;">✅ Demande Reçue !</h1>
   </div>
   
@@ -236,14 +236,14 @@ const generateConfirmationEmailTemplate = (lead) => {
     
     <p>Merci pour votre demande de devis ! Nous avons bien reçu votre message et nous vous recontacterons dans les <strong>24 heures</strong>.</p>
     
-    <div style="background: #f9f9f9; padding: 20px; border-left: 4px solid #D9FF00; border-radius: 5px; margin: 20px 0;">
+    <div style="background: #f9f9f9; padding: 20px; border-left: 4px solid #88A9C3; border-radius: 5px; margin: 20px 0;">
       <h3 style="margin-top: 0; color: #000;">Récapitulatif de votre demande :</h3>
       <p><strong>Type :</strong> Demande de devis</p>
       ${lead.budget ? `<p><strong>Budget :</strong> ${lead.budget}</p>` : ''}
       <p><strong>Date :</strong> ${new Date().toLocaleString('fr-FR')}</p>
     </div>
     
-    <div style="margin: 30px 0; padding: 20px; background: linear-gradient(135deg, #D9FF00 0%, #000000 100%); border-radius: 5px; color: #000;">
+    <div style="margin: 30px 0; padding: 20px; background: linear-gradient(135deg, #88A9C3 0%, #000000 100%); border-radius: 5px; color: #000;">
       <h3 style="margin-top: 0;">🎯 Prochaines étapes :</h3>
       <ol style="margin: 10px 0; padding-left: 20px;">
         <li>Notre équipe analyse votre demande</li>
@@ -252,10 +252,10 @@ const generateConfirmationEmailTemplate = (lead) => {
       </ol>
     </div>
     
-    <p>En attendant, n'hésitez pas à consulter notre <a href="${siteUrl}/#portfolio" style="color: #D9FF00; text-decoration: none; font-weight: bold;">portfolio</a> pour voir nos réalisations.</p>
+    <p>En attendant, n'hésitez pas à consulter notre <a href="${siteUrl}/#portfolio" style="color: #88A9C3; text-decoration: none; font-weight: bold;">portfolio</a> pour voir nos réalisations.</p>
     
     <p style="margin-top: 30px;">À très bientôt,<br>
-    <strong style="color: #D9FF00;">L'équipe Modernize Hub</strong></p>
+    <strong style="color: #88A9C3;">L'équipe Modernize Hub</strong></p>
   </div>
   
   <div style="text-align: center; margin-top: 20px; color: #999; font-size: 12px;">

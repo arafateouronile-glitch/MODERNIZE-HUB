@@ -29,8 +29,8 @@ const AnimatedSphere = () => {
       {/* Inner Core */}
       <Sphere args={[0.5, 32, 32]} scale={2}>
         <meshStandardMaterial
-          color="#D9FF00"
-          emissive="#D9FF00"
+          color="#88A9C3"
+          emissive="#88A9C3"
           emissiveIntensity={2}
           roughness={0}
         />
@@ -44,7 +44,7 @@ export const HeroScene = () => {
     <div className="absolute inset-0 z-0 h-screen w-full">
       <Canvas camera={{ position: [0, 0, 8] }}>
         <ambientLight intensity={0.5} />
-        <pointLight position={[10, 10, 10]} intensity={1.5} color="#D9FF00" />
+        <pointLight position={[10, 10, 10]} intensity={1.5} color="#88A9C3" />
         <pointLight position={[-10, -10, -10]} intensity={0.5} color="#9D4EDD" />
         
         <AnimatedSphere />

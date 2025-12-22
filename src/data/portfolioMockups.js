@@ -142,9 +142,9 @@ export const portfolioProjects = [
         '/images/portfolio/salle-sport-mobile-1.svg',
       ],
     },
-    description: 'Site énergétique avec couleurs vives et néons électriques. Split-screen avant/après, planning cours interactif et système de booking.',
+    description: 'Site énergétique avec couleurs vives et design moderne. Split-screen avant/après, planning cours interactif et système de booking.',
     features: [
-      'Design énergétique néon',
+      'Design énergétique moderne',
       'Split-screen avant/après',
       'Planning cours interactif',
       'Profils coachs avec vidéos',
@@ -155,7 +155,7 @@ export const portfolioProjects = [
     technologies: ['React', 'Tone.js', 'Canvas API', 'Tailwind CSS'],
     colors: {
       primary: '#0F0F0F',
-      secondary: '#00FF88',
+      secondary: '#88A9C3',
       accent: '#FF0080',
     },
     metrics: [
@@ -312,7 +312,7 @@ export const portfolioProjects = [
     colors: {
       primary: 'Multicolore',
       secondary: 'Gradients dynamiques',
-      accent: '#D9FF00',
+      accent: '#88A9C3',
     },
     metrics: [
       { label: 'Leads générés', value: '+450%' },

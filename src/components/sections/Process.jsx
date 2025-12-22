@@ -2,6 +2,10 @@ import { motion } from 'framer-motion'
 import { MessageCircle, Palette, Code, Rocket, Check, Terminal } from 'lucide-react'
 import { processSteps, guarantees } from '../../data/process'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
+import { lazy, Suspense } from 'react'
+
+// Lazy load 3D scene
+const ProcessScene = lazy(() => import('../3d/FloatingShapes').then(m => ({ default: m.ProcessScene })))
 
 const iconMap = {
   MessageCircle,
@@ -20,6 +24,11 @@ export const Process = () => {
 
   return (
     <section id="process" ref={ref} className="py-32 bg-surfaceHighlight relative overflow-hidden">
+      {/* 3D Background */}
+      <Suspense fallback={null}>
+        <ProcessScene />
+      </Suspense>
+      
       {/* Grid Background */}
       <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-5 pointer-events-none" />
       
@@ -29,7 +38,7 @@ export const Process = () => {
           animate={isVisible ? { opacity: 1, y: 0 } : {}}
           className="mb-20"
         >
-          <span className="font-mono text-[#D9FF00] text-sm tracking-widest uppercase mb-4 block">
+          <span className="font-mono text-[#88A9C3] text-sm tracking-widest uppercase mb-4 block">
             System Protocol
           </span>
           <h2 className="font-display text-5xl md:text-7xl font-bold text-white uppercase mb-8">
@@ -53,14 +62,14 @@ export const Process = () => {
                 transition={{ delay: index * 0.1 }}
                 className="relative pl-12 pb-16 border-l border-white/10 last:pb-0 group"
               >
-                <div className="absolute left-0 top-0 -translate-x-1/2 w-8 h-8 bg-white group-hover:bg-[#D9FF00] transition-colors duration-300 flex items-center justify-center border-4 border-surfaceHighlight">
+                <div className="absolute left-0 top-0 -translate-x-1/2 w-8 h-8 bg-white group-hover:bg-[#88A9C3] transition-colors duration-300 flex items-center justify-center border-4 border-surfaceHighlight">
                   {getIcon(step.icon)}
                 </div>
                 
                 <div className="bg-white/5 border border-white/5 p-6 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
                   <div className="flex justify-between items-start mb-4">
                     <h3 className="font-display text-2xl font-bold text-white uppercase">{step.title}</h3>
-                    <span className="font-mono text-xs text-[#D9FF00] px-2 py-1 bg-[#D9FF00]/10 rounded">
+                    <span className="font-mono text-xs text-[#88A9C3] px-2 py-1 bg-[#88A9C3]/10 rounded">
                       {step.days}
                     </span>
                   </div>
@@ -70,7 +79,7 @@ export const Process = () => {
                   <ul className="space-y-2">
                     {step.deliverables.map((item, idx) => (
                       <li key={idx} className="flex items-center gap-2 font-mono text-xs text-white/60">
-                        <span className="text-[#D9FF00]">{'>'}</span> {item}
+                        <span className="text-[#88A9C3]">{'>'}</span> {item}
                       </li>
                     ))}
                   </ul>
@@ -101,7 +110,7 @@ export const Process = () => {
                     transition={{ delay: 0.5 + idx * 0.1 }}
                     className="flex gap-4"
                    >
-                     <span className="text-[#D9FF00] text-xl">{item.icon}</span>
+                     <span className="text-[#88A9C3] text-xl">{item.icon}</span>
                      <div>
                        <div className="text-white font-bold uppercase mb-1">{item.title}</div>
                        <div className="text-white/50">{item.description}</div>
@@ -110,7 +119,7 @@ export const Process = () => {
                  ))}
                </div>
 
-               <div className="mt-8 pt-4 border-t border-white/10 text-[#D9FF00] animate-pulse">
+               <div className="mt-8 pt-4 border-t border-white/10 text-[#88A9C3] animate-pulse">
                  _ Cursor blinking... Waiting for input
                </div>
             </div>

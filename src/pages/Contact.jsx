@@ -79,7 +79,7 @@ export const Contact = () => {
           >
             Démarrons Votre
             <br />
-            <span className="text-[#D9FF00]">Projet</span>
+            <span className="text-[#88A9C3]">Projet</span>
           </motion.h1>
           
           <motion.p
@@ -131,7 +131,7 @@ export const Contact = () => {
                   animate={{ scale: 1, opacity: 1 }}
                   className="text-center py-12"
                 >
-                  <div className="w-20 h-20 rounded-full bg-[#D9FF00] flex items-center justify-center mx-auto mb-6">
+                  <div className="w-20 h-20 rounded-full bg-[#88A9C3] flex items-center justify-center mx-auto mb-6">
                     <Check className="w-10 h-10 text-black" />
                   </div>
                   <h3 className={`text-3xl font-bold mb-4 ${
@@ -146,7 +146,7 @@ export const Contact = () => {
                   </p>
                   <button
                     onClick={() => setIsSubmitted(false)}
-                    className="px-6 py-3 bg-[#D9FF00] text-black font-bold rounded-full hover:bg-white transition-colors"
+                    className="px-6 py-3 bg-[#88A9C3] text-black font-bold rounded-full hover:bg-white transition-colors"
                   >
                     Envoyer une autre demande
                   </button>
@@ -174,7 +174,7 @@ export const Contact = () => {
                             : theme === 'light'
                             ? 'border-black bg-white'
                             : 'border-white/20 bg-black/50'
-                        } ${theme === 'light' ? 'text-black' : 'text-white'} focus:outline-none focus:border-[#D9FF00]`}
+                        } ${theme === 'light' ? 'text-black' : 'text-white'} focus:outline-none focus:border-[#88A9C3]`}
                         placeholder="Votre nom"
                       />
                       {errors.name && (
@@ -197,7 +197,7 @@ export const Contact = () => {
                             : theme === 'light'
                             ? 'border-black bg-white'
                             : 'border-white/20 bg-black/50'
-                        } ${theme === 'light' ? 'text-black' : 'text-white'} focus:outline-none focus:border-[#D9FF00]`}
+                        } ${theme === 'light' ? 'text-black' : 'text-white'} focus:outline-none focus:border-[#88A9C3]`}
                         placeholder="votre@email.com"
                       />
                       {errors.email && (
@@ -218,7 +218,7 @@ export const Contact = () => {
                           theme === 'light'
                             ? 'border-black bg-white'
                             : 'border-white/20 bg-black/50'
-                        } ${theme === 'light' ? 'text-black' : 'text-white'} focus:outline-none focus:border-[#D9FF00]`}
+                        } ${theme === 'light' ? 'text-black' : 'text-white'} focus:outline-none focus:border-[#88A9C3]`}
                         placeholder="+33 6 12 34 56 78"
                       />
                     </div>
@@ -237,7 +237,7 @@ export const Contact = () => {
                             : theme === 'light'
                             ? 'border-black bg-white'
                             : 'border-white/20 bg-black/50'
-                        } ${theme === 'light' ? 'text-black' : 'text-white'} focus:outline-none focus:border-[#D9FF00]`}
+                        } ${theme === 'light' ? 'text-black' : 'text-white'} focus:outline-none focus:border-[#88A9C3]`}
                       >
                         <option value="">Sélectionner...</option>
                         <option value="Site vitrine">Site vitrine</option>
@@ -265,7 +265,7 @@ export const Contact = () => {
                             : theme === 'light'
                             ? 'border-black bg-white'
                             : 'border-white/20 bg-black/50'
-                        } ${theme === 'light' ? 'text-black' : 'text-white'} focus:outline-none focus:border-[#D9FF00]`}
+                        } ${theme === 'light' ? 'text-black' : 'text-white'} focus:outline-none focus:border-[#88A9C3]`}
                       >
                         <option value="">Sélectionner...</option>
                         <option value="Essentiel (1 990€)">Essentiel (1 990€)</option>
@@ -292,7 +292,7 @@ export const Contact = () => {
                             : theme === 'light'
                             ? 'border-black bg-white'
                             : 'border-white/20 bg-black/50'
-                        } ${theme === 'light' ? 'text-black' : 'text-white'} focus:outline-none focus:border-[#D9FF00]`}
+                        } ${theme === 'light' ? 'text-black' : 'text-white'} focus:outline-none focus:border-[#88A9C3]`}
                       >
                         <option value="">Sélectionner...</option>
                         <option value="Urgent (< 2 semaines)">Urgent (&lt; 2 semaines)</option>
@@ -317,7 +317,7 @@ export const Contact = () => {
                           theme === 'light'
                             ? 'border-black bg-white'
                             : 'border-white/20 bg-black/50'
-                        } ${theme === 'light' ? 'text-black' : 'text-white'} focus:outline-none focus:border-[#D9FF00] resize-none`}
+                        } ${theme === 'light' ? 'text-black' : 'text-white'} focus:outline-none focus:border-[#88A9C3] resize-none`}
                         placeholder="Décrivez votre projet en quelques mots..."
                       />
                     </div>
@@ -325,7 +325,7 @@ export const Contact = () => {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full py-4 px-6 bg-[#D9FF00] text-black font-bold rounded-full hover:bg-white transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                      className="w-full py-4 px-6 bg-[#88A9C3] text-black font-bold rounded-full hover:bg-white transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                     >
                       {isSubmitting ? (
                         <>
@@ -365,8 +365,8 @@ export const Contact = () => {
                 
                 <div className="space-y-4">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-full bg-[#D9FF00]/20 flex items-center justify-center flex-shrink-0">
-                      <Mail className="w-6 h-6 text-[#D9FF00]" />
+                    <div className="w-12 h-12 rounded-full bg-[#88A9C3]/20 flex items-center justify-center flex-shrink-0">
+                      <Mail className="w-6 h-6 text-[#88A9C3]" />
                     </div>
                     <div>
                       <div className={`font-bold mb-1 ${
@@ -376,7 +376,7 @@ export const Contact = () => {
                       </div>
                       <a
                         href="mailto:contact@modernizehub.com"
-                        className={`text-[#D9FF00] hover:underline ${
+                        className={`text-[#88A9C3] hover:underline ${
                           theme === 'light' ? 'text-black' : ''
                         }`}
                       >
@@ -386,8 +386,8 @@ export const Contact = () => {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-full bg-[#D9FF00]/20 flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-6 h-6 text-[#D9FF00]" />
+                    <div className="w-12 h-12 rounded-full bg-[#88A9C3]/20 flex items-center justify-center flex-shrink-0">
+                      <Phone className="w-6 h-6 text-[#88A9C3]" />
                     </div>
                     <div>
                       <div className={`font-bold mb-1 ${
@@ -397,7 +397,7 @@ export const Contact = () => {
                       </div>
                       <a
                         href="tel:+33123456789"
-                        className={`text-[#D9FF00] hover:underline ${
+                        className={`text-[#88A9C3] hover:underline ${
                           theme === 'light' ? 'text-black' : ''
                         }`}
                       >
@@ -407,8 +407,8 @@ export const Contact = () => {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-full bg-[#D9FF00]/20 flex items-center justify-center flex-shrink-0">
-                      <Clock className="w-6 h-6 text-[#D9FF00]" />
+                    <div className="w-12 h-12 rounded-full bg-[#88A9C3]/20 flex items-center justify-center flex-shrink-0">
+                      <Clock className="w-6 h-6 text-[#88A9C3]" />
                     </div>
                     <div>
                       <div className={`font-bold mb-1 ${

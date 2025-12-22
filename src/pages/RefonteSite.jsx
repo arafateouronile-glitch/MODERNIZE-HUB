@@ -45,7 +45,7 @@ export const RefonteSite = () => {
           >
             Refonte de Site Web
             <br />
-            <span className="text-[#D9FF00]">Design Ultra-Premium</span>
+            <span className="text-[#88A9C3]">Design Ultra-Premium</span>
           </motion.h1>
           
           <motion.p
@@ -83,7 +83,7 @@ export const RefonteSite = () => {
                     : 'bg-surface border-white/10 text-white'
                 }`}
               >
-                <div className="text-3xl md:text-4xl font-bold text-[#D9FF00] mb-2">
+                <div className="text-3xl md:text-4xl font-bold text-[#88A9C3] mb-2">
                   {stat.value}
                 </div>
                 <div className="text-sm font-mono uppercase">{stat.label}</div>
@@ -108,7 +108,7 @@ export const RefonteSite = () => {
                   transition={{ delay: index * 0.2 }}
                   className={`relative rounded-3xl p-8 border-2 transition-all duration-300 ${
                     tier.popular
-                      ? 'scale-105 border-[#D9FF00] shadow-2xl'
+                      ? 'scale-105 border-[#88A9C3] shadow-2xl'
                       : theme === 'light'
                       ? 'border-black bg-white'
                       : 'border-white/10 bg-surface'
@@ -124,7 +124,7 @@ export const RefonteSite = () => {
                       animate={{ scale: 1 }}
                       className={`absolute -top-4 left-1/2 -translate-x-1/2 px-6 py-2 rounded-full font-bold text-sm ${
                         tier.popular
-                          ? 'bg-[#D9FF00] text-black'
+                          ? 'bg-[#88A9C3] text-black'
                           : 'bg-white/10 text-white border border-white/20'
                       }`}
                     >
@@ -180,7 +180,7 @@ export const RefonteSite = () => {
                         className="flex items-start gap-3"
                       >
                         <Check className={`w-5 h-5 mt-0.5 flex-shrink-0 ${
-                          tier.popular ? 'text-[#D9FF00]' : 'text-[#8B5CF6]'
+                          tier.popular ? 'text-[#88A9C3]' : 'text-[#8B5CF6]'
                         }`} />
                         <span className={`text-sm ${
                           theme === 'light' ? 'text-gray-700' : 'text-gray-300'
@@ -193,7 +193,7 @@ export const RefonteSite = () => {
 
                   {/* Bonuses */}
                   {tier.bonuses && tier.bonuses.length > 0 && (
-                    <div className="mb-8 p-4 rounded-xl bg-[#D9FF00]/10 border border-[#D9FF00]/30">
+                    <div className="mb-8 p-4 rounded-xl bg-[#88A9C3]/10 border border-[#88A9C3]/30">
                       <div className={`text-xs font-bold mb-2 ${theme === 'light' ? 'text-black' : 'text-white'}`}>
                         BONUS :
                       </div>
@@ -202,7 +202,7 @@ export const RefonteSite = () => {
                           <li key={idx} className={`text-xs flex items-center gap-2 ${
                             theme === 'light' ? 'text-gray-700' : 'text-gray-300'
                           }`}>
-                            <span className="text-[#D9FF00]">✓</span>
+                            <span className="text-[#88A9C3]">✓</span>
                             {bonus}
                           </li>
                         ))}
@@ -217,10 +217,10 @@ export const RefonteSite = () => {
                     onClick={() => handleCTAClick(tier.name)}
                     className={`w-full py-4 px-6 rounded-full font-bold transition-all ${
                       tier.popular
-                        ? 'bg-[#D9FF00] text-black hover:bg-white'
+                        ? 'bg-[#88A9C3] text-black hover:bg-white'
                         : theme === 'light'
                         ? 'bg-black text-white hover:bg-gray-800'
-                        : 'bg-[#D9FF00] text-black hover:bg-white'
+                        : 'bg-[#88A9C3] text-black hover:bg-white'
                     }`}
                   >
                     {tier.cta}
@@ -279,13 +279,13 @@ export const RefonteSite = () => {
                 <p className={`text-sm mb-4 ${theme === 'light' ? 'text-gray-600' : 'text-gray-400'}`}>
                   {service.description}
                 </p>
-                <div className="text-2xl font-bold text-[#D9FF00] mb-4">
+                <div className="text-2xl font-bold text-[#88A9C3] mb-4">
                   {service.price}
                 </div>
                 <ul className="space-y-2 mb-6">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start gap-2">
-                      <Check className="w-4 h-4 mt-1 text-[#D9FF00] flex-shrink-0" />
+                      <Check className="w-4 h-4 mt-1 text-[#88A9C3] flex-shrink-0" />
                       <span className={`text-xs ${
                         theme === 'light' ? 'text-gray-700' : 'text-gray-300'
                       }`}>
@@ -298,7 +298,7 @@ export const RefonteSite = () => {
                   className={`w-full py-2 px-4 rounded-full text-sm font-bold transition-all ${
                     theme === 'light'
                       ? 'bg-black text-white hover:bg-gray-800'
-                      : 'bg-[#D9FF00] text-black hover:bg-white'
+                      : 'bg-[#88A9C3] text-black hover:bg-white'
                   }`}
                 >
                   En savoir plus
@@ -377,7 +377,7 @@ export const RefonteSite = () => {
       </section>
 
       {/* CTA Final Section */}
-      <section className="py-20 px-6 bg-[#D9FF00]">
+      <section className="py-20 px-6 bg-[#88A9C3]">
         <div className="container mx-auto max-w-4xl text-center">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -397,7 +397,7 @@ export const RefonteSite = () => {
           </motion.p>
           <a
             href="/#contact"
-            className="group inline-flex items-center gap-3 px-8 py-4 bg-[#D9FF00] text-black hover:bg-white font-bold rounded-full transition-all duration-300 text-lg"
+            className="group inline-flex items-center gap-3 px-8 py-4 bg-[#88A9C3] text-black hover:bg-white font-bold rounded-full transition-all duration-300 text-lg"
           >
             <span>Demander un Devis</span>
           </a>

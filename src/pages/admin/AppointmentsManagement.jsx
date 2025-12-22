@@ -67,17 +67,17 @@ export const AppointmentsManagement = () => {
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
           <button
             onClick={() => navigate('/admin/dashboard')}
-            className="flex items-center gap-2 text-white hover:text-[#D9FF00] transition-colors"
+            className="flex items-center gap-2 text-white hover:text-[#88A9C3] transition-colors"
           >
             <ArrowLeft className="w-5 h-5" />
             <span className="font-mono text-sm">Retour</span>
           </button>
           <h1 className="font-display text-xl font-bold text-white">
-            Gestion des <span className="text-[#D9FF00]">Rendez-vous</span>
+            Gestion des <span className="text-[#88A9C3]">Rendez-vous</span>
           </h1>
           <button
             onClick={() => setShowForm(!showForm)}
-            className="flex items-center gap-2 px-4 py-2 bg-[#D9FF00] text-black font-bold hover:bg-white transition-all"
+            className="flex items-center gap-2 px-4 py-2 bg-[#88A9C3] text-black font-bold hover:bg-white transition-all"
           >
             <Plus className="w-4 h-4" />
             <span className="font-mono text-sm">Ajouter</span>
@@ -110,7 +110,7 @@ export const AppointmentsManagement = () => {
                   placeholder="Nom"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00]"
+                  className="bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3]"
                 />
                 <input
                   type="email"
@@ -118,39 +118,39 @@ export const AppointmentsManagement = () => {
                   placeholder="Email"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00]"
+                  className="bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3]"
                 />
                 <input
                   type="tel"
                   placeholder="Téléphone"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00]"
+                  className="bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3]"
                 />
                 <input
                   type="date"
                   required
                   value={formData.date}
                   onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                  className="bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00]"
+                  className="bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3]"
                 />
                 <input
                   type="time"
                   required
                   value={formData.time}
                   onChange={(e) => setFormData({ ...formData, time: e.target.value })}
-                  className="bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00]"
+                  className="bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3]"
                 />
               </div>
               <textarea
                 placeholder="Notes (optionnel)"
                 value={formData.notes}
                 onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                className="w-full bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] h-24"
+                className="w-full bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] h-24"
               />
               <button
                 type="submit"
-                className="px-6 py-3 bg-[#D9FF00] text-black font-bold hover:bg-white transition-all"
+                className="px-6 py-3 bg-[#88A9C3] text-black font-bold hover:bg-white transition-all"
               >
                 Créer le Rendez-vous
               </button>
@@ -166,7 +166,7 @@ export const AppointmentsManagement = () => {
               onClick={() => setFilter(f)}
               className={`px-6 py-3 font-mono text-sm uppercase transition-all ${
                 filter === f
-                  ? 'bg-[#D9FF00] text-black'
+                  ? 'bg-[#88A9C3] text-black'
                   : 'border border-white/10 text-white hover:bg-white/5'
               }`}
             >
@@ -191,7 +191,7 @@ export const AppointmentsManagement = () => {
                   key={apt.id}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className={`border ${isPast ? 'border-white/5' : 'border-[#D9FF00]/30'} bg-white/5 p-6`}
+                  className={`border ${isPast ? 'border-white/5' : 'border-[#88A9C3]/30'} bg-white/5 p-6`}
                 >
                   <div className="flex items-start justify-between mb-4">
                     <div>
@@ -221,7 +221,7 @@ export const AppointmentsManagement = () => {
 
                   <div className="flex items-center gap-6 mb-4">
                     <div className="flex items-center gap-2 text-white/80">
-                      <Calendar className="w-5 h-5 text-[#D9FF00]" />
+                      <Calendar className="w-5 h-5 text-[#88A9C3]" />
                       <span className="font-mono">
                         {new Date(apt.date).toLocaleDateString('fr-FR', { 
                           weekday: 'long',
@@ -232,7 +232,7 @@ export const AppointmentsManagement = () => {
                       </span>
                     </div>
                     <div className="flex items-center gap-2 text-white/80">
-                      <Clock className="w-5 h-5 text-[#D9FF00]" />
+                      <Clock className="w-5 h-5 text-[#88A9C3]" />
                       <span className="font-mono">{apt.time}</span>
                     </div>
                   </div>

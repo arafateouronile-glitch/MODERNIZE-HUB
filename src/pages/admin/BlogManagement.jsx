@@ -116,13 +116,13 @@ export const BlogManagement = () => {
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
           <button
             onClick={() => navigate('/admin/dashboard')}
-            className="flex items-center gap-2 text-white hover:text-[#D9FF00] transition-colors"
+            className="flex items-center gap-2 text-white hover:text-[#88A9C3] transition-colors"
           >
             <ArrowLeft className="w-5 h-5" />
             <span className="font-mono text-sm">Retour</span>
           </button>
           <h1 className="font-display text-xl font-bold text-white">
-            Gestion du <span className="text-[#D9FF00]">Blog</span>
+            Gestion du <span className="text-[#88A9C3]">Blog</span>
           </h1>
           <button
             onClick={() => {
@@ -138,7 +138,7 @@ export const BlogManagement = () => {
                 featured: false,
               })
             }}
-            className="flex items-center gap-2 px-4 py-2 bg-[#D9FF00] text-black font-bold hover:bg-white transition-all"
+            className="flex items-center gap-2 px-4 py-2 bg-[#88A9C3] text-black font-bold hover:bg-white transition-all"
           >
             <Plus className="w-4 h-4" />
             <span className="font-mono text-sm">Nouvel Article</span>
@@ -175,20 +175,20 @@ export const BlogManagement = () => {
                 placeholder="Titre de l'article"
                 value={formData.title}
                 onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-                className="w-full bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] text-xl font-bold"
+                className="w-full bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] text-xl font-bold"
               />
               <textarea
                 required
                 placeholder="Extrait / Description"
                 value={formData.excerpt}
                 onChange={(e) => setFormData({ ...formData, excerpt: e.target.value })}
-                className="w-full bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] h-24"
+                className="w-full bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] h-24"
               />
               <div className="grid md:grid-cols-4 gap-4">
                 <select
                   value={formData.category}
                   onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                  className="bg-black/50 border border-white/20 px-4 py-3 text-white focus:outline-none focus:border-[#D9FF00]"
+                  className="bg-black/50 border border-white/20 px-4 py-3 text-white focus:outline-none focus:border-[#88A9C3]"
                 >
                   <option value="Conversion">Conversion</option>
                   <option value="Marketing">Marketing</option>
@@ -202,20 +202,20 @@ export const BlogManagement = () => {
                   placeholder="Temps de lecture (ex: 5 min)"
                   value={formData.readTime}
                   onChange={(e) => setFormData({ ...formData, readTime: e.target.value })}
-                  className="bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00]"
+                  className="bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3]"
                 />
                 <input
                   type="date"
                   value={formData.date}
                   onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                  className="bg-black/50 border border-white/20 px-4 py-3 text-white focus:outline-none focus:border-[#D9FF00]"
+                  className="bg-black/50 border border-white/20 px-4 py-3 text-white focus:outline-none focus:border-[#88A9C3]"
                 />
                 <label className="flex items-center gap-3 border border-white/20 bg-black/50 px-4 py-3 cursor-pointer">
                   <input
                     type="checkbox"
                     checked={formData.featured}
                     onChange={(e) => setFormData({ ...formData, featured: e.target.checked })}
-                    className="w-5 h-5 accent-[#D9FF00]"
+                    className="w-5 h-5 accent-[#88A9C3]"
                   />
                   <span className="font-mono text-sm text-white">Article mis en avant</span>
                 </label>
@@ -225,11 +225,11 @@ export const BlogManagement = () => {
                 placeholder="Slug URL (auto-généré si vide)"
                 value={formData.slug}
                 onChange={(e) => setFormData({ ...formData, slug: e.target.value })}
-                className="w-full bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] font-mono text-sm"
+                className="w-full bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] font-mono text-sm"
               />
               <button
                 type="submit"
-                className="px-6 py-3 bg-[#D9FF00] text-black font-bold hover:bg-white transition-all flex items-center gap-2"
+                className="px-6 py-3 bg-[#88A9C3] text-black font-bold hover:bg-white transition-all flex items-center gap-2"
               >
                 <Save className="w-4 h-4" />
                 {editingPost ? 'Enregistrer les Modifications' : 'Créer l\'Article'}
@@ -259,7 +259,7 @@ export const BlogManagement = () => {
                         {post.title}
                       </h3>
                       {post.featured && (
-                        <span className="px-2 py-1 bg-[#D9FF00]/20 text-[#D9FF00] font-mono text-xs uppercase">
+                        <span className="px-2 py-1 bg-[#88A9C3]/20 text-[#88A9C3] font-mono text-xs uppercase">
                           Featured
                         </span>
                       )}
@@ -276,7 +276,7 @@ export const BlogManagement = () => {
                   <div className="flex items-center gap-2">
                     <button
                       onClick={() => handleEdit(post)}
-                      className="p-2 border border-white/10 hover:border-[#D9FF00] hover:text-[#D9FF00] transition-all"
+                      className="p-2 border border-white/10 hover:border-[#88A9C3] hover:text-[#88A9C3] transition-all"
                     >
                       <Edit2 className="w-4 h-4" />
                     </button>

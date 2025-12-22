@@ -20,13 +20,13 @@ export const FitnessLanding = () => {
       
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#111111] to-[#1F1F1F] text-white px-6 pt-24 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-[#00FF88] opacity-5 -skew-x-12" />
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-[#88A9C3] opacity-5 -skew-x-12" />
         
         <div className="max-w-5xl mx-auto text-center z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="inline-flex items-center gap-2 bg-[#00FF88]/20 border border-[#00FF88] rounded-full px-4 py-2 mb-6"
+            className="inline-flex items-center gap-2 bg-[#88A9C3]/20 border border-[#88A9C3] rounded-full px-4 py-2 mb-6"
           >
             <Dumbbell className="w-4 h-4" />
             <span className="text-sm font-bold uppercase tracking-wider">Spécial Fitness & Coaching</span>
@@ -34,7 +34,7 @@ export const FitnessLanding = () => {
           
           <h1 className="text-5xl md:text-8xl font-black mb-6 leading-tight uppercase">
             Explosez vos
-            <span className="block text-[#00FF88] mt-2 italic">inscriptions</span>
+            <span className="block text-[#88A9C3] mt-2 italic">inscriptions</span>
           </h1>
           
           <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8 font-bold">
@@ -45,13 +45,13 @@ export const FitnessLanding = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
             <button 
               onClick={() => navigate('/demo/coach-sportif')}
-              className="bg-[#00FF88] text-black px-8 py-4 rounded-lg font-black text-lg hover:bg-white transition-all shadow-[4px_4px_0px_white]"
+              className="bg-[#88A9C3] text-black px-8 py-4 rounded-lg font-black text-lg hover:bg-white transition-all shadow-[4px_4px_0px_white]"
             >
               VOIR LA DÉMO FITNESS
             </button>
             <button 
               onClick={() => navigate('/contact')}
-              className="border-2 border-[#00FF88] text-[#00FF88] px-8 py-4 rounded-lg font-black hover:bg-[#00FF88] hover:text-black transition-all uppercase"
+              className="border-2 border-[#88A9C3] text-[#88A9C3] px-8 py-4 rounded-lg font-black hover:bg-[#88A9C3] hover:text-black transition-all uppercase"
             >
               JE FONCE
             </button>
@@ -69,9 +69,9 @@ export const FitnessLanding = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 + i * 0.1 }}
-                className="text-center border border-[#00FF88]/20 p-6 rounded-lg bg-[#1F1F1F]"
+                className="text-center border border-[#88A9C3]/20 p-6 rounded-lg bg-[#1F1F1F]"
               >
-                <div className="text-4xl font-black text-[#00FF88] mb-2">{item.stat}</div>
+                <div className="text-4xl font-black text-[#88A9C3] mb-2">{item.stat}</div>
                 <div className="text-sm text-gray-400 uppercase tracking-widest font-bold">{item.label}</div>
               </motion.div>
             ))}
@@ -119,7 +119,7 @@ export const FitnessLanding = () => {
               {
                 icon: Dumbbell,
                 title: 'Design énergique',
-                desc: 'Couleurs néon, animations dynamiques, style brutaliste. L\'énergie de votre salle.',
+                desc: 'Couleurs vibrantes, animations dynamiques, style brutaliste. L\'énergie de votre salle.',
               },
             ].map((feature, i) => (
               <motion.div 
@@ -130,7 +130,7 @@ export const FitnessLanding = () => {
                 transition={{ delay: i * 0.1 }}
                 className="text-center p-8 rounded-2xl border-4 border-black hover:bg-black hover:text-white transition-all group"
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-[#00FF88] rounded-full mb-6 group-hover:bg-white transition-all">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-[#88A9C3] rounded-full mb-6 group-hover:bg-white transition-all">
                   <feature.icon className="w-8 h-8 text-black" />
                 </div>
                 <h3 className="text-2xl font-black mb-4 uppercase">{feature.title}</h3>
@@ -148,12 +148,12 @@ export const FitnessLanding = () => {
             Notre réalisation fitness
           </h2>
           <p className="text-gray-300 mb-12 max-w-2xl mx-auto font-bold">
-            Design brutaliste néon, animations énergiques, conversion maximale
+            Design brutaliste moderne, animations énergiques, conversion maximale
           </p>
           
           <button 
             onClick={() => navigate('/demo/coach-sportif')}
-            className="inline-flex items-center gap-2 bg-[#00FF88] text-black px-8 py-4 rounded-lg font-black hover:bg-white transition-all shadow-[4px_4px_0px_white] uppercase"
+            className="inline-flex items-center gap-2 bg-[#88A9C3] text-black px-8 py-4 rounded-lg font-black hover:bg-white transition-all shadow-[4px_4px_0px_white] uppercase"
           >
             VOIR LA DÉMO
             <ArrowRight className="w-5 h-5" />
@@ -170,10 +170,10 @@ export const FitnessLanding = () => {
           
           <div className="bg-gradient-to-br from-[#111111] to-[#1F1F1F] text-white p-12 rounded-3xl shadow-2xl border-4 border-black">
             <div className="flex items-center gap-4 mb-6">
-              <Dumbbell className="w-12 h-12 text-[#00FF88]" />
+              <Dumbbell className="w-12 h-12 text-[#88A9C3]" />
               <div>
                 <h3 className="text-3xl font-black uppercase">Formule Fitness Pro</h3>
-                <p className="text-[#00FF88] font-bold">Tout pour performer</p>
+                <p className="text-[#88A9C3] font-bold">Tout pour performer</p>
               </div>
             </div>
             
@@ -184,7 +184,7 @@ export const FitnessLanding = () => {
             
             <ul className="space-y-4 mb-8">
               {[
-                'Design énergique néon & brutaliste',
+                'Design énergique moderne & brutaliste',
                 'Planning cours interactif avec réservation',
                 'Galerie transformations avant/après',
                 'Profils coachs avec vidéos',
@@ -196,7 +196,7 @@ export const FitnessLanding = () => {
                 'Formation 2h + Support 1 mois',
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <div className="w-6 h-6 bg-[#00FF88] rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                  <div className="w-6 h-6 bg-[#88A9C3] rounded-full flex items-center justify-center shrink-0 mt-0.5">
                     <Check className="w-4 h-4 text-black" />
                   </div>
                   <span className="font-bold">{item}</span>
@@ -206,7 +206,7 @@ export const FitnessLanding = () => {
             
             <button 
               onClick={() => navigate('/contact')}
-              className="w-full bg-white text-black py-4 rounded-lg font-black text-lg hover:bg-[#00FF88] transition-all uppercase shadow-[4px_4px_0px_#00FF88]"
+              className="w-full bg-white text-black py-4 rounded-lg font-black text-lg hover:bg-[#88A9C3] transition-all uppercase shadow-[4px_4px_0px_#88A9C3]"
             >
               JE FONCE
             </button>
@@ -215,7 +215,7 @@ export const FitnessLanding = () => {
       </section>
       
       {/* CTA Final */}
-      <section className="py-24 px-6 bg-[#00FF88] text-black text-center">
+      <section className="py-24 px-6 bg-[#88A9C3] text-black text-center">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-black mb-6 uppercase">
             Prêt à transformer ton business ?

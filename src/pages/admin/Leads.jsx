@@ -67,7 +67,7 @@ export const AdminLeads = () => {
             <p className="text-white/60">
               {leads.length} demande{leads.length > 1 ? 's' : ''} au total
               {unreadCount > 0 && (
-                <span className="ml-2 text-[#D9FF00]">• {unreadCount} non lue{unreadCount > 1 ? 's' : ''}</span>
+                <span className="ml-2 text-[#88A9C3]">• {unreadCount} non lue{unreadCount > 1 ? 's' : ''}</span>
               )}
             </p>
           </div>
@@ -80,7 +80,7 @@ export const AdminLeads = () => {
                 onClick={() => setFilter(f)}
                 className={`px-4 py-2 border font-mono text-xs uppercase transition-all ${
                   filter === f
-                    ? 'border-[#D9FF00] bg-[#D9FF00]/10 text-[#D9FF00]'
+                    ? 'border-[#88A9C3] bg-[#88A9C3]/10 text-[#88A9C3]'
                     : 'border-white/20 text-white/60 hover:border-white/40'
                 }`}
               >
@@ -110,9 +110,9 @@ export const AdminLeads = () => {
                   }}
                   className={`border p-4 cursor-pointer transition-all ${
                     selectedLead?.id === lead.id
-                      ? 'border-[#D9FF00] bg-[#D9FF00]/10'
+                      ? 'border-[#88A9C3] bg-[#88A9C3]/10'
                       : 'border-white/10 bg-white/5 hover:border-white/30'
-                  } ${!lead.read ? 'border-l-4 border-l-[#D9FF00]' : ''}`}
+                  } ${!lead.read ? 'border-l-4 border-l-[#88A9C3]' : ''}`}
                 >
                   <div className="flex items-start justify-between mb-2">
                     <div>
@@ -130,7 +130,7 @@ export const AdminLeads = () => {
                       </p>
                     </div>
                     {!lead.read && (
-                      <div className="w-3 h-3 rounded-full bg-[#D9FF00] flex-shrink-0" />
+                      <div className="w-3 h-3 rounded-full bg-[#88A9C3] flex-shrink-0" />
                     )}
                   </div>
                   <p className="text-sm text-white/70 line-clamp-2">
@@ -181,7 +181,7 @@ export const AdminLeads = () => {
                       </div>
                       <a
                         href={`mailto:${selectedLead.email}`}
-                        className="text-[#D9FF00] hover:underline"
+                        className="text-[#88A9C3] hover:underline"
                       >
                         {selectedLead.email}
                       </a>
@@ -195,7 +195,7 @@ export const AdminLeads = () => {
                       </div>
                       <a
                         href={`tel:${selectedLead.phone}`}
-                        className="text-[#D9FF00] hover:underline"
+                        className="text-[#88A9C3] hover:underline"
                       >
                         {selectedLead.phone}
                       </a>
@@ -208,7 +208,7 @@ export const AdminLeads = () => {
                         href={selectedLead.siteUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[#D9FF00] hover:underline"
+                        className="text-[#88A9C3] hover:underline"
                       >
                         {selectedLead.siteUrl}
                       </a>
@@ -241,7 +241,7 @@ export const AdminLeads = () => {
                   {selectedLead.email && (
                     <a
                       href={`mailto:${selectedLead.email}?subject=Re: Votre demande de devis - Modernize Hub`}
-                      className="px-6 py-3 bg-[#D9FF00] text-black font-bold hover:bg-white transition-colors flex items-center gap-2"
+                      className="px-6 py-3 bg-[#88A9C3] text-black font-bold hover:bg-white transition-colors flex items-center gap-2"
                     >
                       <Mail className="w-4 h-4" />
                       Répondre par Email

@@ -61,12 +61,12 @@ export const PricingJustification = () => {
         {/* Header */}
         <Reveal>
           <div className="max-w-4xl mx-auto text-center mb-20">
-            <span className="font-mono text-[#D9FF00] text-sm tracking-widest uppercase mb-6 block">
+            <span className="font-mono text-[#88A9C3] text-sm tracking-widest uppercase mb-6 block">
               Transparence Totale
             </span>
             <h2 className="font-display text-5xl md:text-7xl font-bold text-white uppercase leading-[0.9] mb-8">
               POURQUOI<br/>
-              <span className="text-[#D9FF00]">CES PRIX ?</span>
+              <span className="text-[#88A9C3]">CES PRIX ?</span>
             </h2>
             <p className="text-xl text-white/80 font-light">
               Comparez. Calculez. Décidez en connaissance de cause.
@@ -80,11 +80,11 @@ export const PricingJustification = () => {
             <Reveal key={index} delay={index * 0.1}>
               <div className={`border-2 p-8 h-full flex flex-col ${
                 index === 2 
-                  ? 'border-[#D9FF00] bg-[#D9FF00]/5 relative' 
+                  ? 'border-[#88A9C3] bg-[#88A9C3]/5 relative' 
                   : 'border-white/10 bg-white/5'
               }`}>
                 {index === 2 && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#D9FF00] text-black px-6 py-2 font-mono text-xs font-bold uppercase">
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#88A9C3] text-black px-6 py-2 font-mono text-xs font-bold uppercase">
                     Notre Offre
                   </div>
                 )}
@@ -93,7 +93,7 @@ export const PricingJustification = () => {
                   <h3 className="font-display text-2xl font-bold text-white mb-2">
                     {option.label}
                   </h3>
-                  <div className="font-display text-4xl font-bold text-[#D9FF00]">
+                  <div className="font-display text-4xl font-bold text-[#88A9C3]">
                     {option.price}
                   </div>
                 </div>
@@ -107,15 +107,15 @@ export const PricingJustification = () => {
                   ))}
                   {option.benefits && option.benefits.map((benefit, idx) => (
                     <div key={idx} className="flex items-start gap-2 text-sm text-white">
-                      <Check className="w-4 h-4 text-[#D9FF00] flex-shrink-0 mt-0.5" />
+                      <Check className="w-4 h-4 text-[#88A9C3] flex-shrink-0 mt-0.5" />
                       <span>{benefit}</span>
                     </div>
                   ))}
                 </div>
 
-                <div className={`pt-4 border-t ${index === 2 ? 'border-[#D9FF00]/30' : 'border-white/10'}`}>
+                <div className={`pt-4 border-t ${index === 2 ? 'border-[#88A9C3]/30' : 'border-white/10'}`}>
                   <div className="font-mono text-xs uppercase text-white/50 mb-1">Résultat</div>
-                  <div className={`font-bold ${index === 2 ? 'text-[#D9FF00]' : 'text-white/60'}`}>
+                  <div className={`font-bold ${index === 2 ? 'text-[#88A9C3]' : 'text-white/60'}`}>
                     {option.result}
                   </div>
                 </div>
@@ -128,7 +128,7 @@ export const PricingJustification = () => {
         <Reveal delay={0.4}>
           <div className="max-w-4xl mx-auto border border-white/10 bg-white/5 p-8 md:p-12">
             <h3 className="font-display text-3xl font-bold text-white mb-8 text-center">
-              Détail de la Valeur <span className="text-[#D9FF00]">(Formule Transformation)</span>
+              Détail de la Valeur <span className="text-[#88A9C3]">(Formule Transformation)</span>
             </h3>
 
             <div className="space-y-4 mb-8">
@@ -139,7 +139,7 @@ export const PricingJustification = () => {
                     <span className="font-mono text-sm text-white/40 line-through">
                       Marché: {item.market}
                     </span>
-                    <span className="font-mono text-sm font-bold text-[#D9FF00] min-w-[80px] text-right">
+                    <span className="font-mono text-sm font-bold text-[#88A9C3] min-w-[80px] text-right">
                       {item.us}
                     </span>
                   </div>
@@ -147,7 +147,7 @@ export const PricingJustification = () => {
               ))}
             </div>
 
-            <div className="flex items-center justify-between pt-6 border-t-2 border-[#D9FF00]/30">
+            <div className="flex items-center justify-between pt-6 border-t-2 border-[#88A9C3]/30">
               <div>
                 <div className="text-white/50 text-sm mb-1">Valeur marché total</div>
                 <div className="font-display text-3xl font-bold text-white line-through decoration-red-500">
@@ -155,8 +155,8 @@ export const PricingJustification = () => {
                 </div>
               </div>
               <div className="text-right">
-                <div className="text-[#D9FF00] text-sm font-mono mb-1">Notre Prix</div>
-                <div className="font-display text-4xl font-bold text-[#D9FF00]">
+                <div className="text-[#88A9C3] text-sm font-mono mb-1">Notre Prix</div>
+                <div className="font-display text-4xl font-bold text-[#88A9C3]">
                   3 490€
                 </div>
                 <div className="text-white/50 text-xs mt-1">
@@ -166,19 +166,19 @@ export const PricingJustification = () => {
             </div>
 
             {/* ROI Calculation */}
-            <div className="mt-12 p-6 bg-[#D9FF00]/10 border border-[#D9FF00]/30">
+            <div className="mt-12 p-6 bg-[#88A9C3]/10 border border-[#88A9C3]/30">
               <div className="flex items-start gap-4">
-                <TrendingUp className="w-8 h-8 text-[#D9FF00] flex-shrink-0" />
+                <TrendingUp className="w-8 h-8 text-[#88A9C3] flex-shrink-0" />
                 <div>
                   <h4 className="font-bold text-white mb-2">Calcul ROI Réel</h4>
                   <p className="text-sm text-white/80 mb-3">
                     Site actuel : ~10 visiteurs/jour × 0% conversion = <span className="font-bold text-red-500">0 lead</span>
                   </p>
                   <p className="text-sm text-white/80 mb-3">
-                    Nouveau site : ~10 visiteurs/jour × 8% conversion = <span className="font-bold text-[#D9FF00]">~24 leads/mois</span>
+                    Nouveau site : ~10 visiteurs/jour × 8% conversion = <span className="font-bold text-[#88A9C3]">~24 leads/mois</span>
                   </p>
                   <p className="text-sm text-white font-bold">
-                    Si 1 lead = 500€ de CA → <span className="text-[#D9FF00]">12 000€/mois</span> 
+                    Si 1 lead = 500€ de CA → <span className="text-[#88A9C3]">12 000€/mois</span> 
                     <br/>
                     <span className="text-xs font-normal text-white/60">Investissement récupéré en 8 jours</span>
                   </p>
@@ -192,7 +192,7 @@ export const PricingJustification = () => {
                 onClick={() => {
                   window.location.href = '/nos-services'
                 }}
-                className="inline-flex items-center gap-3 px-8 py-4 bg-[#D9FF00] text-black font-bold hover:bg-white transition-all"
+                className="inline-flex items-center gap-3 px-8 py-4 bg-[#88A9C3] text-black font-bold hover:bg-white transition-all"
               >
                 <Zap className="w-5 h-5" />
                 <span>Je Veux Ce ROI →</span>

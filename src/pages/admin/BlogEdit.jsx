@@ -107,7 +107,7 @@ export const AdminBlogEdit = () => {
               required
               value={formData.title}
               onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-              className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] transition-colors font-display text-2xl"
+              className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] transition-colors font-display text-2xl"
               placeholder="Titre de l'article"
             />
           </div>
@@ -121,7 +121,7 @@ export const AdminBlogEdit = () => {
               <select
                 value={formData.category}
                 onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white focus:outline-none focus:border-[#D9FF00] transition-colors"
+                className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white focus:outline-none focus:border-[#88A9C3] transition-colors"
               >
                 {categories.map(cat => (
                   <option key={cat} value={cat}>{cat}</option>
@@ -137,7 +137,7 @@ export const AdminBlogEdit = () => {
                 type="text"
                 value={formData.readTime}
                 onChange={(e) => setFormData({ ...formData, readTime: e.target.value })}
-                className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] transition-colors"
+                className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] transition-colors"
                 placeholder="5 min"
               />
             </div>
@@ -153,7 +153,7 @@ export const AdminBlogEdit = () => {
               value={formData.excerpt}
               onChange={(e) => setFormData({ ...formData, excerpt: e.target.value })}
               rows={3}
-              className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] transition-colors resize-none"
+              className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] transition-colors resize-none"
               placeholder="Résumé court de l'article (2-3 lignes)"
             />
           </div>
@@ -167,7 +167,7 @@ export const AdminBlogEdit = () => {
               type="text"
               value={formData.slug || generateSlug(formData.title)}
               onChange={(e) => setFormData({ ...formData, slug: e.target.value })}
-              className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] transition-colors font-mono text-sm"
+              className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] transition-colors font-mono text-sm"
               placeholder="url-de-l-article"
             />
           </div>
@@ -179,7 +179,7 @@ export const AdminBlogEdit = () => {
               id="featured"
               checked={formData.featured}
               onChange={(e) => setFormData({ ...formData, featured: e.target.checked })}
-              className="w-5 h-5 accent-[#D9FF00]"
+              className="w-5 h-5 accent-[#88A9C3]"
             />
             <label htmlFor="featured" className="font-mono text-sm text-white/70">
               Article mis en avant (Featured)
@@ -195,7 +195,7 @@ export const AdminBlogEdit = () => {
               value={formData.content}
               onChange={(e) => setFormData({ ...formData, content: e.target.value })}
               rows={15}
-              className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] transition-colors resize-none font-mono text-sm"
+              className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] transition-colors resize-none font-mono text-sm"
               placeholder="Contenu complet de l'article (markdown ou HTML)"
             />
           </div>
@@ -204,7 +204,7 @@ export const AdminBlogEdit = () => {
           <div className="flex gap-4 pt-6 border-t border-white/10">
             <button
               type="submit"
-              className="flex items-center gap-2 px-8 py-4 bg-[#D9FF00] text-black font-bold hover:bg-white transition-colors"
+              className="flex items-center gap-2 px-8 py-4 bg-[#88A9C3] text-black font-bold hover:bg-white transition-colors"
             >
               <Save className="w-5 h-5" />
               {isNew ? 'Publier l\'Article' : 'Enregistrer les Modifications'}

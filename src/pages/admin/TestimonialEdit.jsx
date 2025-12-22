@@ -80,7 +80,7 @@ export const AdminTestimonialEdit = () => {
         <form onSubmit={handleSubmit} className="space-y-6">
           {/* Avatar Preview */}
           <div className="flex items-center gap-6">
-            <div className="w-24 h-24 rounded-full border-2 border-[#D9FF00]/30 overflow-hidden bg-white/5">
+            <div className="w-24 h-24 rounded-full border-2 border-[#88A9C3]/30 overflow-hidden bg-white/5">
               {formData.avatar ? (
                 <img src={formData.avatar} alt="Avatar" className="w-full h-full object-cover" />
               ) : (
@@ -97,7 +97,7 @@ export const AdminTestimonialEdit = () => {
                 type="text"
                 value={formData.avatar}
                 onChange={(e) => setFormData({ ...formData, avatar: e.target.value })}
-                className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] transition-colors font-mono text-sm"
+                className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] transition-colors font-mono text-sm"
                 placeholder="/images/testimonials/nom.svg"
               />
             </div>
@@ -114,7 +114,7 @@ export const AdminTestimonialEdit = () => {
                 required
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] transition-colors"
+                className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] transition-colors"
                 placeholder="Pierre"
               />
             </div>
@@ -128,7 +128,7 @@ export const AdminTestimonialEdit = () => {
                 required
                 value={formData.role}
                 onChange={(e) => setFormData({ ...formData, role: e.target.value })}
-                className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] transition-colors"
+                className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] transition-colors"
                 placeholder="Avocat"
               />
             </div>
@@ -147,7 +147,7 @@ export const AdminTestimonialEdit = () => {
                 required
                 value={formData.rating}
                 onChange={(e) => setFormData({ ...formData, rating: e.target.value })}
-                className="w-20 bg-black/50 border border-white/20 px-6 py-4 text-white focus:outline-none focus:border-[#D9FF00] transition-colors"
+                className="w-20 bg-black/50 border border-white/20 px-6 py-4 text-white focus:outline-none focus:border-[#88A9C3] transition-colors"
               />
               <div className="flex gap-1">
                 {[...Array(5)].map((_, i) => (
@@ -155,7 +155,7 @@ export const AdminTestimonialEdit = () => {
                     key={i}
                     className={`w-6 h-6 cursor-pointer transition-colors ${
                       i < formData.rating
-                        ? 'text-[#D9FF00] fill-current'
+                        ? 'text-[#88A9C3] fill-current'
                         : 'text-white/20'
                     }`}
                     onClick={() => setFormData({ ...formData, rating: i + 1 })}
@@ -175,7 +175,7 @@ export const AdminTestimonialEdit = () => {
               value={formData.text}
               onChange={(e) => setFormData({ ...formData, text: e.target.value })}
               rows={5}
-              className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] transition-colors resize-none"
+              className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] transition-colors resize-none"
               placeholder="Le témoignage complet du client..."
             />
           </div>
@@ -189,7 +189,7 @@ export const AdminTestimonialEdit = () => {
               type="text"
               value={formData.results}
               onChange={(e) => setFormData({ ...formData, results: e.target.value })}
-              className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] transition-colors"
+              className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] transition-colors"
               placeholder="+230% demandes de rendez-vous"
             />
           </div>
@@ -198,7 +198,7 @@ export const AdminTestimonialEdit = () => {
           <div className="flex gap-4 pt-6 border-t border-white/10">
             <button
               type="submit"
-              className="flex items-center gap-2 px-8 py-4 bg-[#D9FF00] text-black font-bold hover:bg-white transition-colors"
+              className="flex items-center gap-2 px-8 py-4 bg-[#88A9C3] text-black font-bold hover:bg-white transition-colors"
             >
               <Save className="w-5 h-5" />
               {isNew ? 'Ajouter l\'Avis' : 'Enregistrer les Modifications'}

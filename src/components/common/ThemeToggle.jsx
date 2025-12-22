@@ -18,7 +18,7 @@ export const ThemeToggle = () => {
           : 'bg-white/5 border border-white/10 hover:bg-white/10'
       }`}
       style={theme === 'light' ? {
-        backgroundColor: '#D9FF00'
+        backgroundColor: 'transparent'
       } : {}}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
@@ -34,7 +34,7 @@ export const ThemeToggle = () => {
             transition={{ duration: 0.2 }}
           >
             <Moon className={`w-5 h-5 ${
-              theme === 'light' ? 'text-black' : 'text-[#D9FF00]'
+              theme === 'light' ? 'text-black' : 'text-[#88A9C3]'
             }`} />
           </motion.div>
         ) : (
@@ -45,7 +45,7 @@ export const ThemeToggle = () => {
             exit={{ rotate: -90, opacity: 0 }}
             transition={{ duration: 0.2 }}
           >
-            <Sun className="w-5 h-5 text-[#D9FF00]" />
+            <Sun className="w-5 h-5 text-[#88A9C3]" />
           </motion.div>
         )}
       </AnimatePresence>

@@ -4,19 +4,28 @@ import { PricingComparison } from '../pricing/PricingComparison'
 import { pricingPlans } from '../../data/pricing'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 import { Reveal } from '../animations/Reveal'
+import { lazy, Suspense } from 'react'
+
+// Lazy load 3D scene
+const PricingScene = lazy(() => import('../3d/PricingScene'))
 
 export const Pricing = () => {
   const [ref, isVisible] = useScrollAnimation()
 
   return (
-    <section id="refonte" ref={ref} className="py-32 bg-background relative z-10 border-t border-white/5">
-      <div className="container mx-auto px-6">
+    <section id="refonte" ref={ref} className="py-32 bg-background relative z-10 border-t border-white/5 overflow-hidden">
+      {/* 3D Background */}
+      <Suspense fallback={null}>
+        <PricingScene />
+      </Suspense>
+      
+      <div className="container mx-auto px-6 relative z-10">
         
         <div className="flex flex-col items-center mb-20">
           <Reveal>
             <h2 className="font-display text-5xl md:text-8xl font-bold text-white uppercase leading-[0.9] mb-8 text-center">
               COMBIEN COÛTE<br/>
-              <span className="text-[#D9FF00]">VOTRE INACTION ?</span>
+              <span className="text-[#88A9C3]">VOTRE INACTION ?</span>
             </h2>
           </Reveal>
 

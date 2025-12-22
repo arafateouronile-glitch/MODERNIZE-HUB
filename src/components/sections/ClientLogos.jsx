@@ -19,7 +19,7 @@ export const ClientLogos = () => {
       <div className="container mx-auto px-6">
         <Reveal>
           <div className="text-center mb-12">
-            <span className="font-mono text-[#D9FF00] text-xs tracking-widest uppercase mb-4 block">
+            <span className="font-mono text-[#88A9C3] text-xs tracking-widest uppercase mb-4 block">
               Ils Nous Font Confiance
             </span>
             <h3 className="font-display text-3xl md:text-5xl font-bold text-white uppercase">
@@ -49,9 +49,9 @@ export const ClientLogos = () => {
               {[...clientLogos, ...clientLogos, ...clientLogos].map((client, index) => (
                 <div
                   key={index}
-                  className="flex-shrink-0 w-[250px] h-[120px] border border-white/10 bg-white/5 backdrop-blur-sm hover:bg-white/10 hover:border-[#D9FF00]/30 transition-all duration-300 flex flex-col items-center justify-center gap-2 group"
+                  className="flex-shrink-0 w-[250px] h-[120px] border border-white/10 bg-white/5 backdrop-blur-sm hover:bg-white/10 hover:border-[#88A9C3]/30 transition-all duration-300 flex flex-col items-center justify-center gap-2 group"
                 >
-                  <div className="font-display text-xl font-bold text-white group-hover:text-[#D9FF00] transition-colors text-center px-4">
+                  <div className="font-display text-xl font-bold text-white group-hover:text-[#88A9C3] transition-colors text-center px-4">
                     {client.name}
                   </div>
                   <div className="font-mono text-[10px] text-white/40 uppercase tracking-widest">
@@ -71,19 +71,19 @@ export const ClientLogos = () => {
         <Reveal delay={0.4}>
           <div className="mt-16 grid grid-cols-3 gap-8 max-w-2xl mx-auto text-center">
             <div className="border-l border-white/10 pl-4 first:border-0">
-              <div className="font-display text-4xl font-bold text-[#D9FF00] mb-1">70+</div>
+              <div className="font-display text-4xl font-bold text-[#88A9C3] mb-1">70+</div>
               <div className="font-mono text-[10px] uppercase text-white/50 tracking-wider">
                 Projets Livrés
               </div>
             </div>
             <div className="border-l border-white/10 pl-4">
-              <div className="font-display text-4xl font-bold text-[#D9FF00] mb-1">4.9/5</div>
+              <div className="font-display text-4xl font-bold text-[#88A9C3] mb-1">4.9/5</div>
               <div className="font-mono text-[10px] uppercase text-white/50 tracking-wider">
                 Satisfaction
               </div>
             </div>
             <div className="border-l border-white/10 pl-4">
-              <div className="font-display text-4xl font-bold text-[#D9FF00] mb-1">100%</div>
+              <div className="font-display text-4xl font-bold text-[#88A9C3] mb-1">100%</div>
               <div className="font-mono text-[10px] uppercase text-white/50 tracking-wider">
                 Respectent Délais
               </div>

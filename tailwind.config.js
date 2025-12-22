@@ -13,7 +13,7 @@ export default {
         background: 'var(--color-background)',
         surface: 'var(--color-surface)',
         surfaceHighlight: 'var(--color-surface-highlight)',
-        primary: '#D9FF00',
+        primary: '#88A9C3',
         secondary: '#9D4EDD',
         text: {
           main: 'var(--color-text-main)',

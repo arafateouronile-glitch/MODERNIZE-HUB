@@ -6,8 +6,8 @@ export const ContactButton = ({ variant = 'primary', text = 'Demander un Devis G
       href="#contact"
       className={`group inline-flex items-center gap-3 px-8 py-4 ${
         variant === 'primary'
-          ? 'bg-[#D9FF00] text-black hover:bg-white'
-          : 'border-2 border-[#D9FF00] text-[#D9FF00] hover:bg-[#D9FF00] hover:text-black'
+          ? 'bg-[#88A9C3] text-black hover:bg-white'
+          : 'border-2 border-[#88A9C3] text-[#88A9C3] hover:bg-[#88A9C3] hover:text-black'
       } font-bold rounded-full transition-all duration-300 ${className}`}
     >
       <span>{text}</span>

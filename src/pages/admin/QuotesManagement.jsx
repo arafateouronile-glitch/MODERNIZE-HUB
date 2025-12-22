@@ -55,13 +55,13 @@ export const QuotesManagement = () => {
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
           <button
             onClick={() => navigate('/admin/dashboard')}
-            className="flex items-center gap-2 text-white hover:text-[#D9FF00] transition-colors"
+            className="flex items-center gap-2 text-white hover:text-[#88A9C3] transition-colors"
           >
             <ArrowLeft className="w-5 h-5" />
             <span className="font-mono text-sm">Retour</span>
           </button>
           <h1 className="font-display text-xl font-bold text-white">
-            Gestion des <span className="text-[#D9FF00]">Devis</span>
+            Gestion des <span className="text-[#88A9C3]">Devis</span>
           </h1>
           <div className="w-24" /> {/* Spacer */}
         </div>
@@ -96,7 +96,7 @@ export const QuotesManagement = () => {
               onClick={() => setFilter(status)}
               className={`px-6 py-3 font-mono text-sm uppercase tracking-wider transition-all ${
                 filter === status
-                  ? 'bg-[#D9FF00] text-black'
+                  ? 'bg-[#88A9C3] text-black'
                   : 'border border-white/10 text-white hover:bg-white/5'
               }`}
             >
@@ -150,7 +150,7 @@ export const QuotesManagement = () => {
 
                 <div className="mb-4">
                   <div className="font-mono text-xs text-white/50 uppercase mb-2">Budget</div>
-                  <div className="text-[#D9FF00] font-bold">{quote.budget || 'Non spécifié'}</div>
+                  <div className="text-[#88A9C3] font-bold">{quote.budget || 'Non spécifié'}</div>
                 </div>
 
                 {quote.message && (

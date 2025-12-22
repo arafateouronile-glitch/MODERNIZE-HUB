@@ -29,7 +29,7 @@ export const pricingPlans = [
     id: 'transformation',
     name: 'Transformation Complète',
     badge: '⭐ Populaire',
-    badgeColor: 'bg-primary text-black font-bold shadow-[0_0_20px_rgba(217,255,0,0.5)]',
+    badgeColor: 'bg-primary text-black font-bold shadow-[0_0_20px_rgba(136,169,195,0.5)]',
     price: 2990,
     oldPrice: 5200,
     tagline: 'Machine à Leads 24/7 Qui Se Paie Toute Seule',

@@ -43,12 +43,12 @@ export const Certifications = () => {
         {/* Header */}
         <Reveal>
           <div className="max-w-4xl mx-auto text-center mb-20">
-            <span className="font-mono text-[#D9FF00] text-sm tracking-widest uppercase mb-6 block">
+            <span className="font-mono text-[#88A9C3] text-sm tracking-widest uppercase mb-6 block">
               Crédibilité & Reconnaissance
             </span>
             <h2 className="font-display text-5xl md:text-7xl font-bold text-white uppercase leading-[0.9] mb-8">
               CERTIFIÉS PAR<br/>
-              <span className="text-[#D9FF00]">LES MEILLEURS</span>
+              <span className="text-[#88A9C3]">LES MEILLEURS</span>
             </h2>
             <p className="text-xl text-white/80 font-light">
               Des certifications qui valident notre expertise. Des résultats qui parlent.
@@ -62,16 +62,16 @@ export const Certifications = () => {
             <Reveal key={index} delay={index * 0.1}>
               <motion.div
                 whileHover={{ y: -5, scale: 1.02 }}
-                className="relative border border-white/10 bg-white/5 p-8 hover:bg-white/10 hover:border-[#D9FF00]/30 transition-all duration-300 group"
+                className="relative border border-white/10 bg-white/5 p-8 hover:bg-white/10 hover:border-[#88A9C3]/30 transition-all duration-300 group"
               >
                 {/* Badge */}
-                <div className="absolute -top-3 right-4 bg-[#D9FF00] text-black px-3 py-1 font-mono text-[10px] font-bold uppercase">
+                <div className="absolute -top-3 right-4 bg-[#88A9C3] text-black px-3 py-1 font-mono text-[10px] font-bold uppercase">
                   {cert.badge}
                 </div>
 
                 {/* Icon */}
-                <div className="w-16 h-16 rounded-full bg-[#D9FF00]/10 border border-[#D9FF00]/30 flex items-center justify-center mb-6 group-hover:bg-[#D9FF00]/20 transition-all">
-                  <cert.icon className="w-8 h-8 text-[#D9FF00]" />
+                <div className="w-16 h-16 rounded-full bg-[#88A9C3]/10 border border-[#88A9C3]/30 flex items-center justify-center mb-6 group-hover:bg-[#88A9C3]/20 transition-all">
+                  <cert.icon className="w-8 h-8 text-[#88A9C3]" />
                 </div>
 
                 {/* Content */}
@@ -100,9 +100,9 @@ export const Certifications = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="border border-[#D9FF00]/20 bg-[#D9FF00]/5 p-6 text-center hover:bg-[#D9FF00]/10 transition-all"
+                  className="border border-[#88A9C3]/20 bg-[#88A9C3]/5 p-6 text-center hover:bg-[#88A9C3]/10 transition-all"
                 >
-                  <div className="font-mono text-xs text-[#D9FF00] uppercase tracking-widest mb-2">
+                  <div className="font-mono text-xs text-[#88A9C3] uppercase tracking-widest mb-2">
                     {award.year}
                   </div>
                   <h4 className="font-display text-lg font-bold text-white mb-2">
@@ -121,19 +121,19 @@ export const Certifications = () => {
         <Reveal delay={0.6}>
           <div className="mt-20 grid md:grid-cols-3 gap-8 max-w-4xl mx-auto text-center border-t border-white/10 pt-12">
             <div>
-              <div className="font-display text-5xl font-bold text-[#D9FF00] mb-2">100%</div>
+              <div className="font-display text-5xl font-bold text-[#88A9C3] mb-2">100%</div>
               <div className="font-mono text-sm text-white/60 uppercase tracking-wider">
                 Projets Livrés à Temps
               </div>
             </div>
             <div>
-              <div className="font-display text-5xl font-bold text-[#D9FF00] mb-2">0%</div>
+              <div className="font-display text-5xl font-bold text-[#88A9C3] mb-2">0%</div>
               <div className="font-mono text-sm text-white/60 uppercase tracking-wider">
                 Taux de Remboursement
               </div>
             </div>
             <div>
-              <div className="font-display text-5xl font-bold text-[#D9FF00] mb-2">48H</div>
+              <div className="font-display text-5xl font-bold text-[#88A9C3] mb-2">48H</div>
               <div className="font-mono text-sm text-white/60 uppercase tracking-wider">
                 Temps de Récupération ROI
               </div>

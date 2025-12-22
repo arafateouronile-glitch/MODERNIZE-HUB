@@ -4,7 +4,7 @@ import { Mail, Phone, Calendar, Check, X, Trash2, Eye, Clock } from 'lucide-reac
 import { supabaseStorage as storage } from '../../services/supabaseStorage'
 
 const statusColors = {
-  new: 'bg-[#D9FF00] text-black',
+  new: 'bg-[#88A9C3] text-black',
   contacted: 'bg-blue-500/20 text-blue-400 border border-blue-500/30',
   qualified: 'bg-purple-500/20 text-purple-400 border border-purple-500/30',
   converted: 'bg-green-500/20 text-green-400 border border-green-500/30',
@@ -70,7 +70,7 @@ export const LeadsManager = ({ onUpdate }) => {
             onClick={() => setFilter(status)}
             className={`px-4 py-2 font-mono text-sm transition-all ${
               filter === status
-                ? 'bg-[#D9FF00] text-black font-bold'
+                ? 'bg-[#88A9C3] text-black font-bold'
                 : 'bg-white/5 border border-white/10 text-white/70 hover:bg-white/10'
             }`}
           >
@@ -96,7 +96,7 @@ export const LeadsManager = ({ onUpdate }) => {
                 onClick={() => setSelectedLead(lead)}
                 className={`border p-4 cursor-pointer transition-all ${
                   selectedLead?.id === lead.id
-                    ? 'border-[#D9FF00] bg-[#D9FF00]/10'
+                    ? 'border-[#88A9C3] bg-[#88A9C3]/10'
                     : 'border-white/10 bg-white/5 hover:bg-white/10'
                 }`}
               >
@@ -194,7 +194,7 @@ const LeadDetails = ({ lead, onUpdateStatus, onDelete, onClose }) => {
             <label className="font-mono text-xs text-white/50 uppercase mb-1 block">
               Email
             </label>
-            <a href={`mailto:${lead.email}`} className="text-[#D9FF00] hover:underline">
+            <a href={`mailto:${lead.email}`} className="text-[#88A9C3] hover:underline">
               {lead.email}
             </a>
           </div>
@@ -205,7 +205,7 @@ const LeadDetails = ({ lead, onUpdateStatus, onDelete, onClose }) => {
             <label className="font-mono text-xs text-white/50 uppercase mb-1 block">
               Téléphone
             </label>
-            <a href={`tel:${lead.phone}`} className="text-[#D9FF00] hover:underline">
+            <a href={`tel:${lead.phone}`} className="text-[#88A9C3] hover:underline">
               {lead.phone}
             </a>
           </div>
@@ -251,7 +251,7 @@ const LeadDetails = ({ lead, onUpdateStatus, onDelete, onClose }) => {
               onClick={() => onUpdateStatus(lead.id, key)}
               className={`px-3 py-2 text-xs font-mono transition-all ${
                 lead.status === key
-                  ? 'bg-[#D9FF00] text-black font-bold'
+                  ? 'bg-[#88A9C3] text-black font-bold'
                   : 'bg-white/5 border border-white/10 text-white/70 hover:bg-white/10'
               }`}
             >

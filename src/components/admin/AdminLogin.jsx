@@ -37,7 +37,7 @@ export const AdminLogin = ({ onLogin }) => {
         <div className="border border-white/10 bg-white/5 p-8 md:p-12">
           {/* Logo */}
           <div className="text-center mb-8">
-            <div className="inline-block w-16 h-16 rounded-full bg-[#D9FF00] flex items-center justify-center mb-4">
+            <div className="inline-block w-16 h-16 rounded-full bg-[#88A9C3] flex items-center justify-center mb-4">
               <Lock className="w-8 h-8 text-black" />
             </div>
             <h1 className="font-display text-3xl font-bold text-white mb-2">
@@ -66,7 +66,7 @@ export const AdminLogin = ({ onLogin }) => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="admin@modernizehub.com"
-                className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] transition-colors font-mono mb-4"
+                className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] transition-colors font-mono mb-4"
                 autoFocus
                 disabled={isLoading}
               />
@@ -81,7 +81,7 @@ export const AdminLogin = ({ onLogin }) => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="Entrez votre mot de passe"
-                className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] transition-colors font-mono"
+                className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] transition-colors font-mono"
                 disabled={isLoading}
               />
             </div>
@@ -89,7 +89,7 @@ export const AdminLogin = ({ onLogin }) => {
             <button
               type="submit"
               disabled={isLoading || !password}
-              className="w-full py-4 bg-[#D9FF00] text-black font-bold hover:bg-white transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3"
+              className="w-full py-4 bg-[#88A9C3] text-black font-bold hover:bg-white transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3"
             >
               {isLoading ? (
                 <>

@@ -112,7 +112,7 @@ export const AdminDashboard = ({ onLogout }) => {
               }}
               className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg transition-all ${
                 activeTab === item.id
-                  ? 'bg-[#D9FF00] text-black font-bold'
+                  ? 'bg-[#88A9C3] text-black font-bold'
                   : 'text-white/70 hover:bg-white/5 hover:text-white'
               }`}
             >
@@ -171,7 +171,7 @@ const DashboardHome = ({ stats }) => {
       <div className="grid md:grid-cols-4 gap-6">
         {[
           { label: 'Total Leads', value: stats.totalLeads, color: 'text-blue-400' },
-          { label: 'Nouveaux Leads', value: stats.newLeads, color: 'text-[#D9FF00]' },
+          { label: 'Nouveaux Leads', value: stats.newLeads, color: 'text-[#88A9C3]' },
           { label: 'Articles Blog', value: stats.totalPosts, color: 'text-purple-400' },
           { label: 'Témoignages', value: stats.totalTestimonials, color: 'text-orange-400' },
         ].map((stat, index) => (

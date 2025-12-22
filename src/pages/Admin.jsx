@@ -42,7 +42,7 @@ export const Admin = () => {
   if (isLoading) {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
-        <div className="w-8 h-8 border-2 border-[#D9FF00] border-t-transparent rounded-full animate-spin" />
+        <div className="w-8 h-8 border-2 border-[#88A9C3] border-t-transparent rounded-full animate-spin" />
       </div>
     )
   }

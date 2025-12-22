@@ -70,7 +70,7 @@ export const Services = () => {
           >
             Nos Services
             <br />
-            <span className="text-[#D9FF00]">Premium</span>
+            <span className="text-[#88A9C3]">Premium</span>
           </motion.h1>
           
           <motion.p
@@ -103,13 +103,13 @@ export const Services = () => {
                   onClick={() => navigate(service.link)}
                   className={`relative cursor-pointer rounded-3xl p-8 md:p-12 border-2 transition-all ${
                     service.popular
-                      ? 'scale-105 border-[#D9FF00] shadow-2xl'
+                      ? 'scale-105 border-[#88A9C3] shadow-2xl'
                       : theme === 'light'
                       ? 'border-black bg-white'
                       : 'border-white/10 bg-surface'
                   }`}
                   style={{
-                    backgroundColor: service.popular && theme === 'dark' ? 'rgba(217, 255, 0, 0.05)' : undefined,
+                    backgroundColor: service.popular && theme === 'dark' ? 'rgba(136, 169, 195, 0.05)' : undefined,
                   }}
                 >
                   {/* Badge Popular */}
@@ -117,7 +117,7 @@ export const Services = () => {
                     <motion.div
                       initial={{ scale: 0 }}
                       animate={{ scale: 1 }}
-                      className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#D9FF00] text-black px-6 py-2 rounded-full font-bold text-sm"
+                      className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#88A9C3] text-black px-6 py-2 rounded-full font-bold text-sm"
                     >
                       ⭐ POPULAIRE
                     </motion.div>
@@ -181,10 +181,10 @@ export const Services = () => {
                     whileTap={{ scale: 0.95 }}
                     className={`w-full py-4 px-6 rounded-full font-bold transition-all flex items-center justify-center gap-2 ${
                       service.popular
-                        ? 'bg-[#D9FF00] text-black hover:bg-white'
+                        ? 'bg-[#88A9C3] text-black hover:bg-white'
                         : theme === 'light'
                         ? 'bg-black text-white hover:bg-gray-800'
-                        : 'bg-[#D9FF00] text-black hover:bg-white'
+                        : 'bg-[#88A9C3] text-black hover:bg-white'
                     }`}
                   >
                     Découvrir cette offre
@@ -250,7 +250,7 @@ export const Services = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-[#D9FF00]">
+      <section className="py-20 px-6 bg-[#88A9C3]">
         <div className="container mx-auto max-w-4xl text-center">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}

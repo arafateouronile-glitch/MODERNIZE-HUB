@@ -150,12 +150,12 @@ export const LeadQuiz = ({ isOpen, onClose }) => {
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           exit={{ scale: 0.9, opacity: 0 }}
-          className="relative w-full max-w-3xl bg-surface border border-[#D9FF00]/20 shadow-2xl max-h-[90vh] overflow-y-auto"
+          className="relative w-full max-w-3xl bg-surface border border-[#88A9C3]/20 shadow-2xl max-h-[90vh] overflow-y-auto"
         >
           {/* Close Button */}
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center bg-black/50 hover:bg-[#D9FF00] hover:text-black transition-colors z-10"
+            className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center bg-black/50 hover:bg-[#88A9C3] hover:text-black transition-colors z-10"
             aria-label="Fermer"
           >
             <X className="w-5 h-5" />
@@ -166,7 +166,7 @@ export const LeadQuiz = ({ isOpen, onClose }) => {
               {/* Progress Bar */}
               <div className="h-2 bg-black/50">
                 <motion.div
-                  className="h-full bg-[#D9FF00]"
+                  className="h-full bg-[#88A9C3]"
                   initial={{ width: 0 }}
                   animate={{ width: `${progress}%` }}
                   transition={{ duration: 0.3 }}
@@ -176,7 +176,7 @@ export const LeadQuiz = ({ isOpen, onClose }) => {
               {/* Question Content */}
               <div className="p-8 md:p-12">
                 <div className="mb-8">
-                  <span className="font-mono text-xs text-[#D9FF00] uppercase tracking-wider">
+                  <span className="font-mono text-xs text-[#88A9C3] uppercase tracking-wider">
                     Question {currentQuestion + 1} / {quizQuestions.length}
                   </span>
                   <h3 className="font-display text-3xl md:text-4xl font-bold text-white mt-4 leading-tight">
@@ -195,8 +195,8 @@ export const LeadQuiz = ({ isOpen, onClose }) => {
                       onClick={() => handleAnswer(currentQ.id, option)}
                       className={`w-full p-6 text-left border-2 transition-all duration-300 ${
                         answers[currentQ.id]?.value === option.value
-                          ? 'border-[#D9FF00] bg-[#D9FF00]/10'
-                          : 'border-white/10 hover:border-[#D9FF00]/50 hover:bg-white/5'
+                          ? 'border-[#88A9C3] bg-[#88A9C3]/10'
+                          : 'border-white/10 hover:border-[#88A9C3]/50 hover:bg-white/5'
                       }`}
                     >
                       <div className="flex items-center justify-between">
@@ -204,7 +204,7 @@ export const LeadQuiz = ({ isOpen, onClose }) => {
                           {option.label}
                         </span>
                         {answers[currentQ.id]?.value === option.value && (
-                          <Check className="w-6 h-6 text-[#D9FF00]" />
+                          <Check className="w-6 h-6 text-[#88A9C3]" />
                         )}
                       </div>
                     </motion.button>
@@ -225,7 +225,7 @@ export const LeadQuiz = ({ isOpen, onClose }) => {
                   <button
                     onClick={goNext}
                     disabled={!canProceed}
-                    className="px-8 py-3 bg-[#D9FF00] text-black font-bold hover:bg-white disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center gap-2"
+                    className="px-8 py-3 bg-[#88A9C3] text-black font-bold hover:bg-white disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center gap-2"
                   >
                     {currentQuestion === quizQuestions.length - 1 ? 'Voir Mon Résultat' : 'Suivant'}
                     <ArrowRight className="w-4 h-4" />
@@ -242,24 +242,24 @@ export const LeadQuiz = ({ isOpen, onClose }) => {
                 transition={{ delay: 0.2 }}
               >
                 <div className="text-center mb-8">
-                  <div className="w-20 h-20 bg-[#D9FF00] rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="w-20 h-20 bg-[#88A9C3] rounded-full flex items-center justify-center mx-auto mb-6">
                     <Check className="w-10 h-10 text-black" />
                   </div>
                   <h3 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
                     {recommendation.title}
                   </h3>
-                  <p className="text-xl text-[#D9FF00] font-mono uppercase tracking-wide">
+                  <p className="text-xl text-[#88A9C3] font-mono uppercase tracking-wide">
                     {recommendation.subtitle}
                   </p>
                 </div>
 
-                <div className="bg-black/30 border border-[#D9FF00]/20 p-8 mb-8">
+                <div className="bg-black/30 border border-[#88A9C3]/20 p-8 mb-8">
                   <p className="text-lg text-white/90 leading-relaxed mb-6">
                     {recommendation.description}
                   </p>
                   <div className="flex items-baseline gap-2">
                     <span className="font-mono text-sm text-white/50">À partir de</span>
-                    <span className="font-display text-4xl font-bold text-[#D9FF00]">
+                    <span className="font-display text-4xl font-bold text-[#88A9C3]">
                       {recommendation.price}
                     </span>
                   </div>
@@ -271,7 +271,7 @@ export const LeadQuiz = ({ isOpen, onClose }) => {
                       onClose()
                       window.location.href = '/nos-services'
                     }}
-                    className="flex-1 px-8 py-4 bg-[#D9FF00] text-black font-bold hover:bg-white transition-all"
+                    className="flex-1 px-8 py-4 bg-[#88A9C3] text-black font-bold hover:bg-white transition-all"
                   >
                     {recommendation.cta}
                   </button>

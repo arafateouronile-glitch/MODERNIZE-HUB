@@ -13,14 +13,14 @@
   <!-- Tech/Modern Background -->
   <rect width="400" height="400" fill="#7C3AED"/>
   <circle cx="200" cy="200" r="180" fill="#A78BFA" opacity="0.3"/>
-  <circle cx="280" cy="120" r="60" fill="#D9FF00" opacity="0.1"/>
+  <circle cx="280" cy="120" r="60" fill="#88A9C3" opacity="0.1"/>
   
   <!-- Modern Hoodie/Shirt -->
   <ellipse cx="200" cy="380" rx="145" ry="70" fill="url(#modern-shirt)"/>
   <rect x="55" y="290" width="290" height="110" fill="url(#modern-shirt)"/>
   
   <!-- Neon accent on shirt -->
-  <rect x="185" y="310" width="30" height="90" fill="#D9FF00" opacity="0.8"/>
+  <rect x="185" y="310" width="30" height="90" fill="#88A9C3" opacity="0.8"/>
   <rect x="188" y="310" width="24" height="90" fill="#000000" opacity="0.3"/>
   
   <!-- Neck -->

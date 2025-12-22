@@ -106,13 +106,13 @@ export const TestimonialsManagement = () => {
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
           <button
             onClick={() => navigate('/admin/dashboard')}
-            className="flex items-center gap-2 text-white hover:text-[#D9FF00] transition-colors"
+            className="flex items-center gap-2 text-white hover:text-[#88A9C3] transition-colors"
           >
             <ArrowLeft className="w-5 h-5" />
             <span className="font-mono text-sm">Retour</span>
           </button>
           <h1 className="font-display text-xl font-bold text-white">
-            Gestion des <span className="text-[#D9FF00]">Avis Clients</span>
+            Gestion des <span className="text-[#88A9C3]">Avis Clients</span>
           </h1>
           <button
             onClick={() => {
@@ -127,7 +127,7 @@ export const TestimonialsManagement = () => {
                 results: '',
               })
             }}
-            className="flex items-center gap-2 px-4 py-2 bg-[#D9FF00] text-black font-bold hover:bg-white transition-all"
+            className="flex items-center gap-2 px-4 py-2 bg-[#88A9C3] text-black font-bold hover:bg-white transition-all"
           >
             <Plus className="w-4 h-4" />
             <span className="font-mono text-sm">Nouvel Avis</span>
@@ -165,7 +165,7 @@ export const TestimonialsManagement = () => {
                   placeholder="Nom du client"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00]"
+                  className="bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3]"
                 />
                 <input
                   type="text"
@@ -173,14 +173,14 @@ export const TestimonialsManagement = () => {
                   placeholder="Rôle / Profession"
                   value={formData.role}
                   onChange={(e) => setFormData({ ...formData, role: e.target.value })}
-                  className="bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00]"
+                  className="bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3]"
                 />
                 <input
                   type="text"
                   placeholder="URL Avatar (ex: /images/testimonials/pierre.svg)"
                   value={formData.avatar}
                   onChange={(e) => setFormData({ ...formData, avatar: e.target.value })}
-                  className="bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] font-mono text-sm"
+                  className="bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] font-mono text-sm"
                 />
                 <div>
                   <label className="block font-mono text-xs text-white/70 uppercase mb-2">Note</label>
@@ -190,7 +190,7 @@ export const TestimonialsManagement = () => {
                         key={star}
                         type="button"
                         onClick={() => setFormData({ ...formData, rating: star })}
-                        className={`${formData.rating >= star ? 'text-[#D9FF00]' : 'text-white/30'} transition-colors`}
+                        className={`${formData.rating >= star ? 'text-[#88A9C3]' : 'text-white/30'} transition-colors`}
                       >
                         <Star className="w-6 h-6 fill-current" />
                       </button>
@@ -203,18 +203,18 @@ export const TestimonialsManagement = () => {
                 placeholder="Témoignage / Avis"
                 value={formData.text}
                 onChange={(e) => setFormData({ ...formData, text: e.target.value })}
-                className="w-full bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] h-32"
+                className="w-full bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] h-32"
               />
               <input
                 type="text"
                 placeholder="Résultats (ex: +230% demandes de rendez-vous)"
                 value={formData.results}
                 onChange={(e) => setFormData({ ...formData, results: e.target.value })}
-                className="w-full bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00]"
+                className="w-full bg-black/50 border border-white/20 px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3]"
               />
               <button
                 type="submit"
-                className="px-6 py-3 bg-[#D9FF00] text-black font-bold hover:bg-white transition-all flex items-center gap-2"
+                className="px-6 py-3 bg-[#88A9C3] text-black font-bold hover:bg-white transition-all flex items-center gap-2"
               >
                 <Save className="w-4 h-4" />
                 {editingTestimonial ? 'Enregistrer' : 'Créer l\'Avis'}
@@ -243,7 +243,7 @@ export const TestimonialsManagement = () => {
                       <img
                         src={testimonial.avatar}
                         alt={testimonial.name}
-                        className="w-16 h-16 rounded-full border-2 border-[#D9FF00]/30"
+                        className="w-16 h-16 rounded-full border-2 border-[#88A9C3]/30"
                         onError={(e) => {
                           e.target.style.display = 'none'
                         }}
@@ -253,14 +253,14 @@ export const TestimonialsManagement = () => {
                       <div className="font-display text-xl font-bold text-white mb-1">
                         {testimonial.name}
                       </div>
-                      <div className="font-mono text-sm text-[#D9FF00] mb-3">
+                      <div className="font-mono text-sm text-[#88A9C3] mb-3">
                         {testimonial.role}
                       </div>
                       <div className="flex gap-1 mb-3">
                         {[...Array(5)].map((_, i) => (
                           <Star
                             key={i}
-                            className={`w-4 h-4 ${i < testimonial.rating ? 'text-[#D9FF00] fill-current' : 'text-white/20'}`}
+                            className={`w-4 h-4 ${i < testimonial.rating ? 'text-[#88A9C3] fill-current' : 'text-white/20'}`}
                           />
                         ))}
                       </div>
@@ -275,7 +275,7 @@ export const TestimonialsManagement = () => {
                   <div className="flex items-center gap-2">
                     <button
                       onClick={() => handleEdit(testimonial)}
-                      className="p-2 border border-white/10 hover:border-[#D9FF00] hover:text-[#D9FF00] transition-all"
+                      className="p-2 border border-white/10 hover:border-[#88A9C3] hover:text-[#88A9C3] transition-all"
                     >
                       <Edit2 className="w-4 h-4" />
                     </button>

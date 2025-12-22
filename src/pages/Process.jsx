@@ -81,7 +81,7 @@ const processSteps = [
       'Configuration finale',
       'Support 15 jours inclus',
     ],
-    color: '#D9FF00',
+    color: '#88A9C3',
   },
 ]
 
@@ -128,7 +128,7 @@ export const Process = () => {
           >
             Notre Méthode
             <br />
-            <span className="text-[#D9FF00]">de Travail</span>
+            <span className="text-[#88A9C3]">de Travail</span>
           </motion.h1>
           
           <motion.p
@@ -201,7 +201,7 @@ export const Process = () => {
                           }`}>
                             {step.description}
                           </p>
-                          <div className="flex items-center gap-2 text-sm text-[#D9FF00]">
+                          <div className="flex items-center gap-2 text-sm text-[#88A9C3]">
                             <Clock className="w-4 h-4" />
                             <span>{step.duration}</span>
                           </div>
@@ -260,8 +260,8 @@ export const Process = () => {
                       : 'bg-surface border-white/10'
                   }`}
                 >
-                  <div className="w-16 h-16 rounded-full bg-[#D9FF00]/20 flex items-center justify-center mx-auto mb-4">
-                    <IconComponent className="w-8 h-8 text-[#D9FF00]" />
+                  <div className="w-16 h-16 rounded-full bg-[#88A9C3]/20 flex items-center justify-center mx-auto mb-4">
+                    <IconComponent className="w-8 h-8 text-[#88A9C3]" />
                   </div>
                   <h3 className={`text-xl font-bold mb-3 ${
                     theme === 'light' ? 'text-black' : 'text-white'
@@ -317,7 +317,7 @@ export const Process = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-[#D9FF00]">
+      <section className="py-20 px-6 bg-[#88A9C3]">
         <div className="container mx-auto max-w-4xl text-center">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -337,7 +337,7 @@ export const Process = () => {
           </motion.p>
           <a
             href="/#contact"
-            className="group inline-flex items-center gap-3 px-8 py-4 bg-[#D9FF00] text-black hover:bg-white font-bold rounded-full transition-all duration-300 text-lg"
+            className="group inline-flex items-center gap-3 px-8 py-4 bg-[#88A9C3] text-black hover:bg-white font-bold rounded-full transition-all duration-300 text-lg"
           >
             <span>Demander un Devis</span>
           </a>

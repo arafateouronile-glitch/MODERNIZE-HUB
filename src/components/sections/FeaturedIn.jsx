@@ -45,12 +45,12 @@ export const FeaturedIn = () => {
         {/* Header */}
         <Reveal>
           <div className="max-w-4xl mx-auto text-center mb-20">
-            <span className="font-mono text-[#D9FF00] text-sm tracking-widest uppercase mb-6 block">
+            <span className="font-mono text-[#88A9C3] text-sm tracking-widest uppercase mb-6 block">
               Presse & Médias
             </span>
             <h2 className="font-display text-5xl md:text-7xl font-bold text-white uppercase leading-[0.9] mb-8">
               ON PARLE<br/>
-              <span className="text-[#D9FF00]">DE NOUS</span>
+              <span className="text-[#88A9C3]">DE NOUS</span>
             </h2>
             <p className="text-xl text-white/80 font-light">
               Nos méthodes et résultats font parler d'eux dans les médias spécialisés.
@@ -67,24 +67,24 @@ export const FeaturedIn = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ y: -5, scale: 1.02 }}
-                className="block border border-white/10 bg-white/5 p-8 hover:bg-white/10 hover:border-[#D9FF00]/30 transition-all duration-300 group"
+                className="block border border-white/10 bg-white/5 p-8 hover:bg-white/10 hover:border-[#88A9C3]/30 transition-all duration-300 group"
               >
                 <div className="flex items-start gap-4 mb-4">
                   {/* Icon */}
-                  <div className="w-12 h-12 rounded-full bg-[#D9FF00]/10 border border-[#D9FF00]/30 flex items-center justify-center flex-shrink-0 group-hover:bg-[#D9FF00]/20 transition-all">
-                    <item.icon className="w-6 h-6 text-[#D9FF00]" />
+                  <div className="w-12 h-12 rounded-full bg-[#88A9C3]/10 border border-[#88A9C3]/30 flex items-center justify-center flex-shrink-0 group-hover:bg-[#88A9C3]/20 transition-all">
+                    <item.icon className="w-6 h-6 text-[#88A9C3]" />
                   </div>
 
                   {/* Type Badge */}
                   <div className="ml-auto">
-                    <span className="font-mono text-[10px] text-[#D9FF00] uppercase tracking-widest bg-[#D9FF00]/10 px-3 py-1 border border-[#D9FF00]/30">
+                    <span className="font-mono text-[10px] text-[#88A9C3] uppercase tracking-widest bg-[#88A9C3]/10 px-3 py-1 border border-[#88A9C3]/30">
                       {item.type}
                     </span>
                   </div>
                 </div>
 
                 {/* Content */}
-                <h3 className="font-display text-xl font-bold text-white mb-2 group-hover:text-[#D9FF00] transition-colors">
+                <h3 className="font-display text-xl font-bold text-white mb-2 group-hover:text-[#88A9C3] transition-colors">
                   {item.title}
                 </h3>
                 <p className="font-mono text-sm text-white/70 leading-relaxed mb-4">
@@ -96,7 +96,7 @@ export const FeaturedIn = () => {
                   <span className="font-mono text-xs text-white/50">
                     {item.date}
                   </span>
-                  <ExternalLink className="w-4 h-4 text-[#D9FF00] opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <ExternalLink className="w-4 h-4 text-[#88A9C3] opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
               </motion.a>
             </Reveal>
@@ -106,7 +106,7 @@ export const FeaturedIn = () => {
         {/* Press Quote */}
         <Reveal delay={0.5}>
           <div className="mt-20 max-w-4xl mx-auto text-center">
-            <div className="border-l-4 border-[#D9FF00] pl-8 py-6">
+            <div className="border-l-4 border-[#88A9C3] pl-8 py-6">
               <blockquote className="font-display text-2xl md:text-3xl font-bold text-white leading-relaxed mb-4">
                 "Modernize Hub a réussi à transformer le paysage du web design en France. Leurs résultats parlent d'eux-mêmes."
               </blockquote>
@@ -125,7 +125,7 @@ export const FeaturedIn = () => {
             </p>
             <a
               href="mailto:press@modernizehub.com"
-              className="inline-flex items-center gap-3 px-8 py-4 border border-[#D9FF00] text-[#D9FF00] hover:bg-[#D9FF00] hover:text-black transition-all font-mono text-sm uppercase tracking-widest"
+              className="inline-flex items-center gap-3 px-8 py-4 border border-[#88A9C3] text-[#88A9C3] hover:bg-[#88A9C3] hover:text-black transition-all font-mono text-sm uppercase tracking-widest"
             >
               <ExternalLink className="w-4 h-4" />
               Contact Presse

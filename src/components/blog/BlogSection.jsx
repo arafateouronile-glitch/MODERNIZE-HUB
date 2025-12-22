@@ -15,12 +15,12 @@ export const BlogSection = () => {
         {/* Header */}
         <Reveal>
           <div className="max-w-4xl mx-auto text-center mb-20">
-            <span className="font-mono text-[#D9FF00] text-sm tracking-widest uppercase mb-6 block">
+            <span className="font-mono text-[#88A9C3] text-sm tracking-widest uppercase mb-6 block">
               Ressources & Expertise
             </span>
             <h2 className="font-display text-5xl md:text-7xl font-bold text-white uppercase leading-[0.9] mb-8">
               NOTRE BLOG<br/>
-              <span className="text-[#D9FF00]">EXPERT</span>
+              <span className="text-[#88A9C3]">EXPERT</span>
             </h2>
             <p className="text-xl text-white/80 font-light">
               Guides pratiques, études de cas, tendances. Tout pour transformer votre présence web.
@@ -34,14 +34,14 @@ export const BlogSection = () => {
             <Reveal key={post.id} delay={index * 0.1}>
               <motion.article
                 whileHover={{ y: -5 }}
-                className="border border-white/10 bg-white/5 p-8 hover:bg-white/10 hover:border-[#D9FF00]/30 transition-all duration-300 group"
+                className="border border-white/10 bg-white/5 p-8 hover:bg-white/10 hover:border-[#88A9C3]/30 transition-all duration-300 group"
               >
                 {/* Category Badge */}
-                <span className="inline-block font-mono text-[10px] text-[#D9FF00] uppercase tracking-widest mb-4 bg-[#D9FF00]/10 px-3 py-1 border border-[#D9FF00]/30">
+                <span className="inline-block font-mono text-[10px] text-[#88A9C3] uppercase tracking-widest mb-4 bg-[#88A9C3]/10 px-3 py-1 border border-[#88A9C3]/30">
                   {post.category}
                 </span>
 
-                <h3 className="font-display text-2xl md:text-3xl font-bold text-white mb-4 group-hover:text-[#D9FF00] transition-colors">
+                <h3 className="font-display text-2xl md:text-3xl font-bold text-white mb-4 group-hover:text-[#88A9C3] transition-colors">
                   {post.title}
                 </h3>
 
@@ -60,7 +60,7 @@ export const BlogSection = () => {
                       <span className="font-mono">{post.readTime}</span>
                     </div>
                   </div>
-                  <ArrowRight className="w-5 h-5 text-[#D9FF00] group-hover:translate-x-2 transition-transform" />
+                  <ArrowRight className="w-5 h-5 text-[#88A9C3] group-hover:translate-x-2 transition-transform" />
                 </div>
               </motion.article>
             </Reveal>
@@ -73,13 +73,13 @@ export const BlogSection = () => {
             <Reveal key={post.id} delay={0.2 + index * 0.1}>
               <motion.article
                 whileHover={{ y: -3 }}
-                className="border border-white/10 bg-white/5 p-6 hover:bg-white/10 hover:border-[#D9FF00]/30 transition-all duration-300 group"
+                className="border border-white/10 bg-white/5 p-6 hover:bg-white/10 hover:border-[#88A9C3]/30 transition-all duration-300 group"
               >
-                <span className="inline-block font-mono text-[10px] text-[#D9FF00] uppercase tracking-widest mb-3">
+                <span className="inline-block font-mono text-[10px] text-[#88A9C3] uppercase tracking-widest mb-3">
                   {post.category}
                 </span>
                 
-                <h3 className="font-display text-xl font-bold text-white mb-3 group-hover:text-[#D9FF00] transition-colors">
+                <h3 className="font-display text-xl font-bold text-white mb-3 group-hover:text-[#88A9C3] transition-colors">
                   {post.title}
                 </h3>
 
@@ -89,7 +89,7 @@ export const BlogSection = () => {
 
                 <div className="flex items-center justify-between pt-4 border-t border-white/10">
                   <span className="font-mono text-[10px] text-white/50">{post.readTime}</span>
-                  <ArrowRight className="w-4 h-4 text-[#D9FF00] group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-4 h-4 text-[#88A9C3] group-hover:translate-x-1 transition-transform" />
                 </div>
               </motion.article>
             </Reveal>
@@ -105,7 +105,7 @@ export const BlogSection = () => {
                 e.preventDefault()
                 window.location.href = '/blog'
               }}
-              className="inline-flex items-center gap-3 px-8 py-4 border border-[#D9FF00] text-[#D9FF00] hover:bg-[#D9FF00] hover:text-black transition-all font-mono text-sm uppercase tracking-widest cursor-pointer"
+              className="inline-flex items-center gap-3 px-8 py-4 border border-[#88A9C3] text-[#88A9C3] hover:bg-[#88A9C3] hover:text-black transition-all font-mono text-sm uppercase tracking-widest cursor-pointer"
             >
               Voir Tous Les Articles
               <ArrowRight className="w-4 h-4" />

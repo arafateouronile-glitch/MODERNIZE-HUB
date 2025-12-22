@@ -70,7 +70,7 @@ export const TestimonialsManager = ({ onUpdate }) => {
         </h2>
         <button
           onClick={() => startEdit()}
-          className="flex items-center gap-3 px-6 py-3 bg-[#D9FF00] text-black font-bold hover:bg-white transition-all"
+          className="flex items-center gap-3 px-6 py-3 bg-[#88A9C3] text-black font-bold hover:bg-white transition-all"
         >
           <Plus className="w-5 h-5" />
           Nouveau Témoignage
@@ -99,7 +99,7 @@ export const TestimonialsManager = ({ onUpdate }) => {
           <p className="text-white/50 font-mono mb-6">Aucun témoignage</p>
           <button
             onClick={() => startEdit()}
-            className="px-6 py-3 bg-[#D9FF00] text-black font-bold hover:bg-white transition-all"
+            className="px-6 py-3 bg-[#88A9C3] text-black font-bold hover:bg-white transition-all"
           >
             Ajouter le premier témoignage
           </button>
@@ -116,12 +116,12 @@ export const TestimonialsManager = ({ onUpdate }) => {
             >
               <div className="flex items-start gap-6">
                 {/* Avatar */}
-                <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-[#D9FF00]/30 flex-shrink-0">
+                <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-[#88A9C3]/30 flex-shrink-0">
                   {testimonial.avatar ? (
                     <img src={testimonial.avatar} alt={testimonial.name} className="w-full h-full object-cover" />
                   ) : (
-                    <div className="w-full h-full bg-[#D9FF00]/10 flex items-center justify-center">
-                      <User className="w-8 h-8 text-[#D9FF00]" />
+                    <div className="w-full h-full bg-[#88A9C3]/10 flex items-center justify-center">
+                      <User className="w-8 h-8 text-[#88A9C3]" />
                     </div>
                   )}
                 </div>
@@ -133,13 +133,13 @@ export const TestimonialsManager = ({ onUpdate }) => {
                       <h3 className="font-display text-lg font-bold text-white mb-1">
                         {testimonial.name}
                       </h3>
-                      <p className="font-mono text-sm text-[#D9FF00]">
+                      <p className="font-mono text-sm text-[#88A9C3]">
                         {testimonial.role}
                       </p>
                     </div>
                     <div className="flex items-center gap-1">
                       {[...Array(testimonial.rating || 5)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 text-[#D9FF00] fill-current" />
+                        <Star key={i} className="w-4 h-4 text-[#88A9C3] fill-current" />
                       ))}
                     </div>
                   </div>
@@ -224,7 +224,7 @@ const TestimonialEditor = ({ testimonial, onChange, onSave, onCancel }) => {
                   type="text"
                   value={testimonial.name}
                   onChange={(e) => onChange({ ...testimonial, name: e.target.value })}
-                  className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] transition-colors"
+                  className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] transition-colors"
                   placeholder="Pierre"
                 />
               </div>
@@ -237,7 +237,7 @@ const TestimonialEditor = ({ testimonial, onChange, onSave, onCancel }) => {
                   type="text"
                   value={testimonial.role}
                   onChange={(e) => onChange({ ...testimonial, role: e.target.value })}
-                  className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] transition-colors"
+                  className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] transition-colors"
                   placeholder="Avocat"
                 />
               </div>
@@ -251,7 +251,7 @@ const TestimonialEditor = ({ testimonial, onChange, onSave, onCancel }) => {
                 type="text"
                 value={testimonial.avatar}
                 onChange={(e) => onChange({ ...testimonial, avatar: e.target.value })}
-                className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] transition-colors font-mono"
+                className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] transition-colors font-mono"
                 placeholder="/images/testimonials/pierre.svg"
               />
             </div>
@@ -264,7 +264,7 @@ const TestimonialEditor = ({ testimonial, onChange, onSave, onCancel }) => {
                 value={testimonial.text}
                 onChange={(e) => onChange({ ...testimonial, text: e.target.value })}
                 rows={5}
-                className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] transition-colors resize-none"
+                className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] transition-colors resize-none"
                 placeholder="Mon ancien site datait de 2014. Résultat : +230% de demandes..."
               />
             </div>
@@ -277,7 +277,7 @@ const TestimonialEditor = ({ testimonial, onChange, onSave, onCancel }) => {
                 type="text"
                 value={testimonial.results}
                 onChange={(e) => onChange({ ...testimonial, results: e.target.value })}
-                className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] transition-colors"
+                className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] transition-colors"
                 placeholder="+230% demandes de rendez-vous"
               />
             </div>
@@ -294,7 +294,7 @@ const TestimonialEditor = ({ testimonial, onChange, onSave, onCancel }) => {
                     onClick={() => onChange({ ...testimonial, rating })}
                     className={`w-12 h-12 flex items-center justify-center border transition-all ${
                       testimonial.rating >= rating
-                        ? 'bg-[#D9FF00] border-[#D9FF00] text-black'
+                        ? 'bg-[#88A9C3] border-[#88A9C3] text-black'
                         : 'bg-white/5 border-white/20 text-white/50'
                     }`}
                   >
@@ -309,7 +309,7 @@ const TestimonialEditor = ({ testimonial, onChange, onSave, onCancel }) => {
           <div className="flex gap-4 mt-8 pt-8 border-t border-white/10">
             <button
               onClick={onSave}
-              className="flex-1 px-6 py-4 bg-[#D9FF00] text-black font-bold hover:bg-white transition-all flex items-center justify-center gap-3"
+              className="flex-1 px-6 py-4 bg-[#88A9C3] text-black font-bold hover:bg-white transition-all flex items-center justify-center gap-3"
             >
               <Save className="w-5 h-5" />
               Enregistrer

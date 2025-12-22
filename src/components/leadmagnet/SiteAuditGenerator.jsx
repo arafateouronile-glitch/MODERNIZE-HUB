@@ -162,12 +162,12 @@ Modernize Hub © 2025
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <span className="font-mono text-[#D9FF00] text-sm tracking-widest uppercase mb-6 block">
+            <span className="font-mono text-[#88A9C3] text-sm tracking-widest uppercase mb-6 block">
               Lead Magnet Gratuit
             </span>
             <h2 className="font-display text-5xl md:text-6xl font-bold text-white uppercase leading-[0.9] mb-6">
               AUDIT GRATUIT<br/>
-              <span className="text-[#D9FF00]">DE VOTRE SITE</span>
+              <span className="text-[#88A9C3]">DE VOTRE SITE</span>
             </h2>
             <p className="text-xl text-white/80 font-light">
               Recevez un audit complet de votre site web en 2 minutes. Analysé par nos experts.
@@ -194,7 +194,7 @@ Modernize Hub © 2025
                     value={formData.siteUrl}
                     onChange={(e) => setFormData({ ...formData, siteUrl: e.target.value })}
                     placeholder="https://votre-site.fr"
-                    className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] transition-colors font-mono"
+                    className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] transition-colors font-mono"
                   />
                 </div>
 
@@ -209,7 +209,7 @@ Modernize Hub © 2025
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       placeholder="Jean Dupont"
-                      className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] transition-colors"
+                      className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] transition-colors"
                     />
                   </div>
 
@@ -223,7 +223,7 @@ Modernize Hub © 2025
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       placeholder="jean@exemple.fr"
-                      className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#D9FF00] transition-colors"
+                      className="w-full bg-black/50 border border-white/20 px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:border-[#88A9C3] transition-colors"
                     />
                   </div>
                 </div>
@@ -231,7 +231,7 @@ Modernize Hub © 2025
                 <button
                   type="submit"
                   disabled={isGenerating}
-                  className="w-full py-5 bg-[#D9FF00] text-black font-bold hover:bg-white transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3"
+                  className="w-full py-5 bg-[#88A9C3] text-black font-bold hover:bg-white transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3"
                 >
                   {isGenerating ? (
                     <>
@@ -252,7 +252,7 @@ Modernize Hub © 2025
               </form>
             ) : (
               <div className="text-center py-12">
-                <CheckCircle className="w-20 h-20 text-[#D9FF00] mx-auto mb-6" />
+                <CheckCircle className="w-20 h-20 text-[#88A9C3] mx-auto mb-6" />
                 <h3 className="font-display text-3xl font-bold text-white mb-4">
                   Audit Généré !
                 </h3>
@@ -267,7 +267,7 @@ Modernize Hub © 2025
                     setIsDownloaded(false)
                     setFormData({ siteUrl: '', email: '', name: '' })
                   }}
-                  className="px-8 py-4 border border-[#D9FF00] text-[#D9FF00] hover:bg-[#D9FF00] hover:text-black transition-all font-mono text-sm uppercase"
+                  className="px-8 py-4 border border-[#88A9C3] text-[#88A9C3] hover:bg-[#88A9C3] hover:text-black transition-all font-mono text-sm uppercase"
                 >
                   Générer Un Autre Audit
                 </button>
@@ -289,7 +289,7 @@ Modernize Hub © 2025
               { icon: CheckCircle, text: 'Recommandations Actionnables' },
             ].map((item, index) => (
               <div key={index} className="border border-white/10 bg-white/5 p-6 text-center">
-                <item.icon className="w-8 h-8 text-[#D9FF00] mx-auto mb-4" />
+                <item.icon className="w-8 h-8 text-[#88A9C3] mx-auto mb-4" />
                 <p className="font-mono text-sm text-white/80">{item.text}</p>
               </div>
             ))}

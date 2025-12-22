@@ -55,7 +55,7 @@ export const AdminBlogManager = () => {
           </div>
           <button
             onClick={() => navigate('/admin/blog/new')}
-            className="flex items-center gap-2 px-6 py-3 bg-[#D9FF00] text-black font-bold hover:bg-white transition-colors"
+            className="flex items-center gap-2 px-6 py-3 bg-[#88A9C3] text-black font-bold hover:bg-white transition-colors"
           >
             <Plus className="w-5 h-5" />
             Nouvel Article
@@ -68,7 +68,7 @@ export const AdminBlogManager = () => {
             <p className="text-white/50 mb-6">Aucun article pour le moment</p>
             <button
               onClick={() => navigate('/admin/blog/new')}
-              className="px-6 py-3 bg-[#D9FF00] text-black font-bold hover:bg-white transition-colors"
+              className="px-6 py-3 bg-[#88A9C3] text-black font-bold hover:bg-white transition-colors"
             >
               Créer le Premier Article
             </button>
@@ -84,7 +84,7 @@ export const AdminBlogManager = () => {
                 className="border border-white/10 bg-white/5 p-6 hover:bg-white/10 transition-all"
               >
                 <div className="flex items-start justify-between mb-4">
-                  <span className="font-mono text-[10px] text-[#D9FF00] uppercase tracking-wider bg-[#D9FF00]/10 px-2 py-1 border border-[#D9FF00]/30">
+                  <span className="font-mono text-[10px] text-[#88A9C3] uppercase tracking-wider bg-[#88A9C3]/10 px-2 py-1 border border-[#88A9C3]/30">
                     {post.category || 'Blog'}
                   </span>
                   {post.featured && (
@@ -108,7 +108,7 @@ export const AdminBlogManager = () => {
                 <div className="flex gap-2 pt-4 border-t border-white/10">
                   <button
                     onClick={() => navigate(`/admin/blog/edit/${post.id}`)}
-                    className="flex-1 px-4 py-2 border border-white/20 hover:border-[#D9FF00] hover:text-[#D9FF00] transition-colors flex items-center justify-center gap-2"
+                    className="flex-1 px-4 py-2 border border-white/20 hover:border-[#88A9C3] hover:text-[#88A9C3] transition-colors flex items-center justify-center gap-2"
                   >
                     <Edit className="w-4 h-4" />
                     Modifier
