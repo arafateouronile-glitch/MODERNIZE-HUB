@@ -5,28 +5,36 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    // Optimisations de build
-    minify: 'esbuild', // Utiliser esbuild (déjà inclus) au lieu de terser
-    // Note: pour supprimer console.log, on peut utiliser esbuild drop
+    minify: 'esbuild',
+    target: 'es2020',
+    esbuild: {
+      drop: process.env.NODE_ENV === 'production' ? ['console', 'debugger'] : [],
+    },
+    cssCodeSplit: true,
     rollupOptions: {
       output: {
-        // Code splitting optimisé
-        manualChunks: {
-          'react-vendor': ['react', 'react-dom'],
-          'framer-motion': ['framer-motion'],
+        manualChunks: (id) => {
+          if (id.includes('node_modules')) {
+            if (id.includes('react') || id.includes('react-dom')) return 'react-vendor'
+            if (id.includes('framer-motion')) return 'framer-motion'
+            if (id.includes('three') || id.includes('@react-three')) return 'three'
+            if (id.includes('react-router')) return 'router'
+            if (id.includes('@hookform') || id.includes('zod')) return 'forms'
+          }
         },
+        chunkFileNames: 'assets/[name]-[hash].js',
+        entryFileNames: 'assets/[name]-[hash].js',
+        assetFileNames: 'assets/[name]-[hash][extname]',
       },
     },
-    // Augmenter la limite de chunk size warning
-    chunkSizeWarningLimit: 1000,
+    chunkSizeWarningLimit: 800,
+    sourcemap: false,
   },
-  // Optimisations serveur de dev
   server: {
     hmr: true,
   },
-  // Optimisations de préchargement
   optimizeDeps: {
-    include: ['react', 'react-dom', 'framer-motion'],
+    include: ['react', 'react-dom', 'framer-motion', 'react-router-dom'],
   },
   // Configuration Vitest
   test: {

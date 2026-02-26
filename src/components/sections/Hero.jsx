@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
-import { useState, lazy, Suspense } from 'react'
+import { useState, lazy, Suspense, useEffect } from 'react'
 import { Button } from '../common/Button'
 import { Play, ArrowRight, Sparkles } from 'lucide-react'
 import { Reveal } from '../animations/Reveal'
@@ -7,13 +7,23 @@ import { scrollToSection } from '../../utils/helpers'
 import { useCountUp } from '../../hooks/useCountUp'
 import { LeadQuiz } from '../quiz/LeadQuiz'
 
-// Lazy load 3D scene pour performance
+// Lazy load 3D scene pour performance (chargé après le premier rendu)
 const Hero3DScene = lazy(() => import('../3d/Hero3DScene'))
 
 export const Hero = () => {
   const { scrollY } = useScroll()
   const y = useTransform(scrollY, [0, 500], [0, 200])
   const [isQuizOpen, setIsQuizOpen] = useState(false)
+  const [show3D, setShow3D] = useState(false)
+
+  // Charger la scène 3D après le premier paint pour ne pas bloquer l'affichage
+  useEffect(() => {
+    const useIdle = typeof requestIdleCallback !== 'undefined'
+    const id = useIdle
+      ? requestIdleCallback(() => setShow3D(true), { timeout: 2000 })
+      : setTimeout(() => setShow3D(true), 400)
+    return () => (useIdle ? cancelIdleCallback(id) : clearTimeout(id))
+  }, [])
 
   // Stats avec counter animations
   const stats = [
@@ -29,10 +39,12 @@ export const Hero = () => {
       
       <section className="relative min-h-screen w-full flex flex-col justify-center items-center text-center px-4 sm:px-6 pt-24 sm:pt-28 md:pt-32 pb-12 overflow-hidden bg-background">
       
-      {/* 3D Scene Background */}
-      <Suspense fallback={null}>
-        <Hero3DScene />
-      </Suspense>
+      {/* 3D Scene Background - chargée en différé pour ne pas bloquer le LCP */}
+      {show3D && (
+        <Suspense fallback={null}>
+          <Hero3DScene />
+        </Suspense>
+      )}
       
       {/* Animated Background Gradients */}
       <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[80vw] h-[80vw] bg-primary/10 rounded-full blur-[120px] animate-pulse-slow pointer-events-none" />
