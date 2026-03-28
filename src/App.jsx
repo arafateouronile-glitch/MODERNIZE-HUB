@@ -8,7 +8,7 @@ import { About } from './components/sections/About'
 import { Pricing } from './components/sections/Pricing'
 import { Contact } from './components/sections/Contact'
 import { MetaTags } from './components/seo/MetaTags'
-import { faqs } from './components/sections/FAQ'
+import { faqs } from './data/faqs'
 
 // Lazy load sections below the fold for better performance
 const Process = lazy(() => import('./components/sections/Process').then(m => ({ default: m.Process })))
