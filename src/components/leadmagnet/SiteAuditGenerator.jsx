@@ -52,24 +52,24 @@ export const SiteAuditGenerator = () => {
         conversion: Math.floor(Math.random() * 40) + 40,
       },
       issues: [
-        'Design obsolète (2020-2023)',
-        'Temps de chargement > 4 secondes',
-        'Pas optimisé mobile',
-        'Aucune stratégie SEO',
-        'Absence de tracking conversion',
+        'Zéro automatisation IA (leads perdus la nuit & le weekend)',
+        'Absence de qualification automatique (40% des prospects non traités)',
+        'Pas de devis automatique (délai moyen de réponse : 24-48h)',
+        'CRM non connecté au site (perte de données prospects)',
+        'Aucun agent IA de pré-qualification (appels non qualifiés chronophages)',
       ],
       opportunities: [
-        'Refonte design moderne pourrait générer +280% conversions',
-        'Optimisation vitesse = +45% temps sur site',
-        'SEO technique = +120% trafic organique',
-        'Mobile-first = +67% leads mobiles',
+        'Système IA de qualification = +200% taux de conversion leads',
+        'Devis automatiques = temps de réponse < 5 minutes vs 24h',
+        'Agent IA 24/7 = 40% de leads supplémentaires capturés la nuit',
+        'CRM autonome = 15h/semaine récupérées sur tâches administratives',
       ],
     }
 
     // Créer le texte du PDF
     const pdfContent = `
-AUDIT GRATUIT DE VOTRE SITE WEB
-Modernize Hub
+AUDIT IA GRATUIT — POTENTIEL D'AUTOMATISATION
+Modernize Hub · Web & Systèmes d'IA Autonomes
 
 Date: ${auditData.date}
 Site analysé: ${auditData.site}
@@ -102,26 +102,26 @@ ${auditData.opportunities.map((opp, i) => `${i + 1}. ${opp}`).join('\n')}
 
 RECOMMANDATIONS PRIORITAIRES
 
-1. REFONTE DESIGN URGENTE
-   Impact: +280% conversions estimées
+1. DÉPLOIEMENT AGENT IA DE QUALIFICATION
+   Impact: +200% taux de conversion leads
    Délai: 14 jours
-   Investissement: 1 990€ - 5 990€
+   Investissement: À partir de 4 490€ (sur devis après audit)
 
-2. OPTIMISATION PERFORMANCE
-   Impact: +45% temps sur site
-   Délai: 7 jours
-   Investissement: Inclus dans refonte
+2. SITE WEB ULTRA-RAPIDE + CAPTURE IA
+   Impact: +180% leads qualifiés
+   Délai: 10 jours
+   Investissement: À partir de 1 990€
 
-3. STRATÉGIE SEO COMPLÈTE
-   Impact: +120% trafic organique
-   Délai: 30 jours
-   Investissement: Inclus dans refonte
+3. AUTOMATISATION CRM COMPLÈTE
+   Impact: 15h/semaine récupérées
+   Délai: Inclus dans Pack Système Autonome
+   Maintenance continue: 349€/mois
 
 ─────────────────────────────────────
 
 PROCHAINES ÉTAPES
 
-Pour transformer votre site en machine à générer des leads:
+Pour déployer votre système IA autonome et récupérer 15h/semaine:
 
 1. Réservez un appel découverte gratuit (30 min)
 2. Recevez un devis personnalisé sous 24h
@@ -166,11 +166,11 @@ Modernize Hub © 2025
               Lead Magnet Gratuit
             </span>
             <h2 className="font-display text-5xl md:text-6xl font-bold text-white uppercase leading-[0.9] mb-6">
-              AUDIT GRATUIT<br/>
-              <span className="text-[#88A9C3]">DE VOTRE SITE</span>
+              AUDIT IA GRATUIT<br/>
+              <span className="text-[#88A9C3]">VOTRE POTENTIEL</span>
             </h2>
             <p className="text-xl text-white/80 font-light">
-              Recevez un audit complet de votre site web en 2 minutes. Analysé par nos experts.
+              Découvrez combien d'heures et d'euros vous perdez sans système IA. Résultat en 2 minutes.
             </p>
           </motion.div>
 
@@ -284,9 +284,9 @@ Modernize Hub © 2025
             className="mt-12 grid md:grid-cols-3 gap-6"
           >
             {[
-              { icon: FileText, text: '15+ Points Analysés' },
-              { icon: AlertCircle, text: 'Problèmes Identifiés' },
-              { icon: CheckCircle, text: 'Recommandations Actionnables' },
+              { icon: FileText, text: 'Potentiel IA Calculé' },
+              { icon: AlertCircle, text: 'Coûts Cachés Révélés' },
+              { icon: CheckCircle, text: 'Plan d\'Automatisation Inclus' },
             ].map((item, index) => (
               <div key={index} className="border border-white/10 bg-white/5 p-6 text-center">
                 <item.icon className="w-8 h-8 text-[#88A9C3] mx-auto mb-4" />

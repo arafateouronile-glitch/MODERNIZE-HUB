@@ -28,14 +28,40 @@ export const PricingCard = ({ plan, index }) => {
         <h3 className="font-display text-3xl font-bold text-white uppercase mb-2">{plan.name}</h3>
         <p className="font-mono text-xs text-white/50 mb-6 min-h-[40px]">{plan.tagline}</p>
         
-        <div className="flex items-baseline gap-2 mb-2">
-          <span className="font-display text-5xl font-bold text-white tracking-tighter">
-            {plan.price}€
-          </span>
-        </div>
-        <div className="font-mono text-sm text-white/40 line-through decoration-[#88A9C3]">
-           AVANT {plan.oldPrice}€
-        </div>
+        {plan.priceOnAudit ? (
+          <div className="mb-2">
+            <div className="inline-flex items-center gap-2 px-4 py-2 border border-[#88A9C3]/40 bg-[#88A9C3]/8 mb-3">
+              <span className="font-display text-2xl font-bold text-[#88A9C3] tracking-tight">Sur devis</span>
+            </div>
+            <p className="font-mono text-xs text-white/40">
+              À partir de {plan.priceFrom?.toLocaleString('fr-FR')}€ · Après audit gratuit
+            </p>
+          </div>
+        ) : plan.priceFrom ? (
+          <div className="mb-2">
+            <div className="flex items-baseline gap-1 mb-1">
+              <span className="font-mono text-sm text-white/50">À partir de</span>
+            </div>
+            <div className="flex items-baseline gap-2">
+              <span className="font-display text-5xl font-bold text-white tracking-tighter">
+                {plan.priceFrom.toLocaleString('fr-FR')}€
+              </span>
+            </div>
+          </div>
+        ) : (
+          <>
+            <div className="flex items-baseline gap-2 mb-2">
+              <span className="font-display text-5xl font-bold text-white tracking-tighter">
+                {plan.price}€
+              </span>
+            </div>
+            {plan.oldPrice && (
+              <div className="font-mono text-sm text-white/40 line-through decoration-[#88A9C3]">
+                AVANT {plan.oldPrice}€
+              </div>
+            )}
+          </>
+        )}
       </div>
 
       <div className="flex-grow space-y-4 mb-8 border-t border-white/10 pt-8">
@@ -60,7 +86,7 @@ export const PricingCard = ({ plan, index }) => {
         )}
       </div>
 
-      <button 
+      <button
         onClick={() => scrollToSection('contact')}
         className={`w-full py-4 font-mono text-sm font-bold uppercase tracking-widest transition-all duration-300 ${
           isPopular
@@ -68,7 +94,7 @@ export const PricingCard = ({ plan, index }) => {
             : 'bg-transparent border border-[#88A9C3] text-[#88A9C3] hover:bg-[#88A9C3] hover:text-black'
         }`}
       >
-        Select Plan
+        {plan.priceOnAudit ? 'Demander un Audit Gratuit' : 'Choisir ce Pack'}
       </button>
     </motion.div>
   )

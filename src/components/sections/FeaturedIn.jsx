@@ -7,7 +7,7 @@ const featuredItems = [
     type: 'Podcast',
     icon: Mic,
     title: 'Entrepreneurs du Digital',
-    description: 'Episode 42: "Comment transformer un site web en machine à leads"',
+    description: 'Episode 42: "Comment les entrepreneurs utilisent l\'IA pour générer 10× plus de leads qualifiés"',
     date: 'Novembre 2024',
     link: '#',
   },
@@ -15,7 +15,7 @@ const featuredItems = [
     type: 'Article',
     icon: Newspaper,
     title: 'TechCrunch France',
-    description: 'Les 10 agences web qui révolutionnent la conversion en 2025',
+    description: 'Les 10 experts en IA autonome qui dominent la conversion en 2025',
     date: 'Octobre 2024',
     link: '#',
   },
@@ -23,7 +23,7 @@ const featuredItems = [
     type: 'Interview',
     icon: Video,
     title: 'YouTube - Web Marketing Pro',
-    description: 'Interview exclusive: Méthode Modernize Hub pour +320% de conversions',
+    description: 'Interview exclusive: Comment l\'IA de Modernize Hub automatise 15h de travail par semaine',
     date: 'Septembre 2024',
     link: '#',
   },
@@ -31,7 +31,7 @@ const featuredItems = [
     type: 'Article',
     icon: Newspaper,
     title: 'Les Echos Entrepreneurs',
-    description: 'Success Story: Comment Modernize Hub génère 850K€ pour ses clients',
+    description: 'Success Story: Comment les systèmes IA autonomes génèrent 850K€ pour des entrepreneurs',
     date: 'Août 2024',
     link: '#',
   },
@@ -108,7 +108,7 @@ export const FeaturedIn = () => {
           <div className="mt-20 max-w-4xl mx-auto text-center">
             <div className="border-l-4 border-[#88A9C3] pl-8 py-6">
               <blockquote className="font-display text-2xl md:text-3xl font-bold text-white leading-relaxed mb-4">
-                "Modernize Hub a réussi à transformer le paysage du web design en France. Leurs résultats parlent d'eux-mêmes."
+                "Modernize Hub redéfinit ce qu'une agence digitale peut faire en 2025. Leurs systèmes IA autonomes ne construisent plus des sites — ils construisent des infrastructures qui travaillent à la place des entrepreneurs."
               </blockquote>
               <cite className="font-mono text-sm text-white/60 not-italic">
                 — TechCrunch France, Octobre 2024

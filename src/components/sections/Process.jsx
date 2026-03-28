@@ -39,15 +39,15 @@ export const Process = () => {
           className="mb-20"
         >
           <span className="font-mono text-[#88A9C3] text-sm tracking-widest uppercase mb-4 block">
-            System Protocol
+            Protocole de Déploiement
           </span>
           <h2 className="font-display text-5xl md:text-7xl font-bold text-white uppercase mb-8">
-            Execution<br/>Pipeline
+            Votre Système<br/>En 14 Jours
           </h2>
           <p className="font-mono text-text-muted max-w-xl">
-            {'>'} Initializing 4-step sequence... <br/>
-            {'>'} Target: Launch in 14 days. <br/>
-            {'>'} Status: Ready to deploy.
+            {'>'} Audit · Design · Intégration IA · Déploiement<br/>
+            {'>'} Objectif : Système autonome opérationnel.<br/>
+            {'>'} Statut : Prêt à activer.
           </p>
         </motion.div>
 

@@ -8,19 +8,19 @@ const videoTestimonials = [
     id: 1,
     client: 'Pierre - Avocat',
     thumbnail: '/images/video-thumbs/pierre.jpg',
-    youtubeId: 'YOUTUBE_VIDEO_ID_1', // Remplacez par votre vraie ID YouTube
-    title: 'Transformation complète de mon cabinet',
+    youtubeId: 'YOUTUBE_VIDEO_ID_1',
+    title: 'Mon IA qualifie mes prospects pendant mes audiences',
     duration: '2:34',
-    quote: '"+230% de demandes en 30 jours. Incroyable."',
+    quote: '"L\'IA a fait ce que 2 assistantes ne faisaient pas. +230% de consultations qualifiées."',
   },
   {
     id: 2,
     client: 'Sophie - Agent Immobilier',
     thumbnail: '/images/video-thumbs/sophie.jpg',
     youtubeId: 'YOUTUBE_VIDEO_ID_2',
-    title: '2,2M€ de mandats fermés grâce au nouveau site',
+    title: '2,2M€ de mandats — grâce au système IA qui répond en 2 min',
     duration: '3:15',
-    quote: '"Le ROI a été instantané. Je recommande à 100%."',
+    quote: '"Avant, je perdais des mandats faute de réactivité. L\'IA répond en 2 minutes. Fini."',
   },
 ]
 
@@ -50,7 +50,7 @@ export const VideoTestimonials = () => {
               <span className="text-[#88A9C3]">CROIRE</span>
             </h2>
             <p className="text-xl text-white/80 font-light">
-              Nos clients témoignent en vidéo de leur transformation. Résultats réels. Histoires authentiques.
+              Nos clients témoignent de leur autonomie retrouvée. Temps libéré. Revenus augmentés. Systèmes IA en action.
             </p>
           </div>
         </Reveal>

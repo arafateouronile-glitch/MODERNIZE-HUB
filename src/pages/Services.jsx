@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Sparkles, RefreshCw, ArrowRight, Check } from 'lucide-react'
+import { Sparkles, RefreshCw, ArrowRight, Check, Bot, Filter, Calendar, Zap } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { Header } from '../components/common/Header'
 import { Footer } from '../components/common/Footer'
@@ -81,7 +81,7 @@ export const Services = () => {
               theme === 'light' ? 'text-gray-700' : 'text-gray-300'
             }`}
           >
-            Choisissez le service qui correspond à votre besoin
+            Site web haute performance · Agent IA · Automatisation CRM
           </motion.p>
         </motion.div>
       </section>
@@ -197,6 +197,139 @@ export const Services = () => {
         </div>
       </section>
 
+      {/* IA Automation Section */}
+      <section className="py-20 px-6">
+        <div className="container mx-auto max-w-6xl">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className={`relative border-2 border-[#88A9C3] p-10 md:p-14 overflow-hidden ${
+              theme === 'light' ? 'bg-gray-50' : 'bg-[#88A9C3]/5'
+            }`}
+          >
+            {/* Background glow */}
+            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#88A9C3]/10 rounded-full blur-[100px] pointer-events-none" />
+
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 px-4 py-2 border border-[#88A9C3]/40 bg-[#88A9C3]/10 mb-8">
+              <Zap className="w-3 h-3 text-[#88A9C3]" />
+              <span className="font-mono text-[#88A9C3] text-xs uppercase tracking-[0.2em]">Nouveau · Offre Flagship</span>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-12 items-start relative z-10">
+              {/* Left — Text */}
+              <div>
+                <div className="w-14 h-14 rounded-full bg-[#88A9C3]/20 border border-[#88A9C3]/40 flex items-center justify-center mb-6">
+                  <Bot className="w-7 h-7 text-[#88A9C3]" />
+                </div>
+                <h3 className={`font-display text-4xl md:text-5xl font-bold uppercase mb-3 ${
+                  theme === 'light' ? 'text-black' : 'text-white'
+                }`}>
+                  Automatisation IA<br />& Systèmes Autonomes
+                </h3>
+                <p className="font-mono text-xs text-[#88A9C3] uppercase tracking-widest mb-6">
+                  Votre business tourne sans vous
+                </p>
+                <p className={`text-lg leading-relaxed mb-8 ${
+                  theme === 'light' ? 'text-gray-700' : 'text-gray-300'
+                }`}>
+                  On ne construit plus seulement des sites. On déploie des <strong className={theme === 'light' ? 'text-black' : 'text-white'}>employés numériques infatigables</strong> — disponibles 24h/24, sans congés, sans erreurs. Chaque lead entrant est capturé, qualifié et converti automatiquement.
+                </p>
+
+                <div className="space-y-3 mb-10">
+                  {[
+                    'Agent IA qui qualifie vos leads en 30 secondes',
+                    'Devis générés et envoyés automatiquement',
+                    'Prise de RDV synchronisée dans votre agenda',
+                    'Pipeline CRM mis à jour en temps réel',
+                    'Maintenance & optimisation IA continue (349€/mois)',
+                    'Votre IA apprend et s\'améliore chaque semaine',
+                  ].map((feature, idx) => (
+                    <div key={idx} className="flex items-start gap-3">
+                      <Check className="w-4 h-4 text-[#88A9C3] mt-0.5 flex-shrink-0" />
+                      <span className={`text-sm ${theme === 'light' ? 'text-gray-700' : 'text-gray-300'}`}>
+                        {feature}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="flex flex-wrap items-center gap-4">
+                  <motion.button
+                    whileHover={{ scale: 1.04 }}
+                    whileTap={{ scale: 0.96 }}
+                    onClick={() => navigate('/#contact')}
+                    className="inline-flex items-center gap-2 px-8 py-4 bg-[#88A9C3] text-black font-bold hover:bg-white transition-all"
+                  >
+                    Demander un Audit Gratuit
+                    <ArrowRight className="w-4 h-4" />
+                  </motion.button>
+                  <div>
+                    <p className={`font-mono text-xs uppercase tracking-widest ${theme === 'light' ? 'text-gray-500' : 'text-white/40'}`}>À partir de</p>
+                    <p className={`font-display text-2xl font-bold ${theme === 'light' ? 'text-black' : 'text-white'}`}>4 490€</p>
+                    <p className="font-mono text-xs text-[#88A9C3]">Sur devis après audit</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right — 3 Pillars */}
+              <div className="space-y-1">
+                {[
+                  {
+                    icon: Zap,
+                    number: '01',
+                    title: 'CAPTURE',
+                    desc: 'Site Web 2025 ultra-rapide. PageSpeed 95+. Chaque visiteur est un prospect potentiel.',
+                  },
+                  {
+                    icon: Filter,
+                    number: '02',
+                    title: 'QUALIFICATION',
+                    desc: 'L\'agent IA analyse chaque lead en 30 secondes. Vous ne parlez plus qu\'aux clients prêts à signer.',
+                  },
+                  {
+                    icon: Calendar,
+                    number: '03',
+                    title: 'CONVERSION',
+                    desc: 'Devis automatiques, RDV pris, CRM alimenté. Le cycle de vente se ferme sans vous.',
+                  },
+                ].map((pillar, i) => {
+                  const Icon = pillar.icon
+                  return (
+                    <motion.div
+                      key={i}
+                      initial={{ opacity: 0, x: 30 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: i * 0.15 }}
+                      className={`flex items-start gap-5 p-6 border border-white/10 ${
+                        theme === 'light' ? 'bg-white' : 'bg-white/3'
+                      } hover:border-[#88A9C3]/40 transition-all`}
+                    >
+                      <div>
+                        <span className="font-mono text-[#88A9C3]/30 text-3xl font-bold leading-none block">{pillar.number}</span>
+                        <div className="w-8 h-8 rounded-full border border-[#88A9C3]/30 bg-[#88A9C3]/10 flex items-center justify-center mt-2">
+                          <Icon className="w-4 h-4 text-[#88A9C3]" />
+                        </div>
+                      </div>
+                      <div>
+                        <h4 className={`font-display text-xl font-bold uppercase mb-2 ${theme === 'light' ? 'text-black' : 'text-white'}`}>
+                          {pillar.title}
+                        </h4>
+                        <p className={`text-sm leading-relaxed ${theme === 'light' ? 'text-gray-600' : 'text-gray-400'}`}>
+                          {pillar.desc}
+                        </p>
+                      </div>
+                    </motion.div>
+                  )
+                })}
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Comparaison Section */}
       <section className="py-20 px-6 bg-black/5">
         <div className="container mx-auto max-w-4xl">
@@ -216,7 +349,7 @@ export const Services = () => {
               ? 'bg-white border-black'
               : 'bg-surface border-white/10'
           }`}>
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-3 gap-8">
               <div>
                 <h3 className={`text-2xl font-bold mb-4 flex items-center gap-3 ${
                   theme === 'light' ? 'text-black' : 'text-white'
@@ -224,10 +357,8 @@ export const Services = () => {
                   <Sparkles className="w-6 h-6 text-[#3B82F6]" />
                   Création de Site
                 </h3>
-                <p className={`${
-                  theme === 'light' ? 'text-gray-700' : 'text-gray-300'
-                }`}>
-                  Parfait si vous n'avez pas encore de site web ou si vous souhaitez créer quelque chose de complètement nouveau à partir de zéro.
+                <p className={`text-sm ${theme === 'light' ? 'text-gray-700' : 'text-gray-300'}`}>
+                  Parfait si vous n'avez pas encore de site ou souhaitez repartir de zéro avec un design premium.
                 </p>
               </div>
 
@@ -238,10 +369,20 @@ export const Services = () => {
                   <RefreshCw className="w-6 h-6 text-[#8B5CF6]" />
                   Refonte de Site
                 </h3>
-                <p className={`${
-                  theme === 'light' ? 'text-gray-700' : 'text-gray-300'
+                <p className={`text-sm ${theme === 'light' ? 'text-gray-700' : 'text-gray-300'}`}>
+                  Idéal si votre site existant ne convertit pas ou a besoin d'un nouveau souffle technique et visuel.
+                </p>
+              </div>
+
+              <div className="border-t md:border-t-0 md:border-l border-[#88A9C3]/30 pt-6 md:pt-0 md:pl-8">
+                <h3 className={`text-2xl font-bold mb-4 flex items-center gap-3 ${
+                  theme === 'light' ? 'text-black' : 'text-white'
                 }`}>
-                  Idéal si vous avez déjà un site web qui ne performe pas ou qui a besoin d'un coup de jeune avec un design ultra-premium.
+                  <Bot className="w-6 h-6 text-[#88A9C3]" />
+                  Automatisation IA
+                </h3>
+                <p className={`text-sm ${theme === 'light' ? 'text-gray-700' : 'text-gray-300'}`}>
+                  Pour ceux qui veulent aller plus loin : un système complet qui capture, qualifie et convertit vos leads sans intervention humaine.
                 </p>
               </div>
             </div>

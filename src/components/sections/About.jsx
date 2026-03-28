@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Frown, Smartphone, ZapOff, Zap, Smartphone as Mobile, Palette, TrendingUp, ArrowDown } from 'lucide-react'
+import { Frown, BotOff, ZapOff, Zap, Bot, BarChart2, TrendingUp, ArrowDown } from 'lucide-react'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 import { Reveal } from '../animations/Reveal'
 import { lazy, Suspense } from 'react'
@@ -9,30 +9,30 @@ const AboutScene = lazy(() => import('../3d/FloatingShapes').then(m => ({ defaul
 
 const problems = [
   {
-    icon: Frown,
+    icon: BotOff,
     stat: '78%',
-    label: 'VISITEURS PERDUS',
-    text: 'Abandon en moins de 3 secondes si votre design fait 2015. Chaque jour = 50+ clients perdus.',
+    label: 'LEADS NON QUALIFIÉS',
+    text: 'Sans IA de qualification, 4 leads sur 5 ne reçoivent aucune réponse rapide. Ils signent avec votre concurrent.',
   },
   {
-    icon: Smartphone,
-    stat: '67%',
-    label: 'TRAFIC MOBILE',
-    text: 'Votre site illisible sur mobile vous coûte 3 000€/mois en revenus perdus. Vos concurrents récupèrent.',
+    icon: Frown,
+    stat: '40%',
+    label: 'LEADS PERDUS LA NUIT',
+    text: 'Vos prospects remplissent un formulaire à 22h. Sans système autonome, ils sont froids le lendemain matin.',
   },
   {
     icon: ZapOff,
-    stat: '5 SEC',
-    label: 'TEMPS DE CHARGEMENT',
-    text: '+5 secondes de chargement = -60% de conversions. Google vous enterre en page 12.',
+    stat: '15H',
+    label: 'PERDUES PAR SEMAINE',
+    text: 'Devis manuels, appels de qualification, relances CRM. Ce temps devrait être consacré à votre cœur de métier.',
   },
 ]
 
 const benefits = [
-  { icon: Zap, text: 'VITESSE < 1.5S', subtext: '+180% Taux de Conversion' },
-  { icon: Mobile, text: 'MOBILE PARFAIT', subtext: '+240% Ventes Mobile' },
-  { icon: Palette, text: 'UX IMMERSIVE', subtext: '+320% Temps sur Site' },
-  { icon: TrendingUp, text: 'SEO PUISSANT', subtext: 'Page 1 Google Garanti' },
+  { icon: Zap, text: 'CAPTURE 24/7', subtext: '+180% Leads Qualifiés' },
+  { icon: Bot, text: 'AGENT IA', subtext: 'Qualification en 30 sec' },
+  { icon: BarChart2, text: 'CRM AUTONOME', subtext: 'Pipeline temps réel' },
+  { icon: TrendingUp, text: 'ROI ×4.8', subtext: 'Retour à 90 jours' },
 ]
 
 export const About = () => {
@@ -61,8 +61,8 @@ export const About = () => {
                 <span className="text-[#88A9C3]">€€€€</span>
               </h2>
               <p className="text-xl text-text-muted font-light max-w-lg leading-relaxed">
-                Chaque jour sans site moderne = clients capturés par vos concurrents. Que vous ayez besoin d'un nouveau site créé à partir de zéro ou d'une refonte complète de votre site existant, nous transformons votre présence digitale.
-                <span className="block mt-4 text-white font-bold">Le coût réel de l'inaction : 10 000€+ par mois.</span>
+                Pendant que vous gérez l'opérationnel à la main, vos concurrents déploient des <strong className="text-white">systèmes IA qui travaillent sans s'arrêter</strong>. Chaque heure sans automatisation est une heure où vous perdez des leads, des devis, des clients.
+                <span className="block mt-4 text-white font-bold">Le coût réel de l'absence d'IA : 10 000€+ par mois.</span>
               </p>
             </div>
           </Reveal>

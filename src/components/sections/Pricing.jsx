@@ -13,7 +13,7 @@ export const Pricing = () => {
   const [ref, isVisible] = useScrollAnimation()
 
   return (
-    <section id="refonte" ref={ref} className="py-32 bg-background relative z-10 border-t border-white/5 overflow-hidden">
+    <section id="solutions-ia" ref={ref} className="py-32 bg-background relative z-10 border-t border-white/5 overflow-hidden">
       {/* 3D Background */}
       <Suspense fallback={null}>
         <PricingScene />
@@ -23,15 +23,18 @@ export const Pricing = () => {
         
         <div className="flex flex-col items-center mb-20">
           <Reveal>
+            <span className="font-mono text-[#88A9C3] text-xs uppercase tracking-[0.3em] mb-6 block text-center">
+              Choisissez votre Infrastructure
+            </span>
             <h2 className="font-display text-5xl md:text-8xl font-bold text-white uppercase leading-[0.9] mb-8 text-center">
               COMBIEN COÛTE<br/>
-              <span className="text-[#88A9C3]">VOTRE INACTION ?</span>
+              <span className="text-[#88A9C3]">L'ABSENCE D'IA ?</span>
             </h2>
           </Reveal>
 
           <Reveal delay={0.2}>
             <p className="text-xl md:text-2xl text-text-muted max-w-3xl text-center font-light mb-8">
-              Pendant que vous réfléchissez, vos concurrents prennent VOS parts de marché.
+              Chaque semaine sans système autonome, c'est 15h perdues, des leads non qualifiés, et des devis jamais envoyés.
             </p>
           </Reveal>
         </div>
