@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { LogOut, FileText, MessageSquare, Star, BarChart3, Menu, X } from 'lucide-react'
+import { LogOut, FileText, MessageSquare, Star, BarChart3, Menu, X, Plug } from 'lucide-react'
 import { LeadsManager } from './LeadsManager'
 import { BlogManager } from './BlogManager'
 import { TestimonialsManager } from './TestimonialsManager'
+import { ApiManager } from './ApiManager'
 import { supabaseStorage as storage } from '../../services/supabaseStorage'
 
 const menuItems = [
@@ -11,6 +12,7 @@ const menuItems = [
   { id: 'leads', label: 'Leads & Devis', icon: FileText },
   { id: 'blog', label: 'Gestion Blog', icon: MessageSquare },
   { id: 'testimonials', label: 'Témoignages', icon: Star },
+  { id: 'api', label: 'API & Intégrations', icon: Plug },
 ]
 
 export const AdminDashboard = ({ onLogout }) => {
@@ -66,6 +68,8 @@ export const AdminDashboard = ({ onLogout }) => {
         return <BlogManager onUpdate={loadStats} />
       case 'testimonials':
         return <TestimonialsManager onUpdate={loadStats} />
+      case 'api':
+        return <ApiManager />
       default:
         return <DashboardHome stats={stats} />
     }
