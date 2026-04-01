@@ -131,7 +131,7 @@ export const Portfolio = () => {
                   exit={{ opacity: 0, scale: 0.8 }}
                   transition={{ delay: index * 0.1, duration: 0.4 }}
                   whileHover={{ y: -8, scale: 1.02 }}
-                  onClick={() => navigate(`/demo/${project.id}`)}
+                  onClick={() => project.liveUrl ? window.open(project.liveUrl, '_blank', 'noopener,noreferrer') : navigate(`/demo/${project.id}`)}
                   className={`group cursor-pointer rounded-3xl overflow-hidden border-2 transition-all ${
                     theme === 'light'
                       ? 'bg-white border-black'

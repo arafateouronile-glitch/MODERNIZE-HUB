@@ -938,8 +938,40 @@ export const DemoPage = () => {
 
       default:
         return (
-          <div className="min-h-screen flex items-center justify-center">
-            <h1>Design en cours de chargement...</h1>
+          <div
+            className="min-h-screen flex flex-col items-center justify-center gap-8 px-6 text-center"
+            style={{ background: project.colors.primary }}
+          >
+            <div
+              className="w-20 h-20 rounded-2xl flex items-center justify-center text-4xl font-bold"
+              style={{ background: project.colors.secondary, color: project.colors.primary }}
+            >
+              {project.title.charAt(0)}
+            </div>
+            <h1
+              className="text-4xl md:text-6xl font-bold"
+              style={{ color: project.colors.accent || '#FFFFFF' }}
+            >
+              {project.title}
+            </h1>
+            <p
+              className="text-lg max-w-xl opacity-70"
+              style={{ color: project.colors.accent || '#FFFFFF' }}
+            >
+              {project.description}
+            </p>
+            {project.liveUrl && (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-8 py-4 rounded-full font-bold text-lg transition-transform hover:scale-105"
+                style={{ background: project.colors.secondary, color: project.colors.primary }}
+              >
+                Visiter le site live
+                <ArrowUpRight className="w-5 h-5" />
+              </a>
+            )}
           </div>
         )
     }
@@ -984,12 +1016,24 @@ export const DemoPage = () => {
           <ArrowLeft className="w-3 h-3" />
           Retour
         </button>
-        <button
-          onClick={() => navigate('/contact')}
-          className="bg-[#88A9C3] text-black px-4 py-2 rounded-full text-xs font-bold hover:bg-white transition-colors"
-        >
-          Je veux ce site
-        </button>
+        {project.liveUrl ? (
+          <a
+            href={project.liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#88A9C3] text-black px-4 py-2 rounded-full text-xs font-bold hover:bg-white transition-colors flex items-center gap-1"
+          >
+            Voir le site
+            <ArrowUpRight className="w-3 h-3" />
+          </a>
+        ) : (
+          <button
+            onClick={() => navigate('/contact')}
+            className="bg-[#88A9C3] text-black px-4 py-2 rounded-full text-xs font-bold hover:bg-white transition-colors"
+          >
+            Je veux ce site
+          </button>
+        )}
       </motion.div>
     </>
   )
