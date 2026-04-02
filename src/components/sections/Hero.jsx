@@ -53,7 +53,7 @@ export const Hero = () => {
         <Reveal>
           <div className="inline-flex items-center gap-2 px-4 py-2 border border-[#88A9C3]/30 bg-[#88A9C3]/5 rounded-full mb-8 sm:mb-10">
             <Zap className="w-3 h-3 text-[#88A9C3]" />
-            <span className="font-mono text-[#88A9C3] text-xs uppercase tracking-[0.2em]">Web & Systèmes d'IA Autonomes</span>
+            <span className="font-mono text-[#88A9C3] text-xs uppercase tracking-[0.2em]">Infrastructure IA · Sur Mesure Métier · Opérationnelle en 14J</span>
           </div>
         </Reveal>
 
@@ -74,31 +74,15 @@ export const Hero = () => {
 
         <Reveal delay={0.7}>
           <p className="max-w-2xl mx-auto text-text-muted text-base sm:text-xl md:text-2xl font-light leading-relaxed mb-3 sm:mb-4 px-2">
-            Nous ne construisons plus des sites web. Nous déployons des{' '}
-            <span className="text-white font-semibold">employés numériques infatigables</span>{' '}
-            — disponibles 24h/24, sans congés, sans erreurs.
+            Vos devis tapés à la main. Vos relances sur WhatsApp. Vos leads dans un tableur.{' '}
+            <span className="text-white font-semibold">Ça s'arrête maintenant.</span>
           </p>
           <p className="text-white font-bold text-lg sm:text-xl md:text-2xl mb-4 sm:mb-6 px-2">
-            L'autonomie opérationnelle.{' '}
-            <span style={{ color: '#88A9C3' }} className="text-[#88A9C3]">C'est maintenant.</span>
+            On construit l'infrastructure qui gère tout ça à votre place —{' '}
+            <span style={{ color: '#88A9C3' }} className="text-[#88A9C3]">calibrée sur votre métier.</span>
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 mb-8 sm:mb-12 px-2">
-            <a
-              href="/creation-site-web"
-              className="px-4 sm:px-6 py-2.5 sm:py-3 border-2 border-white/20 hover:border-[#88A9C3] rounded-full text-white hover:text-[#88A9C3] transition-all text-xs sm:text-sm font-medium whitespace-nowrap"
-            >
-              ⚡ Site Web Ultra-Rapide
-            </a>
-            <span className="text-white/50 hidden sm:inline">•</span>
-            <a
-              href="/refonte-site"
-              className="px-4 sm:px-6 py-2.5 sm:py-3 border-2 border-white/20 hover:border-[#88A9C3] rounded-full text-white hover:text-[#88A9C3] transition-all text-xs sm:text-sm font-medium whitespace-nowrap"
-            >
-              🤖 Agent IA Lead Gen
-            </a>
-          </div>
-          <p className="text-white/70 text-xs sm:text-sm mb-8 sm:mb-12 px-2">
-            Infrastructure digitale complète — de la capture du lead à la signature du contrat
+          <p className="text-white/60 text-sm mb-8 sm:mb-12 px-2 max-w-xl mx-auto">
+            Admin · Devis · Relances · Qualification leads · CRM · Prise de RDV — rien ne se fait plus à la main.
           </p>
         </Reveal>
 
@@ -171,8 +155,8 @@ export const Hero = () => {
               <span className="text-[10px] sm:text-xs text-white/70 whitespace-nowrap">Satisfait ou Remboursé</span>
             </div>
             <div className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 border border-white/10 rounded-full bg-white/5 backdrop-blur-sm">
-              <span className="text-xs sm:text-sm font-bold text-[#88A9C3]">🔒</span>
-              <span className="text-[10px] sm:text-xs text-white/70 whitespace-nowrap">Infrastructure Sécurisée</span>
+              <span className="text-xs sm:text-sm font-bold text-[#88A9C3]">🎯</span>
+              <span className="text-[10px] sm:text-xs text-white/70 whitespace-nowrap">Sur Mesure Métier</span>
             </div>
             <div className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 border border-white/10 rounded-full bg-white/5 backdrop-blur-sm">
               <span className="text-xs sm:text-sm font-bold text-[#88A9C3]">⚡</span>

@@ -4,19 +4,19 @@ import { Reveal } from '../animations/Reveal'
 import { X, Check } from 'lucide-react'
 
 const humanCosts = [
-  { label: 'Salaire brut chargé', value: '3 500€/mois', sub: 'Sans compter les congés payés' },
-  { label: 'Erreurs & oublis humains', value: '~8h perdues', sub: 'Par semaine en corrections' },
+  { label: 'Salaire brut chargé', value: '3 500€/mois', sub: 'Soit 42 000€/an minimum' },
+  { label: 'Charge mentale admin', value: '22h/semaine', sub: 'Devis, relances, qualification, CRM' },
   { label: 'Disponibilité réelle', value: '35h/sem', sub: 'Fermé la nuit, les weekends, en vacances' },
-  { label: 'Temps de formation', value: '3–6 mois', sub: 'Avant d\'être vraiment opérationnel' },
+  { label: 'Relances clients effectuées', value: 'Aléatoires', sub: 'Oubliées dès que la charge augmente' },
   { label: 'Turnover & recrutement', value: '4 000€+', sub: 'Coût moyen d\'un remplacement' },
 ]
 
 const aiCosts = [
-  { label: 'Coût mensuel tout inclus', value: 'dès 349€/mois', sub: 'Maintenance & optimisation continue' },
-  { label: 'Taux d\'erreur', value: '< 0.1%', sub: 'Sur les tâches répétitives qualifiées' },
-  { label: 'Disponibilité', value: '24/7/365', sub: 'Jamais malade, jamais en congé' },
-  { label: 'Temps d\'activation', value: '14 jours', sub: 'Opérationnel dès la première semaine' },
-  { label: 'Scalabilité', value: 'Illimitée', sub: 'Gère 1 ou 1 000 leads simultanément' },
+  { label: 'Coût mensuel tout inclus', value: 'dès 349€/mois', sub: 'Optimisation continue incluse' },
+  { label: 'Charge mentale admin', value: '0h', sub: 'Devis, relances, CRM — tout est automatisé' },
+  { label: 'Disponibilité', value: '24/7/365', sub: 'Jamais malade, jamais en vacances' },
+  { label: 'Relances clients', value: 'J+1, J+3, J+7', sub: 'Séquences programmées selon votre logique métier' },
+  { label: 'Temps d\'activation', value: '14 jours', sub: 'Calibré sur votre secteur, pas un template' },
 ]
 
 export const TruthSection = () => {
@@ -42,8 +42,9 @@ export const TruthSection = () => {
           </Reveal>
           <Reveal delay={0.2}>
             <p className="text-xl md:text-2xl text-text-muted max-w-3xl text-center font-light">
-              Un assistant administratif vous coûte <strong className="text-white">plus de 50 000€/an</strong>.
-              Il dort, fait des erreurs, démissionne. Votre système IA, lui, ne s'arrête jamais.
+              Combien d'heures par semaine passez-vous sur l'admin, les devis, les relances ?
+              Un assistant coûte <strong className="text-white">50 000€/an</strong> et ne travaille que 35h.
+              Votre infrastructure IA, elle, tourne <strong className="text-white">24h/24 pour 349€/mois</strong> — calibrée sur votre métier.
             </p>
           </Reveal>
         </div>

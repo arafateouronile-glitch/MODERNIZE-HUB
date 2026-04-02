@@ -1,5 +1,9 @@
 export const faqs = [
   {
+    question: "En quoi êtes-vous différent d'un outil no-code ou d'un SaaS IA ?",
+    answer: "Un SaaS est générique : il ne connaît pas votre métier, vos offres, votre façon de parler à vos clients. On construit une infrastructure custom — votre logique de devis, vos critères de qualification, vos séquences de relances — intégrée à vos outils existants. Ce n'est pas un abonnement à configurer soi-même : c'est un système livré clé en main, calibré pour votre secteur, opérationnel en 14 jours."
+  },
+  {
     question: "Votre IA est-elle générique ou adaptée à mon métier ?",
     answer: "Chaque système est entraîné sur VOTRE processus métier. Un agent IA pour un avocat ne fonctionne pas comme celui d'un agent immobilier. On ne livre jamais une solution générique — c'est votre logique métier, vos offres, votre ton, encodés dans le système."
   },

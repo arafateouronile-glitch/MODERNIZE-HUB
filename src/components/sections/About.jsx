@@ -10,28 +10,28 @@ const AboutScene = lazy(() => import('../3d/FloatingShapes').then(m => ({ defaul
 const problems = [
   {
     icon: BotOff,
-    stat: '78%',
-    label: 'LEADS NON QUALIFIÉS',
-    text: 'Sans IA de qualification, 4 leads sur 5 ne reçoivent aucune réponse rapide. Ils signent avec votre concurrent.',
+    stat: '87%',
+    label: 'GÉRANTS ÉPUISÉS PAR L\'ADMIN',
+    text: 'Devis tapés à la main, relances oubliées, leads sans suivi. Ce n\'est pas un problème de compétences — c\'est un problème de système.',
   },
   {
     icon: Frown,
-    stat: '40%',
-    label: 'LEADS PERDUS LA NUIT',
-    text: 'Vos prospects remplissent un formulaire à 22h. Sans système autonome, ils sont froids le lendemain matin.',
+    stat: '22H',
+    label: 'D\'ADMIN PAR SEMAINE EN MOYENNE',
+    text: 'Emails de suivi, devis, réponses aux leads, mises à jour CRM. Vingt-deux heures que vous ne passez pas à développer votre business.',
   },
   {
     icon: ZapOff,
-    stat: '15H',
-    label: 'PERDUES PAR SEMAINE',
-    text: 'Devis manuels, appels de qualification, relances CRM. Ce temps devrait être consacré à votre cœur de métier.',
+    stat: '68%',
+    label: 'DES LEADS JAMAIS RELANCÉS',
+    text: 'Sans automatisation, les prospects qui ne répondent pas du premier coup sont abandonnés. Votre concurrent, lui, relance à J+1, J+3, J+7.',
   },
 ]
 
 const benefits = [
-  { icon: Zap, text: 'CAPTURE 24/7', subtext: '+180% Leads Qualifiés' },
-  { icon: Bot, text: 'AGENT IA', subtext: 'Qualification en 30 sec' },
-  { icon: BarChart2, text: 'CRM AUTONOME', subtext: 'Pipeline temps réel' },
+  { icon: Zap, text: 'ZÉRO ADMIN', subtext: '15H récupérées/semaine' },
+  { icon: Bot, text: 'AGENT SUR MESURE', subtext: 'Entraîné sur votre métier' },
+  { icon: BarChart2, text: 'AUTOPILOT TOTAL', subtext: 'Devis · Relances · CRM' },
   { icon: TrendingUp, text: 'ROI ×4.8', subtext: 'Retour à 90 jours' },
 ]
 
@@ -56,13 +56,15 @@ export const About = () => {
                 Vérité Terrain
               </span>
               <h2 className="font-display text-5xl md:text-7xl font-bold leading-[0.9] text-white mb-8">
-                VOUS <br />
-                PERDEZ <br />
-                <span className="text-[#88A9C3]">€€€€</span>
+                ÉPUISÉ <br />
+                DE TOUT <br />
+                <span className="text-[#88A9C3]">GÉRER ?</span>
               </h2>
               <p className="text-xl text-text-muted font-light max-w-lg leading-relaxed">
-                Pendant que vous gérez l'opérationnel à la main, vos concurrents déploient des <strong className="text-white">systèmes IA qui travaillent sans s'arrêter</strong>. Chaque heure sans automatisation est une heure où vous perdez des leads, des devis, des clients.
-                <span className="block mt-4 text-white font-bold">Le coût réel de l'absence d'IA : 10 000€+ par mois.</span>
+                La vraie douleur de nos clients n'est pas "je veux de l'IA". C'est{' '}
+                <strong className="text-white">je suis épuisé de gérer tout ça à la main</strong>.
+                Devis, relances, qualification, suivi client — ces tâches répétitives qui bouffent votre semaine sans créer de valeur.
+                <span className="block mt-4 text-white font-bold">On construit le système qui s'en charge à votre place. Pour toujours.</span>
               </p>
             </div>
           </Reveal>
@@ -109,13 +111,13 @@ export const About = () => {
                 La Solution
               </span>
               <h3 className="font-display text-4xl md:text-7xl font-bold text-white mb-6 uppercase">
-                ROI DE <span className="text-[#88A9C3]">480%</span>
+                L'AUTOPILOT <span className="text-[#88A9C3]">COMPLET</span>
               </h3>
               <p className="text-2xl text-white font-bold mb-4">
-                En Moins de 60 Jours
+                Pas un outil. Une nouvelle façon de travailler.
               </p>
               <p className="text-xl text-text-muted max-w-2xl mx-auto">
-                Nos clients récupèrent leur investissement en 42 jours en moyenne. Le reste ? C'est du profit pur.
+                On ne livre pas un SaaS à configurer soi-même. On construit une infrastructure opérationnelle calibrée sur votre processus métier — et on l'active en 14 jours.
               </p>
             </div>
           </Reveal>
