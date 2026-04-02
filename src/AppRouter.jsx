@@ -12,6 +12,8 @@ const Portfolio = lazy(() => import('./pages/Portfolio').then(m => ({ default: m
 const DemoPage = lazy(() => import('./pages/DemoPage').then(m => ({ default: m.DemoPage })))
 const Contact = lazy(() => import('./pages/Contact').then(m => ({ default: m.Contact })))
 const Process = lazy(() => import('./pages/Process').then(m => ({ default: m.Process })))
+const PolitiqueConfidentialite = lazy(() => import('./pages/PolitiqueConfidentialite').then(m => ({ default: m.PolitiqueConfidentialite })))
+const MentionsLegales = lazy(() => import('./pages/MentionsLegales').then(m => ({ default: m.MentionsLegales })))
 
 const RestaurantLanding = lazy(() => import('./pages/landing/RestaurantLanding').then(m => ({ default: m.RestaurantLanding })))
 const AvocatLanding = lazy(() => import('./pages/landing/AvocatLanding').then(m => ({ default: m.AvocatLanding })))
@@ -46,6 +48,8 @@ export const AppRouter = () => {
           <Route path="/landing/fitness" element={<FitnessLanding />} />
           <Route path="/landing/artisan" element={<ArtisanLanding />} />
 
+          <Route path="/politique-de-confidentialite" element={<PolitiqueConfidentialite />} />
+          <Route path="/mentions-legales" element={<MentionsLegales />} />
           <Route path="/offres" element={<Navigate to="/nos-services" replace />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="*" element={<Navigate to="/" replace />} />

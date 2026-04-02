@@ -66,8 +66,8 @@ export const Footer = () => {
           
           <div className="flex flex-wrap justify-center gap-4 md:gap-8">
             <button onClick={() => scrollToSection('accueil')} className={`transition-colors ${theme === 'light' ? 'text-white hover:text-[#88A9C3]' : 'hover:text-[#88A9C3]'}`}>HAUT</button>
-            <a href="#" className={`transition-colors ${theme === 'light' ? 'text-white hover:text-[#88A9C3]' : 'hover:text-[#88A9C3]'}`}>MENTIONS LÉGALES</a>
-            <a href="#" className={`transition-colors ${theme === 'light' ? 'text-white hover:text-[#88A9C3]' : 'hover:text-[#88A9C3]'}`}>CONFIDENTIALITÉ</a>
+            <a href="/mentions-legales" className={`transition-colors ${theme === 'light' ? 'text-white hover:text-[#88A9C3]' : 'hover:text-[#88A9C3]'}`}>MENTIONS LÉGALES</a>
+            <a href="/politique-de-confidentialite" className={`transition-colors ${theme === 'light' ? 'text-white hover:text-[#88A9C3]' : 'hover:text-[#88A9C3]'}`}>CONFIDENTIALITÉ</a>
             <a href="/admin" className={`transition-colors ${theme === 'light' ? 'text-white/50 hover:text-[#88A9C3]' : 'text-white/20 hover:text-[#88A9C3]'}`}>ADMIN</a>
           </div>
         </div>
